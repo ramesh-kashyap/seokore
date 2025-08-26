@@ -1,0 +1,245 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
+use Redirect;
+use App\Models\PasswordReset;
+use App\Models\User;
+use App\Models\UserLogin;
+
+use DB;
+class Login extends Controller
+{
+
+
+    public function login(Request $request)
+    {
+
+            $validation =  Validator::make($request->all(), [
+                'phone' => 'required|unique:users',
+                'password' => 'required|string',
+                'country' => 'nullable|string|max:100',
+                'dialCode' => 'nullable|string|max:10',
+                'country_iso' => 'nullable|string|max:10',
+
+            ]);
+
+       
+          if (isset($request->captcha)) {
+                if (!captchaVerify($request->captcha, $request->captcha_secret)) {
+                    $notify[] = ['error', "Invalid Captcha"];
+                    return back()->withNotify($notify)->withInput();
+                }
+            }
+
+
+            $user = User::where('phone', $request->phone)->first();
+            
+            if (!$user) {
+                return redirect()->back()->withErrors(['Mobile number not registered!'])->withInput();
+            }
+        
+            // Validate the dialCode and country_iso against the found user
+            if (!empty($request->dialCode) && $user->dialCode !== $request->dialCode) {
+                return redirect()->back()->withErrors(['Invalid Country Code.'])->withInput();
+            }
+            
+            $post_array  = $request->all();
+            $credentials = $request->only('phone', 'password');
+
+
+
+            if (Auth::attempt($credentials)) {
+                $request->session()->regenerate(); // ← Add this line
+                $user = Auth::user();
+
+                if($user->active_status=="Block")
+                {
+                Auth::logout();
+               return Redirect::back()->withErrors(array('You are Blocked by admin'));
+                }
+                
+              
+                $notify[] = ['success', 'Login  Successfully'];
+                return redirect()->route('user.dashboard')->withNotify($notify);
+
+              // echo "credentials are invalid"; die;
+            }
+            else
+            {
+                // echo "credentials are invalid"; die;
+                return Redirect::back()->withErrors(array('Login failed. Please check your credentials'));
+            }
+
+        }
+
+
+
+    public function forgot_password()
+    {
+
+    return view('auth.passwords.forgot-password');
+
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        session()->invalidate();
+        session()->regenerateToken();
+        $notify[] = ['success', 'You have been logged out.'];
+        return redirect()->route('login')->withNotify($notify);
+    }
+
+    public function sendforgot(Request $request)
+    {
+        $code = verificationCode(6);
+      
+        $emailId = $request->emailId;
+        
+       
+        PasswordReset::where('email', $emailId)->delete();
+
+        $password = new PasswordReset();
+        $password->email = $emailId;
+        $password->token = $code;
+        $password->created_at = \Carbon\Carbon::now();
+        $password->save();
+
+            sendEmail($emailId, 'Your One-Time Password', [
+            'name' => "User",
+            'code' => $code,
+            'purpose' => 'Change Password',
+            'viewpage' => 'one_time_password',
+
+         ]);
+
+       return true;
+    }
+   
+
+
+
+    public function forgot_password_submit(Request $request)
+    {
+         $validation =  Validator::make($request->all(), [
+                'email' => 'required',
+                'code' => 'required',
+                'password' => 'required|confirmed',
+
+            ]);
+            
+        $credentials = User::where('email',$request->email)->first();
+
+        if ($credentials)
+        {
+
+          
+           $code = $request->code;
+
+          
+            if (PasswordReset::where('token', $code)->where('email', $request->email)->count() != 1) {
+                $notify[] = ['error', 'Invalid token'];
+                return redirect()->route('forgot-password')->withNotify($notify);
+            }
+
+            $password = password_hash($request->password, PASSWORD_DEFAULT);
+
+            $credentials->password=$password;
+            $credentials->PSR=$request->password;
+            $credentials->save();
+            $notify[] = ['success', 'Your Password change Successfully.'];
+            return redirect()->route('login')->withNotify($notify);
+        }
+        else{
+            $notify[] = ['error', 'Invalid Email ID '];
+            return redirect()->route('forgot-password')->withNotify($notify);
+        }
+
+
+
+    }
+
+    public function codeVerify(){
+        $page_title = 'Account Recovery';
+        $userID = session()->get('pass_res_mail');
+
+        $user_name = session()->get('username');
+
+        if (!$userID) {
+            $notify[] = ['error','Opps! session expired'];
+            return redirect()->route('forgot-password')->withNotify($notify);
+        }
+
+        return view('auth.passwords.confirm',compact('page_title','userID','user_name'));
+    }
+
+
+    public function verifyCode(Request $request)
+    {
+        $request->validate(['code' => 'required', 'userID' => 'required']);
+        $code = $request->code;
+        $userDetail=User::where('id',$request->userID)->first();
+
+        if (PasswordReset::where('token', $code)->where('email', $userDetail->email)->count() != 1) {
+            $notify[] = ['error', 'Invalid token'];
+            return redirect()->route('forgot-password')->withNotify($notify);
+        }
+        $notify[] = ['success', 'You can change your password.'];
+        session()->flash('fpass_email', $request->userID);
+        session()->put('resetMail',$request->userID);
+        return redirect()->route('resetPassword', $code)->withNotify($notify);
+    }
+
+
+    public function resetPassword()
+    {
+        $page_title = "Forgot Password";
+    //   dd("hi");
+        return view('auth.passwords.resetPassword', compact('page_title'));
+    }
+
+   public function loginPage()
+    {
+    
+        return view('auth.login');
+    }
+
+
+
+    public function submitResetPassword(Request $request)
+    {
+
+    $request->validate(['password' => 'required|confirmed|min:5']);
+
+       $userID = session()->get('resetMail');
+
+    //    dd($userID);
+    //    die;
+
+       $user_name = session()->get('username');
+
+       $user = User::where('id',$userID)->orderBy('id', 'DESC')->first();
+
+
+       if (!$user) {
+        $notify[] = ['error','Opps! session expired'];
+        return redirect()->route('forgot-password')->withNotify($notify);
+       }
+       $password = password_hash($request->password, PASSWORD_DEFAULT);
+
+       $user->password=$password;
+       $user->PSR=$request->password;
+       $user->save();
+       $notify[] = ['success', 'Your Password change Successfully.'];
+       return redirect()->route('login')->withNotify($notify);
+
+    }
+
+
+
+}
