@@ -1022,5 +1022,9 @@
                         <div data-v-1e8e5ea6="" data-v-6b868a30=""></div>
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>
             @include('layouts.upnl.footer')
+=======
+            </div>
+>>>>>>> efa549f (xsdsj)
