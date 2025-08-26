@@ -1027,4 +1027,8 @@
             @include('layouts.upnl.footer')
 =======
             </div>
+<<<<<<< HEAD
 >>>>>>> efa549f (xsdsj)
+=======
+>>>>>>> ea1e131 (xsdsj)
+>>>>>>> 7194066 (xsdsj)
