@@ -1,26 +1,42 @@
 
             <div data-v-6b868a30="" class="footer">
                 <ul class="tw-w-full tw-h-full tw-flex tw-justify-around" data-v-6b868a30="">
-                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center actived"><svg
+                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center actived">
+                        <a href="{{ route('user.dashboard') }}">
+                        <svg
                             data-v-3f1a7394="" aria-hidden="true" class="tw-mb-2px svg-icon"
                             style="color: rgb(10, 113, 247); width: 0.5176rem; height: 0.5176rem; font-size: 0.5176rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-home"></use>
-                        </svg><span class="tw-text-12px tw-text-primary"> Home</span></li>
-                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center"><svg data-v-3f1a7394=""
+                        </svg>
+                        </a>
+                        <span class="tw-text-12px tw-text-primary"> Home</span></li>
+                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center">
+                        <a href="{{ route('user.quality') }}">
+                        <svg data-v-3f1a7394=""
                             aria-hidden="true" class="tw-mb-2px svg-icon"
                             style="color: rgb(174, 184, 196); width: 0.5176rem; height: 0.5176rem; font-size: 0.5176rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-robot"></use>
-                        </svg><span class="tw-text-12px tw-text-secondary"> SEOKORE</span></li>
-                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center"><svg data-v-3f1a7394=""
+                        </svg>
+                        </a>
+                        <span class="tw-text-12px tw-text-secondary"> SEOKORE</span></li>
+                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center">
+                        <a href="{{ route('user.level-team') }}">
+                        <svg data-v-3f1a7394=""
                             aria-hidden="true" class="tw-mb-2px svg-icon"
                             style="color: rgb(174, 184, 196); width: 0.5176rem; height: 0.5176rem; font-size: 0.5176rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-team"></use>
-                        </svg><span class="tw-text-12px tw-text-secondary"> Team</span></li>
-                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center"><svg data-v-3f1a7394=""
+                        </svg>
+                        </a>
+                        <span class="tw-text-12px tw-text-secondary"> Team</span></li>
+                    <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center">
+                    <a href="{{ route('user.asset') }}">  
+                    <svg data-v-3f1a7394=""
                             aria-hidden="true" class="tw-mb-2px svg-icon"
                             style="color: rgb(174, 184, 196); width: 0.5176rem; height: 0.5176rem; font-size: 0.5176rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-assets"></use>
-                        </svg><span class="tw-text-12px tw-text-secondary"> Assets</span></li>
+                        </svg>
+                        </a>  
+                        <span class="tw-text-12px tw-text-secondary"> Assets</span></li>
                 </ul>
             </div>
         </div>

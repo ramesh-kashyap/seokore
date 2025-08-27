@@ -6308,7 +6308,8 @@ ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
-    height: 100%
+    /* height: 100% */
+    height: 180px;
 }
 
 .van-swipe__track--vertical {
@@ -6370,6 +6371,7 @@ ul {
     flex-shrink: 0;
     width: 100%;
     height: 100%
+    /* height: 180px */
 }
 
 .van-image-preview {
