@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 <html data-dpr="1" style="font-size: 42.5px; max-width: 425px; margin: 0px auto;">
 
 <head>
@@ -1758,7 +1755,6 @@
                     </div>
                 </div>
             </div>
->>>>>>> b11ef83 (de)
             <div data-v-6b868a30="" id="scroll" class="content-container">
                 <div data-v-6b868a30="" id="content" class="content-scroll">
                     <div data-v-6b868a30="" class="tw-p-16px tw-bg-white tw-rounded-bl-16px tw-rounded-br-16px">
