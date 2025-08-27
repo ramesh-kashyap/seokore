@@ -1,523 +1,133 @@
-<html class="pc" style="font-size: 50px;">
-
-<head>
-    <meta charset="utf-8">
-    <title>{{ siteName() }}</title>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="expires" content="0">
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="full-screen" content="true">
-    <meta name="x5-fullscreen" content="true">
-    <meta name="360-fullscreen" content="true">
-    <meta name="renderer" content="webkit">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="manifest" href="/manifest.json">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            width: 100%;
-        }
-
-        #startLogo {
-            width: 100%;
-            min-width: 7.5rem;
-            height: 100vh;
-            max-width: 8.5rem;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1000000;
-            background: #020503;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            display: none;
-        }
-
-        #startLogo img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-        }
-    </style>
-    <link href="/js1743475952730/app.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="/js1743475952730/axios.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="/js1743475952730/compressorjs.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="/js1743475952730/core-js.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="/js1743475952730/crypto-js.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="/js1743475952730/vant.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="/js1743475952730/vendors~app.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="/js1743475952730/vue.fe8857a9.1743475952730.js?v=1743475952730" rel="preload" as="script">
-    <link href="{{ asset('') }}static/css/app.6328f701.css" rel="preload" as="style">
-    <link href="{{ asset('') }}static/css/vant.d14f5539.css" rel="preload" as="style">
-    <link href="{{ asset('') }}static/css/vant.d14f5539.css" rel="stylesheet">
-    <link href="{{ asset('') }}static/css/app.6328f701.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-6f896b4e.5bb66763.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-6f896b4e.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-5576a184.9f52f39a.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-5576a184.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-60c8a75a.d6f6b692.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-60c8a75a.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-a7d8f170.c87a4291.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-a7d8f170.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-67912ed2.ae8d438d.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-67912ed2.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-bcc45786.50818f65.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-bcc45786.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-00b1464f.674dbd13.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-00b1464f.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-7f362702.6a53b834.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-7f362702.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <script charset="utf-8" src="/js1743475952730/echarts.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <script charset="utf-8" src="/js1743475952730/chunk-0119f9da.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-0b116a05.250ed6be.css">
-    <script charset="utf-8" src="/js1743475952730/chunk-0b116a05.fe8857a9.1743475952730.js?v=1743475952730"></script>
-    <link rel="icon" href="{{ asset('static/img/logo2.png') }}">
-
-</head>
-<style>
-    .top-com[data-v-184f5bd0] {
-        background: linear-gradient(180deg, #111116, #141519);
-        background-size: 100% 100%;
-        padding: .32rem;
-        margin-top: .6rem;
-        margin-bottom: .32rem;
-        border: .02rem solid hsla(0, 0%, 100%, .1);
-        border-radius: 8px;
-    }
-
-    .invate-com .com1[data-v-0e8d00e8] {
-        font-size: .28rem;
-        font-weight: 600;
-        line-height: .28rem;
-    }
-
-    .invate-com .com2[data-v-0e8d00e8] {
-        opacity: .6;
-        margin-top: .16rem;
-        font-size: .24rem;
-        margin-bottom: .4rem;
-    }
-
-    .invate-com .com3[data-v-0e8d00e8] {
-        font-size: .24rem;
-    }
-
-    .invate-com .com3 img[data-v-0e8d00e8] {
-        height: .32rem;
-    }
-
-    .invate-com[data-v-184f5bd0] {
-
-        color: #ffffff;
-        line-height: 100%;
-    }
-    .top-com .flex .ico img[data-v-184f5bd0] {
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-    border-radius: 50%;
-}
-.top-com .flex .ico[data-v-184f5bd0] {
-    width: 1.54rem;
-    height: 1.24rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -.72rem;
-}
-
-    .level-com .str[data-v-0e8d00e8] {
-        border-radius: .86rem;
-        background: #00fefb;
-        display: flex;
-        height: .48rem;
-        justify-content: center;
-        align-items: center;
-        color: #000;
-        font-size: .24rem;
-        padding: 0 .32rem;
-    }
-</style>
-
-<body class="mein_cn">
-    <div id="app" class="applang">
-        <div data-v-6e2d35de="" data-v-184f5bd0="" class="page">
-            <div data-v-6e2d35de="" class="headers">
-                <div data-v-b73557e2="" data-v-184f5bd0="" class="head" data-v-6e2d35de="">
-                    <div data-v-b73557e2="" class="safe"></div>
-                    <div data-v-b73557e2="" class="container flex">
-                        <!---->
-                        <!---->
-                        <!---->
-                        <div data-v-b73557e2="" class="myName"><img data-v-b73557e2=""
-                                src="{{ asset('') }}static/img/logo.png" style="  height: 37px;"
-                                alt=""></div>
-                        <!---->
-                        <!---->
-                        <!---->
-                        <!---->
-                        <div data-v-b73557e2="" class="flex1"></div>
-
-                        <div data-v-b73557e2="" class="notice" style="margin-left: 0rem; margin-right: 0.32rem;">
-                            <a href="{{ route('user.notice') }}">
-                                <img data-v-b73557e2="" src="{{asset('static/img/bell.png')}}" alt="">
-                                @php
-                              $notificationCount = \DB::table('notifications')->where('read_status',0)->where('user_id',Auth::user()->id)->count();
-                          @endphp    
-                              @if ($notificationCount > 0)
-                                  <span data-v-b73557e2=""> {{ $notificationCount ?? 0 }}</span>
-                              @endif
-                        </div>
-                        </a>
-                        <div data-v-b73557e2="" class="lang">
-                            <a href="{{ route('user.lang') }}"> <img data-v-b73557e2=""
-                                    src="{{asset('static/img/globe-1.png')}}" alt="">
-                        </div>
-                        </a>
-                        <div data-v-b73557e2="" class="notice">
-                            <a href="https://t.me/luxboticaa" target="_blank"> 
-                            
-                            <img data-v-b73557e2=""
-                                src="{{asset('static/img/headphone.png')}}"
-                                alt="">
-                                </a>
-                        </div>
-                        <!---->
-                        <div data-v-b73557e2="" class="head_right"></div>
-                    </div>
-                    <div data-v-b73557e2="">
-                        <!---->
-                    </div>
-                </div>
-            </div>
-            <div data-v-6e2d35de="" id="scroll" class="content-container">
-                <div data-v-6e2d35de="" id="content" class="content-scroll">
-                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="profile">
-                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="container">
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="top-com">
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex">
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img
-                                            data-v-184f5bd0="" data-v-6e2d35de=""
-                                            src="{{ asset('') }}static/img/logo.jpeg" alt=""></div>
 
 
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="edit"><a
-                                            href="{{ route('user.showinfo') }}" style="color:black;">
-                                            @lang('Edit') </a></div>
-                                </div>
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="name" style="color:white;">
-                                    {{ Auth::user()->name }} </div>
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="str">
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="copy" style="color:white;">
-                                        @lang('UID'): <span data-v-184f5bd0="" data-v-6e2d35de="" id="code1"
-                                            style="color:white;">{{ Auth::user()->username }}</span><img
-                                            data-v-184f5bd0="" data-v-6e2d35de=""
-                                            src="{{ asset('') }}static/img/copy.png" onclick="copyById('code1')">
-                                    </div>
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="copy" style="color:white;">
-                                        @lang('Invitation Code'):&nbsp;
-                                        <span data-v-184f5bd0="" data-v-6e2d35de="" id="code"
-                                            style="color:white;">{{ Auth::user()->sponsor_detail?Auth::user()->sponsor_detail->username:0 }}</span><img data-v-184f5bd0=""
-                                            data-v-6e2d35de="" src="{{ asset('') }}static/img/copy.png"
-                                            onclick="copyById('code')">
-                                    </div>
-                                </div>
 
 
-                                <div id="copyToast"
-                                    style="position: fixed; left: 50%; transform: translateX(-50%);margin-bottom:50px; background: black; color: white;
-            padding: 10px 20px; border-radius: 5px;
-            visibility: hidden; opacity: 0; transition: all 0.3s ease;">
-                                </div>
-
+            <div data-v-6b868a30="" id="scroll" class="content-container">
+                <div data-v-6b868a30="" id="content" class="content-scroll">
+                    <div data-v-58308541="" data-v-6b868a30="" class="page-kyc tw-min-h-full tw-p-16px">
+                        <div data-v-58308541="" data-v-6b868a30="" class="tw-mb-10px tw-text-14px">Nationality</div>
+                        <div data-v-58308541="" class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body"><input type="text" placeholder="Please enter nationality"
+                                        class="van-field__control"></div>
                             </div>
-
-                            <?php
-                            $balance = round(Auth::user()->available_balance(), 2);
-                            $vip = 0;
-                
-                            if ($balance >= 30) {
-                                // Basic range: small balance, any user
-                                $vip = 1;
-                            } 
-                            if ($balance >= 500 && $user_direct >= 5) {
-                                // Mid range: requires 5 direct referrals
-                                $vip = 2;
-                            } 
-                            if ($balance >= 3000 && $user_direct >= 10) {
-                                // High range: requires 10 direct referrals
-                                $vip = 3;
-                            }
-                            ?>
-
-
-
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="level-com">
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex">
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico">
-
-                                        <img data-v-184f5bd0="" data-v-6e2d35de=""
-                                            src="{{ asset('static/img/' . ($vip > 0 ? 'rank' . $vip: 'V0_icon.69de7dcc') . '.png') }}">
-                                    </div>
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1" style="color:white;">
-                                        <span data-v-184f5bd0="" data-v-6e2d35de=""
-                                            style="color:white;">@lang('My level')</span>
-                                        G{{ $vip }}
-                                    </div>
-                                    <div data-v-0e8d00e8="" data-v-887483d6="" class="str" >
-                                        <a href="{{ route('user.vip') }}" style="color:black;"> Upgrade</a></div>
-
-
-                                    <!-- <div data-v-184f5bd0="" data-v-6e2d35de="" class="str"> <a href="{{ route('user.vip') }}">@lang('Upgrade')</div> -->
+                        </div>
+                        <div data-v-58308541="" data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> Name
+                        </div>
+                        <div data-v-58308541="" class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body"><input type="text"
+                                        placeholder="Please enter your last name" class="van-field__control"></div>
+                            </div>
+                        </div>
+                        <div data-v-58308541="" data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> Document
+                            type </div>
+                        <div data-v-58308541="" class="tw-rounded-10px van-cell van-field" data-v-6b868a30="">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body"><input type="text" readonly="readonly"
+                                        class="van-field__control">
+                                    <div class="van-field__right-icon"><i data-v-58308541=""
+                                            class="van-icon van-icon-arrow">
+                                            <!----></i></div>
                                 </div>
                             </div>
-                            <a href="{{ route('user.share') }}">
-
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="invate-com">
-                                    <div data-v-0e8d00e8="" data-v-887483d6="" class="com1"> Invite friends </div>
-                                    <div data-v-0e8d00e8="" data-v-887483d6="" class="com2"> Invite friends and
-                                        earn
-                                        coins together </div>
-                                    <div data-v-0e8d00e8="" data-v-887483d6="" class="com3"> Go to invite
-                                        <img data-v-0e8d00e8="" data-v-887483d6=""
-                                            src="{{asset('')}}static/img/ero.png"
-                                            alt="">
-                                    </div>
-
-                                </div>
                         </div>
-                        </a>
-                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="container">
-                            <ul data-v-184f5bd0="" data-v-6e2d35de="" class="nav1">
-
-                                <a href="{{ route('user.roi-bonus') }}">
-                                    <li data-v-184f5bd0="" data-v-6e2d35de="">
-                                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img
-                                                data-v-184f5bd0="" data-v-6e2d35de=""
-                                                src="{{asset('')}}static/img/13.png" alt=""></div>
-                                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="n"
-                                            style="color:white;">@lang('My income')</div>
+                        <div data-v-58308541="" data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> Document
+                            number </div>
+                        <div data-v-58308541="" class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body"><input type="text"
+                                        placeholder="Please enter the document number" class="van-field__control"></div>
+                            </div>
+                        </div>
+                        <div data-v-58308541="" data-v-6b868a30="" class="items">
+                            <div data-v-58308541="" data-v-6b868a30="" class="item valMob">
+                                <div data-v-58308541="" data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px">
+                                    Document photo upload </div>
+                                <ul data-v-58308541="" data-v-6b868a30="" class="db ul">
+                                    <li data-v-58308541="" data-v-6b868a30="">
+                                        <div data-v-58308541="" data-v-6b868a30="" class="its">
+                                            <div data-v-58308541="" data-v-6b868a30="" class="rel"><img
+                                                    data-v-58308541="" data-v-6b868a30=""
+                                                    src="{{ asset('') }}static/1756094289381/img/verified_zm.21b1634f.png" alt="">
+                                                <div data-v-58308541="" data-v-6b868a30="" class="abs db">
+                                                    <div data-v-58308541="" data-v-6b868a30=""
+                                                        class="tw-flex tw-flex-col tw-items-center"><img
+                                                            data-v-58308541="" data-v-6b868a30=""
+                                                            src="data:image/png;base64,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"
+                                                            alt="">
+                                                        <div data-v-58308541="" data-v-6b868a30=""
+                                                            class="documents_name"> Document front </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-58308541="" data-v-6b868a30="" class="abs file"><input
+                                                        data-v-58308541="" data-v-6b868a30="" type="file"
+                                                        accept="image/*" class="file"></div>
+                                            </div>
+                                        </div>
+                                        <!---->
                                     </li>
-
-                                </a>
-
-                                <li data-v-184f5bd0="" data-v-6e2d35de="">
-                                    <a href="{{ route('user.about') }}">
-                                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img
-                                                data-v-184f5bd0="" data-v-6e2d35de=""
-                                                src="{{asset('static/img/8.png')}}" alt=""></div>
-                                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="n"
-                                            style="color:white;">
-                                            @lang('About Us')</div>
-                                    </a>
-                                </li>
-
-                                <a href="{{ route('user.terms') }}">
-                                    <li data-v-184f5bd0="" data-v-6e2d35de="">
-                                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img
-                                                data-v-184f5bd0="" data-v-6e2d35de=""
-                                                src="{{ asset('') }}static/img/41.png" alt=""></div>
-                                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="n">@lang('Terms of Use')
-                                </a>
+                                    <li data-v-58308541="" data-v-6b868a30="">
+                                        <div data-v-58308541="" data-v-6b868a30="" class="its rel">
+                                            <div data-v-58308541="" data-v-6b868a30="" class="rel"><img
+                                                    data-v-58308541="" data-v-6b868a30=""
+                                                    src="data:image/png;base64,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"
+                                                    alt="">
+                                                <div data-v-58308541="" data-v-6b868a30="" class="abs db">
+                                                    <div data-v-58308541="" data-v-6b868a30=""
+                                                        class="tw-flex tw-flex-col tw-items-center"><img
+                                                            data-v-58308541="" data-v-6b868a30=""
+                                                            src="data:image/png;base64,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"
+                                                            alt="">
+                                                        <div data-v-58308541="" data-v-6b868a30=""
+                                                            class="documents_name"> Reverse side of ID </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-58308541="" data-v-6b868a30="" class="abs file"><input
+                                                        data-v-58308541="" data-v-6b868a30="" type="file"
+                                                        accept="image/*" class="file"></div>
+                                            </div>
+                                        </div>
+                                        <!---->
+                                    </li>
+                                    <li data-v-58308541="" data-v-6b868a30="">
+                                        <div data-v-58308541="" data-v-6b868a30="" class="its rel">
+                                            <div data-v-58308541="" data-v-6b868a30="" class="rel"><img
+                                                    data-v-58308541="" data-v-6b868a30=""
+                                                    src="{{ asset('') }}static/1756094289381/img/verified_zm.21b1634f.png" alt="">
+                                                <div data-v-58308541="" data-v-6b868a30="" class="abs db">
+                                                    <div data-v-58308541="" data-v-6b868a30=""
+                                                        class="tw-flex tw-flex-col tw-items-center"><img
+                                                            data-v-58308541="" data-v-6b868a30=""
+                                                            src="data:image/png;base64,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"
+                                                            alt="">
+                                                        <div data-v-58308541="" data-v-6b868a30=""
+                                                            class="documents_name"> Handheld documents </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-58308541="" data-v-6b868a30="" class="abs file"><input
+                                                        data-v-58308541="" data-v-6b868a30="" type="file"
+                                                        accept="image/*" class="file"></div>
+                                            </div>
+                                        </div>
+                                        <!---->
+                                    </li>
+                                </ul>
+                                <!---->
+                            </div>
                         </div>
-                        </li>
-                        </a> <a href="{{ route('user.roi-bonus') }}">
-                            <li data-v-184f5bd0="" data-v-6e2d35de="">
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img data-v-184f5bd0=""
-                                        data-v-6e2d35de="" src="{{ asset('') }}static/img/9.png"
-                                        alt="">
-
-                                </div>
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="n" style="color:white;">
-
-                                    @lang('Record')</div>
-                            </li>
-                        </a>
-                        </ul>
-                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="line">
-                            <ul data-v-184f5bd0="" data-v-6e2d35de="" class="ul1">
-                          <li data-v-184f5bd0="" data-v-6e2d35de="">
-
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{asset('')}}static/img/8.png" alt="">
-                            </div>
-                            <a href="{{ route('user.wallets') }}">
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1">@lang
-                                    @lang('Withdrawal Address')
-                            </a>
-
-
-                                </div>
-            
-            
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img data-v-184f5bd0=""
-                                        data-v-6e2d35de="" src="{{ asset('') }}static/img/114.png" alt="">
-                                </div>
-            
-                                </li>
-
-                                @if (empty(Auth::user()->email))
-                                    <li data-v-184f5bd0="" data-v-6e2d35de="">
-
-                                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img
-                                                data-v-184f5bd0="" data-v-6e2d35de=""
-                                                src="{{asset('')}}static/img/122.png" alt=""></div>
-                                        <a href="{{ route('user.bindMail') }}">
-                                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1">@lang
-                                                @lang('Bind Email')
-                                        </a>
-
-                        </div>
-
-
-                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img data-v-184f5bd0=""
-                                data-v-6e2d35de="" src="{{ asset('') }}static/img/114.png" alt="">
-                        </div>
-
-
-                        </li>
-                    @else
-                        <li data-v-184f5bd0="" data-v-6e2d35de="">
-
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{asset('')}}static/img/122.png" alt="">
-                            </div>
-                            <a href="{{ route('user.ChangeMail') }}">
-                                <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1">@lang
-                                    @lang('Change Email')
-                            </a>
-
-
+                        <div data-v-58308541="" data-v-6b868a30="" class="go"><button data-v-58308541=""
+                                data-v-6b868a30=""
+                                class="van-button van-button--primary van-button--normal van-button--block">
+                                <div data-v-58308541="" data-v-6b868a30="" class="van-button__content"><span
+                                        data-v-58308541="" data-v-6b868a30="" class="van-button__text"> Submit review
+                                    </span></div>
+                            </button></div>
                     </div>
-
-
-                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img data-v-184f5bd0=""
-                            data-v-6e2d35de="" src="{{ asset('') }}static/img/114.png" alt="">
-                    </div>
-
-                    </li>
-                    @endif
-
-                    <li data-v-184f5bd0="" data-v-6e2d35de="">
-                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img data-v-184f5bd0=""
-                                data-v-6e2d35de="" src="{{asset('static/img/51.png')}}" alt=""></div>
-
-                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1"> <a
-                                href="{{ route('user.ChangePass') }}">
-                                @lang('Login Password')</a></div>
-                        <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img data-v-184f5bd0=""
-                                data-v-6e2d35de="" src="{{ asset('') }}static/img/114.png" alt=""></div>
-                    </li>
-                    <!-- <li data-v-184f5bd0="" data-v-6e2d35de="">
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img
-                                            data-v-184f5bd0="" data-v-6e2d35de=""
-                                            src="{{ asset('') }}static/img/41.png" alt=""></div>
-
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1"> <a
-                                            href="{{ route('user.change-trx-password') }}"> @lang('Transaction Password') </a>
-                                        </a>
-
-                                    </div>
-                                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img
-                                            data-v-184f5bd0="" data-v-6e2d35de=""
-                                            src="{{ asset('') }}static/img/114.png" alt="">
-                                    </div>
-                                </li> -->
-                    </ul>
-                    <ul data-v-184f5bd0="" data-v-6e2d35de="" class="ul1">
-                        <li data-v-184f5bd0="" data-v-6e2d35de="">
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{asset('static/img/9.png')}}" alt="">
-                            </div>
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1"><a
-                                    href="{{ route('user.GenerateTicket') }}">@lang('Feedback')</a>
-                            </div>
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{ asset('') }}static/img/114.png" alt="">
-                            </div>
-                        </li>
-                        <li data-v-184f5bd0="" data-v-6e2d35de="">
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{asset('static/img/31.png')}}" alt="">
-                            </div>
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1">@lang('Help Center')
-                            </div>
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{ asset('') }}static/img/114.png" alt="">
-                            </div>
-                        </li>
-
-                        <li data-v-184f5bd0="" data-v-6e2d35de="">
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="ico"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{asset('static/img/21.png')}}" alt="">
-                            </div>
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="flex1"> <a
-                                    href="{{ route('user.about') }}">@lang('About')</a></div>
-                            <div data-v-184f5bd0="" data-v-6e2d35de="" class="arr"><img data-v-184f5bd0=""
-                                    data-v-6e2d35de="" src="{{ asset('') }}static/img/114.png" alt="">
-                            </div>
-                        </li>
-
-
-                    </ul>
-                </div>
-                <div data-v-184f5bd0="" data-v-6e2d35de="" class="btn_list">
-                    <div data-v-184f5bd0="" data-v-6e2d35de="" class="go"><button data-v-184f5bd0=""
-                            data-v-6e2d35de=""
-                            style="  color:black;  background: #00fefb;"
-                            href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">@lang('Sign Out')</button>
-                    </div>
+                    <div data-v-91b14df4="" data-v-58308541="" data-v-6b868a30=""></div>
                 </div>
             </div>
+            <!---->
         </div>
-    </div>
-    </div>
 
-
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-        @csrf
-    </form>
-
-
-    <script>
-        function copyById(elementId) {
-            const text = document.getElementById(elementId)?.innerText?.trim();
-            if (!text) return;
-
-            navigator.clipboard.writeText(text)
-                .then(() => {
-                    showToast("Copied: " + text);
-                })
-                .catch(() => {
-                    showToast("Failed to copy");
-                });
-        }
-
-        function showToast(message) {
-            const toast = document.getElementById("copyToast");
-            toast.innerText = message;
-            toast.style.visibility = "visible";
-            toast.style.opacity = "1";
-            toast.style.bottom = "50px";
-
-            setTimeout(() => {
-                toast.style.visibility = "hidden";
-                toast.style.opacity = "0";
-                toast.style.bottom = "30px";
-            }, 2000);
-        }
-    </script>
+        

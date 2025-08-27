@@ -449,15 +449,17 @@ class Profile extends Controller
     }
 
 
+
     public function change_password_post(Request $request)
     {
 
         try {
             $data = $request->all();
-            $rules = array('password' => 'required|confirmed');
+            $rules = array('old_password' => 'required', 'password' => 'required|confirmed');
             $msg = [
-                'password.required'         => 'Password is required',
-                'password.confirmed'        => 'Password must match',
+                'old_password.required'     => 'Old Password is required',
+                'password.required'         => 'Password is required' ,
+                'password.confirmed'        => 'Password must match'    ,
             ];
 
             $validator = Validator::make($data, $rules, $msg);
@@ -466,27 +468,23 @@ class Profile extends Controller
 
             $user = Auth::user();
 
-            $code = $request->code;
-            if (PasswordReset::where('token', $code)->where('email', $user->email)->count() != 1) {
-                $notify[] = ['error', 'Invalid token'];
-                return redirect()->route('user.ChangePass')->withNotify($notify);
-            }
 
-            date_default_timezone_set('Asia/Kolkata');
-            $today = date("Y-m-d H:i:s");
-            $code = verificationCode(6);
-            User::where('id', $user->id)->update(array(
+            if (!\Hash::check($data['old_password'], $user->password))
+                return Redirect::back()->withErrors('Current Password is incorrect');
+
+             User::where('id', $user->id)->update(array(
                 'password' => \Hash::make($data['password']),
                 'PSR' => $data['password'],
-                'detail_changed_date' => $today,
                 'updated_at' => new \DateTime
             ));
 
-            $notify[] = ['success', 'Password Changed successfully'];
-            return redirect()->route('user.ChangePass')->withNotify($notify);
+            $notify[] = ['success', 'password updated successfully'];
+            return redirect()->back()->withNotify($notify);
+
         } catch (\Exception $e) {
             return Redirect::back()->witherrors($e->getMessage())->withInput();
         }
+
     }
 
 
@@ -534,15 +532,16 @@ class Profile extends Controller
     }
 
 
-    public function change_trxpassword_post(Request $request)
+     public function change_trxpassword_post(Request $request)
     {
 
         try {
             $data = $request->all();
-            $rules = array('password' => 'required|confirmed');
+            $rules = array('old_password' => 'required', 'password' => 'required|confirmed');
             $msg = [
-                'password.required'         => 'Password is required',
-                'password.confirmed'        => 'Password must match',
+                'old_password.required'     => 'Old Password is required',
+                'password.required'         => 'Password is required' ,
+                'password.confirmed'        => 'Password must match'    ,
             ];
 
             $validator = Validator::make($data, $rules, $msg);
@@ -551,31 +550,26 @@ class Profile extends Controller
 
             $user = Auth::user();
 
+            if (!\Hash::check($data['old_password'], $user->tpassword))
+                return Redirect::back()->withErrors('Current Transaction  Password is incorrect');
 
-            $code = $request->code;
-            if (PasswordReset::where('token', $code)->where('email', $user->email)->count() != 1) {
-                $notify[] = ['error', 'Invalid token'];
-                return redirect()->route('user.change-trx-password')->withNotify($notify);
-            }
-
-            date_default_timezone_set('Asia/Kolkata');
-            $today = date("Y-m-d H:i:s");
-            User::where('id', $user->id)->update(array(
+                User::where('id', $user->id)->update(array(
                 'tpassword' => \Hash::make($data['password']),
-                'TPSR' => $data['password'],
-                'detail_changed_date' => $today,
+                 'TPSR' => $data['password'],
                 'updated_at' => new \DateTime
             ));
 
-            // return Redirect::Back()->with('messages', 'Transaction password updated successfully');
+           // return Redirect::Back()->with('messages', 'Transaction password updated successfully');
 
             $notify[] = ['success', 'Transaction password updated successfully'];
             return redirect()->back()->withNotify($notify);
-        } catch (\Exception $e) {
+
+        }
+         catch (\Exception $e) {
             return Redirect::back()->witherrors($e->getMessage())->withInput();
         }
-    }
 
+    }
 
 
     public function bank_profile_update(Request $request)
