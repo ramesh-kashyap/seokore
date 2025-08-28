@@ -9,7 +9,7 @@
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-home"></use>
                         </svg>
                         </a>
-                        <span class="tw-text-12px tw-text-secondary"> Home</span></li>
+                        <span class="tw-text-12px tw-text-secondary" style="color: #000"> Home</span></li>
                     <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center">
                         <a href="{{ route('user.quality') }}">
                         <svg data-v-3f1a7394=""
@@ -18,7 +18,7 @@
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-robot"></use>
                         </svg>
                         </a>
-                        <span class="tw-text-12px tw-text-secondary"> SEOKORE</span></li>
+                        <span class="tw-text-12px tw-text-secondary" style="color: #000"> SEOKORE</span></li>
                     <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center">
                         <a href="{{ route('user.level-team') }}">
                         <svg data-v-3f1a7394=""
@@ -27,7 +27,7 @@
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-team"></use>
                         </svg>
                         </a>
-                        <span class="tw-text-12px tw-text-secondary"> Team</span></li>
+                        <span class="tw-text-12px tw-text-secondary" style="color: #000"> Team</span></li>
                     <li class="tw-flex-1 tw-flex tw-flex-col tw-items-center tw-justify-center">
                     <a href="{{ route('user.asset') }}">  
                     <svg data-v-3f1a7394=""
@@ -36,7 +36,7 @@
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-assets"></use>
                         </svg>
                         </a>  
-                        <span class="tw-text-12px tw-text-secondary"> Assets</span></li>
+                        <span class="tw-text-12px tw-text-secondary" style="color: #000"> Assets</span></li>
                 </ul>
             </div>
         </div>
