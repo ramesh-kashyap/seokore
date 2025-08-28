@@ -1727,16 +1727,12 @@
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
                         style="color: rgb(24, 25, 28);"><span>Forgot password</span></div>
-                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px"><svg
-                            data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-website"></use>
-                        </svg>
+                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         <!---->
-                        <div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                                style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                                <use data-v-3f1a7394="" xlink:href="#svg-icon-bell"></use>
-                            </svg></div>
+                        <div>
+                        <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            </div>
                         <!----><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                             style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-service"></use>

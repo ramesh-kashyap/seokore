@@ -16,7 +16,7 @@
     padding-bottom: .32rem;
     margin-right: .64rem;
     font-size: .37333rem;
-    color: #79818f
+    color: #f6faff
 }
 
 .market_card .tabbar-list div[data-v-40a6c17a]:last-child {
@@ -42,7 +42,7 @@
 }
 
 .market_card .quotes-list[data-v-40a6c17a] {
-    border-bottom: .02667rem solid #f4f4f4;
+    /* border-bottom: .02667rem solid #f4f4f4; */
     padding: .42667rem 0;
     display: flex;
     align-items: center
@@ -76,14 +76,14 @@
 
 .market_card .quotes-list .list-coin .coin-name[data-v-40a6c17a] {
     flex: 1;
-    color: #18191c;
+    color: #ffffff;
     font-size: .37333rem
 }
 
 .market_card .quotes-list .list-price[data-v-40a6c17a] {
     flex: 0 0 33.3%;
     text-align: center;
-    color: #000;
+    color: #ffffff;
     font-size: .37333rem
 }
 
@@ -115,7 +115,7 @@
 
 .market-list[data-v-40a6c17a] {
     border-radius: .26667rem;
-    background: #fff;
+    background: rgb(25 140 82 / 11%);
     padding: .32rem;
     margin-top: .32rem
 }
@@ -124,7 +124,7 @@
     display: flex;
     align-items: center;
     font-size: .32rem;
-    color: #79818f
+    color: #e8effd
 }
 
 .market-list .tr .list-coin[data-v-40a6c17a] {
@@ -325,11 +325,14 @@
 .page-home-card li {
     height: 3.84rem;
     background-repeat: no-repeat;
-    background-size: contain
+    background-size: contain;
+    background: rgb(25 140 82 / 11%);
+    border-radius: 20px;
 }
 
-.page-home-card li.invite {
-    background-image: url(https://h5.seokore.com/static/1756094289381/img/bg_invite.21f3007a.png)
+/* .page-home-card li.invite {
+    background-image: url(https://h5.seokore.com/static/1756094289381/img/bg_invite.21f3007a.png);
+    filter: brightness(0) saturate(100%) invert(27%) sepia(79%) saturate(274%) hue-rotate(113deg) brightness(93%) contrast(89%);
 }
 
 .page-home-card li.task {
@@ -338,7 +341,7 @@
 
 .page-home-card li.level {
     background-image: url(https://h5.seokore.com/static/1756094289381/img/bg_level.7e9a0454.png)
-}
+} */
 
 .page-home-market-tab {
     margin-top: .53333rem;
@@ -419,3 +422,21 @@
 .page-home-market-content-change.default:after {
     display: none
 }
+.actions span {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      border-radius: 15px;
+      padding: 12px 5px;
+      color: white;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .actions span img {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 5px;
+}
+    .actions span:hover {
+      background: rgba(255,255,255,0.2);
+    }

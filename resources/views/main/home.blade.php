@@ -2,40 +2,39 @@
 
             <div data-v-6b868a30="" id="scroll" class="content-container">
                 <div data-v-6b868a30="" id="content" class="content-scroll">
-                    <div data-v-6b868a30="" class="tw-p-16px tw-bg-white tw-rounded-bl-16px tw-rounded-br-16px">
-                        <ul data-v-6b868a30="" class="tw-flex tw-justify-between">
-                            <li data-v-6b868a30="" class="tw-h-full tw-flex-1 tw-flex tw-flex-col tw-items-center"><img
-                                    data-v-6b868a30=""
-                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/b0784d925538e301e66bede6d5d3f895.png"
-                                    alt="" class="tw-mb-6px tw-w-52px tw-h-40px">
-                                <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Deposit now
-                                </div>
-                            </li>
-                            <li data-v-6b868a30="" class="tw-h-full tw-flex-1 tw-flex tw-flex-col tw-items-center"><img
-                                    data-v-6b868a30=""
-                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/596c5c62fc7bcca3254a6b2e0d68f53d.png"
-                                    alt="" class="tw-mb-6px tw-w-52px tw-h-40px">
-                                <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Withdraw
-                                    immediately </div>
-                            </li>
-                            <li data-v-6b868a30="" class="tw-h-full tw-flex-1 tw-flex tw-flex-col tw-items-center"><img
-                                    data-v-6b868a30=""
-                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/800d632ec860f011c4c3a95872c029dc.png"
-                                    alt="" class="tw-mb-6px tw-w-52px tw-h-40px">
-                                <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Platform
-                                    introduction </div>
-                            </li>
-                            <li data-v-6b868a30="" class="tw-h-full tw-flex-1 tw-flex tw-flex-col tw-items-center"><img
-                                    data-v-6b868a30=""
-                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/665e5465f0b57c596e913c2dce30fae7.png"
-                                    alt="" class="tw-mb-6px tw-w-52px tw-h-40px">
-                                <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Help Center
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <div data-v-6b868a30="" class="tw-p-16px tw-bg-white2 tw-rounded-bl-16px tw-rounded-br-16px">
+                        <!-- <ul class="page-home-card tw-mt-16px tw-flex tw-justify-between tw-items-center tw-gap-4px"
+                            data-v-6b868a30="">
+                            <li
+                                class="invite tw-flex-1 tw-pt-20px tw-px-12px tw-text-16px tw-text-white tw-font-bold tw-break-words">
+                                <span  class="center-text" style="margin-left: 150px;">
+                                <span style="font-size: 30px;">$ 21.09</span><br> 
+                                <span style="margin-left: 140px;">+0.9</span>
+                                </span> 
+                            </li>                            
+                        </ul> -->
+                        <div class="actions">
+                            <span>
+                                <img src="{{ asset('') }}static/img/arrowu (1).png" alt="">
+                                <p>Receive</p>
+                            </span>
+                            <span>
+                                <img src="{{ asset('') }}static/img/arrowu (2).png" alt="">
+                                <p>Send</p>
+                            </span>
+                            <span>
+                                <img src="{{ asset('') }}static/img/buy (1).png" alt="">
+                                <p>Swap</p>
+                            </span>
+                            <span>
+                                <img src="{{ asset('') }}static/img/buy (2).png" alt="">
+                                <p>Buy</p>
+                            </span>
+                        </div>
+
+                        </div>
                     <div data-v-6b868a30="" class="tw-p-16px">
-                        <div data-v-77e1eeea="" class="tw-bg-white tw-rounded-bl-10px tw-rounded-br-10px"
+                        <div data-v-77e1eeea="" class="tw-bg-white2 tw-rounded-bl-10px tw-rounded-br-10px"
                             data-v-6b868a30="">
                             <div data-v-77e1eeea="" class="van-swipe">
                                 <div class="van-swipe__track"
@@ -98,7 +97,7 @@
                                         style=""></i><i class="van-swipe__indicator" style=""></i></div>
                             </div>
                             <div data-v-77e1eeea="" role="alert" class="van-notice-bar" vertical=""
-                                style="color: rgb(24, 25, 28); background: none;"><i
+                                style="color: #fff;"><i
                                     class="van-icon van-notice-bar__left-icon"><img
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK8SURBVHgB7VbrcdpAEN7VEA+PP6IDpQNcQaADdwCuwMINICrgUkGgA6cCSAVxB1EJmskYYWdym12dTr4QCQkIv+xvBvTY0+53+7oFeMdbB8KJ8H0/QMS13BPRdcKQ+274PCPUE76NWfCVAB92qhP/VwKO8SAncMv2lxmBaUolVpZaw7yMiAdnGv8HBHP+S/beTTzE751wG55FoNY4Y6s60XbR7WuCj0KGJBSGhc/fLrr36ewkAiXGk0Prxd1ChghGQHpVCAgi1xONCJQYf+S4z5t8a4j0JiY0BojerB2mgdy3WPmYlSuxA80gxkd8vSkTdqa7O97mjUewelKdpX0v3uiFW58Q70w44Au/HnFuYHSscVtyZUAgxaU1JDbAFfHD7lTwAZ4jm6Cyxg/JlxDYBQkr3xz4PdQZzxQTfXYeAw9hLYYyA6qfAGEhf/G2YcvdHesewZl4Ut2Qd63YxWs0mwvEEF8jkWuAJe86qwQi79PRfaAJJPE4+2/tsxhyZU4YgosQyA1tbA+QeO+J4/x6OQLGMCV1a1pwIeTZPzBP9LgnDswFk4t4oB3+HEoS2md0Mt8Qw6wqiIm5Hhj0+/11lVLuF7HWelpXhr373YLL1T10Yrch8Y4nhYSPayEgCv38N6xSzEqFxIA758FeQCSzQHHKx1rOghyye25QYyuVWcFjxVN4zco6DORMYBLVnZPdLU1Lev8Vta/dGcDzYIY2/gRLkTUaSCoOo5Ucr5kuZyCpgkxKgDrKWSaaMCPXqApYeSyud0iIJwZNvpU2/MvjMY10kRcczWI6alyGJSQOQuLNLh+/UBpyWF5DhnqeLnrKPh7VB5qQMK7+Lbv1IZsOi5RLZOeuccHRfUBI5PNAXLogizP+laTMYyMxT1VX7S8/qRPueUKwcazNpdSEIBJ8u4K2ShTWtuR3vF38AYAMg8PLrZG7AAAAAElFTkSuQmCC"
                                         class="van-icon__image">
@@ -179,17 +178,18 @@
                             <li
                                 class="invite tw-flex-1 tw-pt-20px tw-px-12px tw-text-16px tw-text-white tw-font-bold tw-break-words">
                                 Invite friends </li>
-                            <li
+                            <!-- <li
                                 class="task tw-flex-1 tw-pt-20px tw-px-12px tw-text-16px tw-text-white tw-font-bold tw-break-words">
-                                <span>Mission Centre</span></li>
+                                <span>Mission Centre</span></li> -->
                             <li
                                 class="level tw-flex-1 tw-pt-20px tw-px-12px tw-text-16px tw-text-white tw-font-bold tw-break-words">
-                                Levels <div class="tw-mt-12px tw-ml-4px tw-w-80px van-image"><img
+                                Levels 
+                                <div class="tw-mt-12px tw-ml-4px tw-w-80px van-image"><img
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/2990dbe8b66676d6d1602405620a8d2b.png"
                                         class="van-image__img"></div>
                             </li>
                         </ul>
-                        <div data-v-6b868a30="" class="tw-mt-16px tw-p-16px tw-bg-white tw-rounded-10px">
+                        <div data-v-6b868a30="" class="tw-mt-16px tw-p-16px tw-bg-white2 tw-rounded-10px">
                             <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center">
                                 <div data-v-6b868a30="" class="tw-text-16px">NEWS</div><a href="/news/?typeId=1"
                                     class="tw-text-secondary newlink" data-v-6b868a30=""><span></span> More </a>
@@ -973,47 +973,47 @@
                             <div data-v-6b868a30="" class="tw-mb-16px tw-text-16px tw-font-bold"> Partner </div>
                             <ul data-v-6b868a30="" class="tw-grid tw-grid-cols-3 tw-gap-16px">
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20250510/b36cef7083fdbb8a435ff5c53365745b.jpg"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240813/5c787d228a90e84a5a1de7e0d6379bcf.png"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240813/a839f92e86dea1769794d1178004e5d3.png"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240813/3f3f6bb14f3505efc9afcfcbb9ddbbf0.png"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20250510/11f5606a2d88aa6ce39d23ab9bbae03b.jpg"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240813/f5352209ec88fe461a0a3ada0a83a1f0.png"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240813/20f7ade14d37d182eef08551be181698.png"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240813/d8eb157fb147fa29f0fefd34b1bddd24.png"
                                         class="tw-w-full"></li>
                                 <li data-v-6b868a30=""
-                                    class="tw-px-16px tw-h-44px tw-bg-white tw-rounded-full tw-flex tw-justify-center tw-items-center">
+                                    class="tw-px-16px tw-h-44px tw-bg-white2 tw-rounded-full tw-flex tw-justify-center tw-items-center">
                                     <img data-v-6b868a30=""
                                         src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20250510/786406ef3327e965e46b01545c09118a.jpg"
                                         class="tw-w-full"></li>

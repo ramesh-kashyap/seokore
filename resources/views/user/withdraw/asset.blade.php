@@ -1,270 +1,98 @@
-<html class="pc" style="font-size: 50px;">
-
-<head>
-    <meta charset="utf-8">
-    <title>{{ siteName() }} </title>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="expires" content="0">
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="full-screen" content="true">
-    <meta name="x5-fullscreen" content="true">
-    <meta name="360-fullscreen" content="true">
-    <meta name="renderer" content="webkit">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="manifest" href="/manifest.json">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            width: 100%;
-        }
-
-        #startLogo {
-            width: 100%;
-            min-width: 7.5rem;
-            height: 100vh;
-            max-width: 8.5rem;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1000000;
-            background: #020503;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            display: none;
-        }
-
-        #startLogo img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-        }
-    </style>
-
-    <link href="{{ asset('') }}static/css/app.6328f701.css" rel="preload" as="style">
-    <link href="{{ asset('') }}static/css/vant.d14f5539.css" rel="preload" as="style">
-    <link href="{{ asset('') }}static/css/vant.d14f5539.css" rel="stylesheet">
-    <link href="{{ asset('') }}static/css/app.6328f701.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-6f896b4e.5bb66763.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-5576a184.9f52f39a.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-60c8a75a.d6f6b692.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-a7d8f170.c87a4291.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-67912ed2.ae8d438d.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-bcc45786.50818f65.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-00b1464f.674dbd13.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-7f362702.6a53b834.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('') }}static/css/chunk-0b116a05.250ed6be.css">
-    <link rel="icon"  href="{{ asset('static/img/logo2.png') }}">
-
-</head>
-
-<body class="mein_cn">
-
-<style>
-    .info-com[data-v-32fa28da] {
-    background: linear-gradient(180deg, #111116, #141519);
-    background-size: 100% 100%;
-    margin: .32rem 0;
-    padding: .32rem;
-    border-radius: 15px;
-    border: .02rem solid hsla(0, 0%, 100%, .1);
-}
-.list .item[data-v-56ab0919] {
-    padding: 0.3rem 0;
-}
-</style>
-
-
-
-    
-    <div id="app" class="applang">
-        <div data-v-6e2d35de="" data-v-32fa28da="" class="page">
-            <div data-v-6e2d35de="" class="headers">
-                <div data-v-b73557e2="" data-v-32fa28da="" class="head" data-v-6e2d35de="" >
-                    <div data-v-b73557e2="" class="safe"></div>
-                    <div data-v-b73557e2="" class="container flex"><!----><!----><!---->
-                        <div data-v-b73557e2="" class="myName"><img data-v-b73557e2=""
-                                src="{{ asset('') }}static/img/logo.png" style="  height: 37px;"
-                                alt=""></div><!----><!----><!----><!---->
-                        <div data-v-b73557e2="" class="flex1"></div>
-                      
-                        <div data-v-b73557e2="" class="notice" style="margin-left: 0rem; margin-right: 0.32rem;">
-                            <a href="{{ route('user.notice') }}">
-                                <img data-v-b73557e2="" src="{{asset('static/img/bell.png')}}" alt="">
-                                @php
-                                  $notificationCount = \DB::table('notifications')->where('read_status',0)->where('user_id',Auth::user()->id)->count();
-                            @endphp    
-                                @if ($notificationCount > 0)
-                                    <span data-v-b73557e2=""> {{ $notificationCount ?? 0 }}</span>
-                                @endif
-                        </div>
-                        </a>
-                        <div data-v-b73557e2="" class="lang">
-                            <a href="{{ route('user.lang') }}"> <img data-v-b73557e2=""
-                                    src="{{asset('static/img/globe-1.png')}}" alt="">
-                        </div>
-                        </a>
-                        <div data-v-b73557e2="" class="notice">
-                            <a href="https://t.me/luxboticaa" target="_blank"> 
-                            
-                            <img data-v-b73557e2=""
-                                src="{{asset('static/img/headphone.png')}}"
-                                alt="">
-                                </a>
-                        </div><!---->
-                        <div data-v-b73557e2="" class="head_right"></div>
-                    </div>
-                    <div data-v-b73557e2=""><!----></div>
-                </div>
-            </div>
-            <div data-v-6e2d35de="" id="scroll" class="content-container">
-                <div data-v-6e2d35de="" id="content" class="content-scroll">
-                    <div data-v-32fa28da="" data-v-6e2d35de="" class="container">
-                        <div data-v-32fa28da="" data-v-6e2d35de="" class="info-com">
-                            <div data-v-7e49fd41="" data-v-32fa28da="" data-v-6e2d35de="">
-                                <div data-v-7e49fd41="" class="total flex">
-                                    <div data-v-7e49fd41="" class="it">
-                                        <div data-v-7e49fd41="" class="name"> @lang('Total Assets (USDT)') <img
-                                                data-v-7e49fd41="" src="{{ asset('') }}static/img/eye.png"
-                                                alt=""></div>
-                                        <div data-v-7e49fd41="" class="val" style="white-space: nowrap;">
-                                            ${{ number_format(Auth::user()->available_balance(), 2) }} </div>
+@include('layouts.upnl.header')
+            <div data-v-6b868a30="" id="scroll" class="content-container">
+                <div data-v-6b868a30="" id="content" class="content-scroll">
+                    <div data-v-6b868a30="" class="page-assets-container tw-min-h-full tw-p-16px">
+                        <div data-v-6b868a30="" class="page-assets-header tw-text-white tw-relative">
+                            <div data-v-6b868a30="" class="page-assets-header-top">
+                                <div data-v-6b868a30="" class="tw-absolute tw-top-0 tw-right-16px tw-w-72px tw-h-72px">
+                                    <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                        style="width: 1.694rem; height: 1.694rem; font-size: 1.694rem;">
+                                        <use data-v-3f1a7394="" xlink:href="#svg-icon-usdt-large"></use>
+                                    </svg></div>
+                                <div data-v-6b868a30="" class="tw-text-12px tw-opacity-80"> Total Assets (USDT) </div>
+                                <div data-v-6b868a30="" class="tw-text-28px tw-font-bold"> 6.09 </div>
+                                <div data-v-6b868a30=""
+                                    class="list tw-flex tw-justify-between tw-px-28px tw-py-16px tw-bg-white3 tw-bg-opacity-90 tw-rounded-8px">
+                                    <div data-v-6b868a30="" class="item tw-flex-1 tw-px-4px tw-text-center">
+                                        <div data-v-6b868a30="" class="tw-text-primary tw-text-18px"> 6.09 </div>
+                                        <div data-v-6b868a30="" class="name tw-text-12px tw-text-secondary"> Flexible
+                                            Funds </div>
                                     </div>
-                                    <div data-v-7e49fd41="" class="it">
-                                        <div data-v-7e49fd41="" class="name"> @lang('Total Earning') </div>
-                                        <div data-v-7e49fd41="" class="val" style="white-space: nowrap;"> ${{number_format(Auth::user()->users_incomes()+Auth::user()->tradingProfit->sum('profit'),2)}}
-                                        </div>
+                                    <div data-v-6b868a30="" class="item tw-flex-1 tw-text-center">
+                                        <div data-v-6b868a30="" class="tw-text-dark tw-text-18px"> 6.09 </div>
+                                        <div data-v-6b868a30="" class="name tw-text-12px tw-text-secondary"> Strategic
+                                            Funds </div>
                                     </div>
-                                </div>
-                                <ul data-v-7e49fd41="" class="flex">
-                                    <li data-v-7e49fd41=""
-                                        style=" color:black; background: #00fefb">
-                                        <div data-v-7e49fd41="" class="title"><span data-v-7e49fd41=""
-                                                style="color:black;">@lang('Flexible Funds')</span></div>
-                                        <div data-v-7e49fd41="" class="val">
-                                            {{ number_format(Auth::user()->available_balance(), 2) }} </div>
-                                    </li>
-                                    <li data-v-7e49fd41=""
-                                        style=" color:black; background: #00fefb">
-                                        <div data-v-7e49fd41="" class="title"><span data-v-7e49fd41=""
-                                                style="color:black;">@lang('Total Withdrawal')
-                                            </span></div>
-                                        <div data-v-7e49fd41="" class="val"> ${{number_format(Auth::user()->withdraw(),2)}} </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <ul data-v-17dc2e5d="" data-v-32fa28da="" class="tab flex" data-v-6e2d35de="">
-                                <li data-v-17dc2e5d="">
-                                    <a href="{{ route('user.invest') }}"><img data-v-17dc2e5d=""
-                                            src="/static/img/wallet-ico10.b777fba7.png" alt=""></a>
-                                    <a href="{{ route('user.invest') }}">
-                                        <div data-v-17dc2e5d="" class="s0" style="color:#fff;">@lang('Deposit')
-                                        </div>
-                                    </a>
-                                </li>
-                                <li data-v-17dc2e5d="">
-                                    <a href="{{ route('user.Withdraw') }}"> <img data-v-17dc2e5d=""
-                                            src="/static/img/wallet-ico11.2bd21110.png" alt=""></a>
-                                    <a href="{{ route('user.Withdraw') }}">
-                                        <div data-v-17dc2e5d="" class="s1" style="color:#fff;">@lang('Withdraw')
-                                        </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                         <div data-v-32fa28da="" data-v-6e2d35de="" class="box-com">
-                            <div data-v-396fd10e="" data-v-32fa28da="" class="box" data-v-6e2d35de="">
-                                <div data-v-396fd10e="" class="cname"> @lang('My income')<a href="{{route('user.roi-bonus')}}"><img data-v-396fd10e=""
-                                        src="{{ asset('') }}static/img/ero.png" alt=""></a></div>
-                                <ul data-v-396fd10e="" class="flex">
-                                    <li data-v-396fd10e="">
-                                        <div data-v-396fd10e="" class="title">@lang('Total Income')</div>
-                                        <div data-v-396fd10e="" class="val">${{number_format($totalIncome,2)}}</div>
-                                    </li>
-                                    <li data-v-396fd10e="">
-                                        <div data-v-396fd10e="" class="title">@lang("Today's earnings")</div>
-                                        <div data-v-396fd10e="" class="val">${{number_format($todaysIncome,2)}}
-                                        </div>
-                                    </li>
-                                    <li data-v-396fd10e="">
-                                        <div data-v-396fd10e="" class="title">@lang('Accumulated trading income')</div>
-                                        <div data-v-396fd10e="" class="val">
-                                            ${{number_format($totalRoi,2)}}</div>
-                                    </li>
-                                    <li data-v-396fd10e="">
-                                        <div data-v-396fd10e="" class="title">@lang("Today's trading income")</div>
-                                        <div data-v-396fd10e="" class="val">
-                                            ${{number_format($todaysRoi,2)}}</div>
-                                    </li>
-                                    <li data-v-396fd10e="">
-                                        <div data-v-396fd10e="" class="title">@lang('Cumulative community income')</div>
-                                        <div data-v-396fd10e="" class="val">
-                                            ${{number_format($totalLevelIncome,2)}}</div>
-                                    </li>
-                                    <li data-v-396fd10e="">
-                                        <div data-v-396fd10e="" class="title">@lang("Today's community income")</div>
-                                        <div data-v-396fd10e="" class="val">
-                                          ${{number_format($todaysLevelIncome,2)}}</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> 
-                        <div data-v-56ab0919="" data-v-32fa28da="" class="itemBox" data-v-6e2d35de="">
-                            <div data-v-56ab0919="" class="cname">@lang('List of Assets')</div>
-                            <div data-v-56ab0919="" class="list">
-                                <div data-v-56ab0919="" class="item">
-                                    <div data-v-56ab0919="" class="item-head flex">
-                                        <div data-v-56ab0919="" class="ico"><img data-v-56ab0919=""
-                                                src="{{ asset('') }}static/img/usdt.png" alt=""></div>
-                                        <div data-v-56ab0919="" class="flex1">
-                                            <div data-v-56ab0919=""> USDT</div>
-                                            <p data-v-56ab0919=""></p>
-                                        </div>
-                                        <div data-v-56ab0919="" class="val">
-                                            {{ number_format(Auth::user()->available_balance(), 2) }}</div>
-                                        <div data-v-56ab0919="" class="arr"><img data-v-56ab0919=""
-                                                src="{{ asset('') }}static/img/bb.png" alt=""
-                                                class=""></div>
-                                    </div>
-                                    <div data-v-56ab0919="" class="com">
-                                        <div data-v-56ab0919="">
-                                            <ul data-v-56ab0919="" class="com-1">
-                                                <li data-v-56ab0919="">
-                                                    <div data-v-56ab0919="" class="title">@lang('Available')</div>
-                                                    <div data-v-56ab0919="" class="val">2.43426034</div>
-                                                </li>
-                                                <li data-v-56ab0919="">
-                                                    <div data-v-56ab0919="" class="title">@lang('Asset-Sperre')</div>
-                                                    <div data-v-56ab0919="" class="val">0</div>
-                                                </li>
-                                                <li data-v-56ab0919="">
-                                                    <div data-v-56ab0919="" class="title">@lang('To be released')</div>
-                                                    <div data-v-56ab0919="" class="val">2.43426034</div>
-                                                </li>
-                                            </ul>
-                                            <ul data-v-56ab0919="" class="com-2">
-                                                <li data-v-56ab0919=""> @lang('Deposit')</li>
-                                                <li data-v-56ab0919="">@lang('Withdraw')</li>
-                                                <li data-v-56ab0919="">@lang('Bill')</li>
-                                            </ul>
+                                    <div data-v-6b868a30="" class="item tw-flex-1 tw-text-center">
+                                        <div data-v-6b868a30="" class="tw-text-dark tw-text-18px"> 0 </div>
+                                        <div data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> To Be Released
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div data-v-6b868a30=""
+                                class="tw-pt-28px tw-pb-12px tw-flex tw-justify-between tw-items-center tw-text-dark tw-bg-white3">
+                                <div data-v-6b868a30="" class="tw-flex-1 tw-flex tw-justify-center tw-items-center"><svg
+                                        data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                        style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
+                                        <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-recharge"></use>
+                                    </svg><span data-v-6b868a30="" class="tw-pl-8px">Deposit</span></div>
+                                <div data-v-6b868a30=""
+                                    class="tw-flex-1 tw-flex tw-justify-center tw-items-center van-hairline--left"><svg
+                                        data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                        style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
+                                        <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-withdraw"></use>
+                                    </svg><span data-v-6b868a30="" class="tw-pl-8px">Withdraw</span></div>
+                            </div>
+                        </div>
+                        <div class="revenue" data-v-6b868a30="">
+                            <div class="tw-mb-12px tw-flex tw-justify-between tw-items-center">
+                                <div class="tw-text-16px">Total Income</div>
+                                <div class="tw-flex tw-items-center"><span class="tw-pr-4px tw-text-14px">Last 7
+                                        days</span><i class="van-icon van-icon-arrow-down">
+                                        <!----></i></div>
+                            </div>
+                            <div class="tw-bg-white3 tw-rounded-10px">
+                                <div class="tw-px-14px tw-py-16px">
+                                    <div class="tw-mb-16px tw-flex tw-justify-between tw-items-center">
+                                        <div class="tw-flex tw-items-center">
+                                            <div class="tw-mr-8px tw-w-36px tw-h-36px"><img
+                                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20241119/a374614d2b1d9d3b68ad00f1b2b38e68.jpeg"
+                                                    alt=""></div>
+                                            <div class="tw-text-16px tw-text-dark">USDT</div>
+                                        </div>
+                                        <div class="tw-flex-1 tw-text-right">
+                                            <div class="tw-text-14px tw-text-dark"> 6.096 </div>
+                                            <div class="tw-text-12px tw-text-secondary"> ≈6.096 USDT </div>
+                                        </div>
+                                    </div>
+                                    <div class="tw-mb-16px tw-flex tw-justify-between tw-items-center">
+                                        <div class="tw-flex tw-items-center">
+                                            <div class="tw-mr-8px tw-w-36px tw-h-36px"><img
+                                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240904/baa89f4d0b494fec297b855f2740d8f2.png"
+                                                    alt=""></div>
+                                            <div class="tw-text-16px tw-text-dark">USDC</div>
+                                        </div>
+                                        <div class="tw-flex-1 tw-text-right">
+                                            <div class="tw-text-14px tw-text-dark"> 0 </div>
+                                            <div class="tw-text-12px tw-text-secondary"> ≈0 USDT </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tw-h-260px">
+                                    <div
+                                        class="tw-w-full tw-py-12 tw-flex tw-justify-center tw-items-center tw-pt-2 tw-pb-2">
+                                        <div class="custom-empty van-empty">
+                                            <div class="van-empty__image"><img
+                                                    src="{{asset('')}}static/img/empty_data.b69933fd.svg"></div>
+                                            <p class="van-empty__description">No record yet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-91b14df4=""></div>
                         </div>
                     </div>
                 </div>
             </div>
+            @include('layouts.upnl.footer')

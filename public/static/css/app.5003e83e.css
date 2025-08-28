@@ -36,7 +36,8 @@
     width: 100%;
     height: 100%;
     word-wrap: break-word;
-    word-break: normal
+    word-break: normal;
+    background: url(../img/strips.png);
 }
 
 .btn2 {
@@ -675,7 +676,7 @@ input::placeholder {
 }
 
 .tw-mt-12px {
-    margin-top: .32rem
+    margin-top: .02rem
 }
 
 .tw-mt-16px {
@@ -763,7 +764,7 @@ input::placeholder {
 }
 
 .tw-ml-4px {
-    margin-left: .10667rem
+    margin-left: 1.10667rem
 }
 
 .tw-ml-6px {
@@ -979,7 +980,7 @@ input::placeholder {
 }
 
 .tw-w-80px {
-    width: 2.13333rem
+    /* width: 2.13333rem */
 }
 
 .tw-w-100px {
@@ -1082,7 +1083,8 @@ input::placeholder {
 }
 
 .tw-items-center {
-    align-items: center
+    align-items: center;
+    color:#fff;
 }
 
 .tw-items-stretch {
@@ -1218,8 +1220,19 @@ input::placeholder {
 
 .tw-bg-white {
     --tw-bg-opacity: 1;
-    /* background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) */
-    background-color: #28926f
+    /* background-color: rgb(255 255 255 / 0%) */
+    background-color: #ffffff
+}
+.tw-bg-white2 {
+    --tw-bg-opacity: 1;    
+    background-color: rgb(255 255 255 / 0%)
+    /* background-color: #ffffff */
+}
+.tw-bg-white3 {
+    --tw-bg-opacity: 1;
+    color: #fff;
+    background-color: rgb(25 140 82 / 11%)
+    /* background-color: #ffffff */
 }
 
 .tw-bg-dark {
@@ -1467,11 +1480,13 @@ input::placeholder {
 }
 
 .tw-text-14px {
-    font-size: .37333rem
+    font-size: .37333rem;
+    color:#fff
 }
 
 .tw-text-16px {
-    font-size: .42667rem
+    font-size: .42667rem;
+    color:#fff;
 }
 
 .tw-text-18px {
@@ -1510,7 +1525,7 @@ input::placeholder {
 
 .tw-text-dark {
     --tw-text-opacity: 1;
-    color: rgba(24, 25, 28, var(--tw-text-opacity))
+    color: rgba(255, 255, 255, var(--tw-text-opacity))
 }
 
 .tw-text-primary {
@@ -1520,7 +1535,7 @@ input::placeholder {
 
 .tw-text-secondary {
     --tw-text-opacity: 1;
-    color: rgba(121, 129, 143, var(--tw-text-opacity))
+    color: rgba(255, 255, 255, var(--tw-text-opacity))
 }
 
 .tw-text-error {
@@ -1614,7 +1629,7 @@ input::placeholder {
     vertical-align: middle;
     fill: currentColor;
     overflow: hidden;
-    color: #18191c
+    color: #ffffff
 }
 
 @keyframes loadingCircle-3f1a7394 {

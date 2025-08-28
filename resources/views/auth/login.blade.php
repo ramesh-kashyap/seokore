@@ -1725,18 +1725,12 @@
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
                         style="color: rgb(24, 25, 28);"><span></span></div>
-                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px"><svg
-                            data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-website"></use>
-                        </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-clear-cache"></use>
-                        </svg>
-                        <div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                                style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                                <use data-v-3f1a7394="" xlink:href="#svg-icon-bell"></use>
-                            </svg></div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
+                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                        <div>                                
+                                <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                           </div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                             style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-i18n"></use>
                         </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
@@ -1751,7 +1745,7 @@
                     <div data-v-6b868a30="" class="page-auth-container tw-h-full tw-p-20px">
                         <div data-v-6b868a30=""
                             class="page-auth-header tw-relative tw-z-10 tw-mb-20px tw-flex tw-items-center"><img
-                                data-v-6b868a30="" src=x`x` alt=""
+                                data-v-6b868a30="" src="{{ asset('/2.png') }}" alt=""
                                 class="tw-w-64px tw-h-64px">
                             <div data-v-6b868a30="" class="tw-pl-12px tw-flex-1">
                                 <div data-v-6b868a30="" class="tw-mb-6px tw-text-24px">Hello,</div>
@@ -1783,7 +1777,7 @@
                                             </div>
                                         </div>
                                         <div class="van-tabs__content">
-                                            <div role="tabpanel" class="van-tab__pane" style="display: none;">
+                                            <div role="tabpanel" class="van-tab__pane" id="mobilephase" style="display:none">
                                                 <div class="tw-mt-20px tw-text-16px"> Mobile phone </div>
                                                 <div class="van-cell van-field !tw-px-0 cell-after-full">
                                                     <div class="van-field__left-icon">
@@ -1800,14 +1794,14 @@
                                                     <div
                                                         class="van-cell__value van-cell__value--alone van-field__value">
                                                         <div class="van-field__body">
-                                                            <input type="text" onkeyup="this.value=this.value.replace(/[ ]/g,'')" name="phone"
-                                                                placeholder="Please enter your phone number"
-                                                                class="van-field__control"></div>
+                                                            <input type="text" onkeyup="this.value=this.value.replace(/[ ]/g,'')" name="phone" placeholder="Please enter your phone number"
+                                                                class="van-field__control">
+                                                            </div>
                                                     </div>
                                                 </div>
                                                 <div></div>
                                             </div>
-                                            <div role="tabpanel" class="van-tab__pane" style="">
+                                            <div role="tabpanel" class="van-tab__pane" id="emailphase" style="">
                                                 <div class="tw-mt-20px tw-text-16px"> Mailbox </div>
                                                 <div class="van-cell van-field !tw-px-0 cell-after-full">
                                                     <div
@@ -1828,8 +1822,9 @@
                                                     autocomplete="new-password"  name="password" id="passwordInput"
                                                     placeholder="Please enter a password" onkeyup="this.value=this.value.replace(/[ ]/g,'')"
                                                     class="van-field__control">
-                                                <div class="van-field__right-icon" onclick="togglePassword()" ><i id="eyeIcon"
-                                                        class="van-icon van-icon-closed-eye tw-text-secondary"  style="cursor: pointer;">
+                                                <div class="van-field__right-icon" onclick="togglePassword()" >
+                                                    <i id="eyeIcon"
+                                                        class="van-icon van-icon-closed-eye tw-text-secondary" style="cursor: pointer;">
                                                         <!----></i></div>
                                             </div>
                                         </div>
@@ -1847,13 +1842,13 @@
                                 <div data-v-6b868a30=""
                                     class="tw-relative tw-z-0 tw-bottom-10px tw-flex tw-justify-between tw-items-center">
                                     <a href="/user/forget_password?id=1" class="tw-mt-12px tw-text-primary"
-                                        data-v-6b868a30=""> Forgot password? </a><a href="/user/register/index"
+                                        data-v-6b868a30=""> Forgot password? </a><a href="{{ route('register') }}"
                                         class="page-auth-form-footer" data-v-6b868a30=""> Registration <i
                                             class="van-icon van-icon-arrow">
                                             <!----></i></a></div>
-                                <div data-v-6b868a30="" class="tw-mt-24px"><button data-v-6b868a30=""
-                                        class="van-button van-button--default van-button--large van-button--disabled van-button--block"
-                                        disabled="disabled">
+                                <div data-v-6b868a30="" class="tw-mt-24px"><button data-v-6b868a30="" type="submit"
+                                        class="van-button van-button--default van-button--large van-button--block"
+                                        >
                                         <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
                                                 class="van-button__text"> Login </span></div>
                                     </button></div>
@@ -1971,11 +1966,19 @@
     function Mobileplate() {
         document.getElementById("stlech").style.transform =
             "translateX(80px) translateX(-50%)"; // Move to 80px
+        document.getElementById("mobilephase").style.display =
+          ""
+          document.getElementById("emailphase").style.display =
+          "none"
     }
 
     function Emailplate() {
         document.getElementById("stlech").style.transform =
             "translateX(258px) translateX(-50%)"; // Move to 258px
+            document.getElementById("emailphase").style.display =
+          ""
+          document.getElementById("mobilephase").style.display =
+          "none"
     }
 </script>
     <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>

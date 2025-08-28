@@ -1725,18 +1725,12 @@
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
                         style="color: rgb(24, 25, 28);"><span></span></div>
-                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px"><svg
-                            data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-website"></use>
-                        </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-clear-cache"></use>
-                        </svg>
-                        <div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                                style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                                <use data-v-3f1a7394="" xlink:href="#svg-icon-bell"></use>
-                            </svg></div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
+                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                        <div>
+                            <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            </div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                             style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-i18n"></use>
                         </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
@@ -1755,17 +1749,30 @@
                                 class="tw-w-64px tw-h-64px">
                             <div data-v-6b868a30="" class="tw-pl-12px tw-flex-1">
                                 <div data-v-6b868a30="" class="tw-mb-6px tw-text-24px">Hello,</div>
-                                <div data-v-6b868a30="" class="tw-text-18px van-ellipsis"> Welcome SEOKORE </div>
+                                <div data-v-6b868a30="" class="tw-text-18px van-ellipsis"> Welcome {{siteName()}}</div>
                             </div>
                         </div>
                         <div data-v-6b868a30="" class="page-auth-content tw-relative tw-z-10">
                             <div data-v-6b868a30="" class="page-auth-form tw-pb-24px">
+                               <form action="{{ route('registers') }}" method="POST" id="form-id">
+                                 @csrf
+                             @php
+                              $sponsor = @$_GET['inviteCode'] ? @$_GET['inviteCode'] : @$_GET['InviteCode'];
+                               @endphp
                                 <div data-v-6b868a30=""
                                     class="tw-relative tw-z-0 tw-top-10px tw-flex tw-justify-between tw-items-start">
                                     <div data-v-6b868a30="" class="page-auth-form-title"> Registration </div>
                                 </div>
                                 <div data-v-6b868a30=""
                                     class="tw-relative tw-z-10 tw-bg-white tw-px-16px tw-pb-20px tw-pt-20px tw-rounded-10px">
+                                    <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">Name</div>
+                                    <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                        <div class="van-cell__value van-cell__value--alone van-field__value">
+                                            <div class="van-field__body"><input type="text" name="name"
+                                                    placeholder="Enter your name" 
+                                                    class="van-field__control"></div>
+                                        </div>
+                                    </div>
                                     <div data-v-6b868a30="" class="tw-text-16px">Mobile phone</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-field__left-icon">
@@ -1774,15 +1781,21 @@
                                                     <!----></i></div>
                                         </div>
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body"><input type="tel"
-                                                    placeholder="Please enter your phone number"
+                                            <div class="van-field__body" id="phone_code">
+                                                <input type="hidden" id="country-name" name="country" value="CANADA">
+                                            <input type="hidden" id="dial-code" name="dialCode" value="1">
+                                            <input type="hidden" id="country_iso" name="country_iso"
+                                                value="CA">
+                                                <input name="phone" type="tel" id="phone"
+                                                    onkeyup="this.value=this.value.replace(/[ ]/g,'')"
                                                     class="van-field__control"></div>
                                         </div>
                                     </div>
                                     <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">Mailbox</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body"><input type="text"
+                                            <div class="van-field__body">
+                                                <input type="text" name=""
                                                     οnkeyup="this.value=this.value.replace(/\s+/g,'')"
                                                     placeholder="Please enter your email address"
                                                     class="van-field__control"></div>
@@ -1791,7 +1804,8 @@
                                     <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px"> Verification code </div>
                                     <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body"><input type="tel" inputmode="numeric"
+                                            <div class="van-field__body">
+                                                <input type="text" inputmode="numeric"
                                                     placeholder="Please enter the verification code"
                                                     class="van-field__control">
                                                 <div class="van-field__right-icon"><button
@@ -1806,19 +1820,21 @@
                                     <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">invitation code</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body"><input type="text"
-                                                    placeholder="Invitation code cannot be empty"
+                                            <div class="van-field__body"><input type="text"  onkeyup="this.value=this.value.replace(/[ ]/g,'')"
+                                                    placeholder="Invitation code cannot be empty"  value="{{$sponsor}}"
                                                     class="van-field__control"></div>
                                         </div>
                                     </div>
                                     <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">Login Password</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body"><input type="password"
-                                                    autocomplete="new-password"
+                                            <div class="van-field__body">
+                                                <input type="password" autocomplete="new-password"  name="password"
                                                     placeholder="Please enter a password (6-20 alphanumeric characters)"
+                                                    onkeyup="this.value=this.value.replace(/[ ]/g,'')" type="password"
                                                     class="van-field__control">
-                                                <div class="van-field__right-icon"><i
+                                                <div class="van-field__right-icon" onclick="togglePassword()">
+                                                    <i id="eyeIcon"
                                                         class="van-icon van-icon-closed-eye tw-text-secondary">
                                                         <!----></i></div>
                                             </div>
@@ -1828,8 +1844,8 @@
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
                                             <div class="van-field__body"><input type="password"
-                                                    autocomplete="new-password"
-                                                    placeholder="Please enter a password (6-20 alphanumeric characters)"
+                                                    autocomplete="new-password" id="password_confirmation"  name="password_confirmation"
+                                                    placeholder="Please enter a password (6-20 alphanumeric characters)" accept="onkeyup="this.value=this.value.replace(/[ ]/g,'')" type="password"
                                                     class="van-field__control">
                                                 <div class="van-field__right-icon"><i
                                                         class="van-icon van-icon-closed-eye tw-text-secondary">
@@ -1838,11 +1854,9 @@
                                         </div>
                                     </div>
                                     <div data-v-6b868a30="" class="tw-mt-16px tw-flex tw-items-center tw-text-14px">
-                                        <div role="checkbox" tabindex="0" aria-checked="true"
-                                            class="tw-mr-8px rounded van-checkbox" data-v-6b868a30="">
-                                            <div
-                                                class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
-                                                <i class="van-icon van-icon-success">
+                                        <div role="checkbox" tabindex="0" aria-checked="true" class="tw-mr-8px rounded van-checkbox" data-v-6b868a30="" >
+                                            <div class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
+                                                <i class="van-icon van-icon-success" >
                                                     <!----></i></div>
                                         </div><a href="/article?id=REGISTRATION_AGREEMENT" class="" data-v-6b868a30="">
                                             I have read the privacy agreement </a>
@@ -1853,12 +1867,12 @@
                                         class="page-auth-form-footer" data-v-6b868a30=""> Login <i
                                             class="van-icon van-icon-arrow">
                                             <!----></i></a></div>
-                                <div data-v-6b868a30="" class="tw-mt-24px"><button data-v-6b868a30=""
-                                        disabled="disabled"
-                                        class="van-button van-button--default van-button--large van-button--disabled van-button--block">
+                                <div data-v-6b868a30="" class="tw-mt-24px"><button data-v-6b868a30="" type="submit"
+                                        class="van-button van-button--default van-button--large">
                                         <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
                                                 class="van-button__text"> Registration </span></div>
                                     </button></div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1953,6 +1967,128 @@
         </div>
     </div> -->
     <!---->
+
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            $("#phone_code").click(function() {
+                $("#popup").show();
+                $("#overlay").show();
+            });
+            $("#cancel").click(function() {
+                $("#popup").hide();
+                $("#overlay").hide();
+            });
+        });
+    </script>
+    <?php
+    $countries = \DB::table('country')
+        ->select('phonecode as code', 'name', 'iso as flag')
+        ->get()
+        ->map(function ($country) {
+            return [
+                'code' => '+' . ltrim($country->code, '+'),
+                'name' => $country->name,
+                'flag' => strtolower($country->flag),
+            ];
+        })
+        ->toArray();
+    ?>
+    <script>
+        const countries = <?php echo json_encode($countries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>;
+    </script>
+    <script>
+        (function($) {
+            function populateList(filteredCountries) {
+                const $list = $('#country-list');
+                $list.empty();
+                filteredCountries.forEach(country => {
+                    $list.append(`
+                
+                                                <li data-v-a84105cc="" class="db">
+                    <div class="db" data-code="${country.code}" data-flag="${country.flag}">
+                        <span class="fi fi-${country.flag}"></span>
+                        ${country.name} (${country.code})
+                    </div>
+                    </li>
+                    
+                `);
+                });
+            }
+
+            $(document).ready(function() {
+                const $popup = $('#popup');
+                const $overlay = $('#overlay');
+                const $search = $('#country-search');
+                const $countryList = $('#country-list');
+                const $phone_code = $('#phone_code');
+                const $country_iso = $('#country_iso');
+                populateList(countries); // Initial population of the list
+
+                // Show popup when input is focused
+                $search.on('focus', function() {
+                    $popup.show();
+                    $overlay.show();
+                });
+
+                // Hide popup when clicking outside
+                $overlay.on('click', function() {
+                    $popup.hide();
+                    $overlay.hide();
+                });
+
+                // Filter the list based on search input
+                $search.on('input', function() {
+                    const searchTerm = $(this).val().toLowerCase();
+                    const filteredCountries = countries.filter(country =>
+                        country.name.toLowerCase().includes(searchTerm) || country.code.includes(
+                            searchTerm)
+                    );
+                    populateList(filteredCountries);
+                });
+
+                // Handle country selection
+                $countryList.on('click', 'div', function() {
+                    const countryCode = $(this).data('code');
+                    const countryIso = $(this).data('flag'); // Correct way to get the ISO code
+                    $phone_code.find('span').text(countryCode);
+                    $('#country-name').val($(this).text().split('(')[0].trim());
+                    $('#dial-code').val(countryCode.replace('+', ''));
+                    $('#country_iso').val(countryIso.toUpperCase()); // Set the ISO code correctly
+                    $popup.hide();
+                    $overlay.hide();
+                });
+                // Hide popup when the close icon is clicked
+                $('#cancel').on('click', function() {
+                    $popup.hide();
+                    $overlay.hide();
+                });
+            });
+        }(jQuery));
+    </script>
+    
+
+
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("passwordInput");
+            const eyeIcon = document.getElementById("eyeIcon");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.className = "van-icon van-icon-eye tw-text-primary"; // show icon when password visible
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.className = "van-icon van-icon-closed-eye tw-text-secondary"; // hide icon
+            }
+        }
+    </script>
+
 </body>
 
 </html>

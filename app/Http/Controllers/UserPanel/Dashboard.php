@@ -1433,8 +1433,7 @@ public function notice()
   \DB::table('notifications')
   ->where('user_id', auth()->id())
   ->where('read_status', 0)
-  ->update(['read_status' => 1]);
-  
+  ->update(['read_status' => 1]);  
   $notifications = Notification::where('user_id',$user->id)->orderBy('id', 'desc')->get();
   return view('user.notice', compact('notifications'));
 }

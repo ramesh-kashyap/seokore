@@ -1727,40 +1727,26 @@
         <div data-v-6b868a30="" class="page">
             <div data-v-6b868a30="" class="headers">
                 <div class="tw-px-16px tw-w-full tw-h-full tw-flex tw-items-center" data-v-6b868a30=""
-                    style="background-color: rgb(255, 255, 255);">
+                    style="background-color: rgb(255 255 255 / 0%)">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center">
                         <a href="{{ route('user.profile') }}">
-                        <!----><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;" >
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-menu-dot"></use>
-                        </svg>
+                        <img data-v-6b868a30="" src="{{ asset('static/img/5.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         </a>
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
-                        style="color: rgb(24, 25, 28);"><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="width: 2.588rem; height: 0.5647rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-logo-long"></use>
-                        </svg></div>
+                        style="color: rgb(24, 25, 28);">
+                           <img src="{{ asset('') }}y1.png" alt="" class="svg-icon">
+                    </div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
                         <a href="{{ route('user.lang') }}">
-                        <svg
-                            data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-website"></use>
-                        </svg>
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         </a>
                         <a href="{{ route('user.dashboard') }}">
-                        <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-clear-cache"></use>
-                        </svg>
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         </a>
                         <div>
                             <a href="{{ route('user.notice') }}">
-                            <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                                style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                                <use data-v-3f1a7394="" xlink:href="#svg-icon-bell"></use>
-                            </svg>
+                            <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             </a>
                         </div>
                         <!---->

@@ -17,23 +17,21 @@ class Login extends Controller
 
     public function login(Request $request)
     {
-
+        //  dd($request);
             $validation =  Validator::make($request->all(), [
-                'phone' => 'required|unique:users',
+                'phone' => 'unique:users,phone',
+                // 'email' => 'nullable|unique:users,email',
                 'password' => 'required|string',
-                'country' => 'nullable|string|max:100',
-                'dialCode' => 'nullable|string|max:10',
-                'country_iso' => 'nullable|string|max:10',
 
             ]);
 
        
-          if (isset($request->captcha)) {
-                if (!captchaVerify($request->captcha, $request->captcha_secret)) {
-                    $notify[] = ['error', "Invalid Captcha"];
-                    return back()->withNotify($notify)->withInput();
-                }
-            }
+        //   if (isset($request->captcha)) {
+        //         if (!captchaVerify($request->captcha, $request->captcha_secret)) {
+        //             $notify[] = ['error', "Invalid Captcha"];
+        //             return back()->withNotify($notify)->withInput();
+        //         }
+        //     }
 
 
             $user = User::where('phone', $request->phone)->first();
@@ -43,9 +41,9 @@ class Login extends Controller
             }
         
             // Validate the dialCode and country_iso against the found user
-            if (!empty($request->dialCode) && $user->dialCode !== $request->dialCode) {
-                return redirect()->back()->withErrors(['Invalid Country Code.'])->withInput();
-            }
+            // if (!empty($request->dialCode) && $user->dialCode !== $request->dialCode) {
+            //     return redirect()->back()->withErrors(['Invalid Country Code.'])->withInput();
+            // }
             
             $post_array  = $request->all();
             $credentials = $request->only('phone', 'password');

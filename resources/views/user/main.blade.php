@@ -1,4 +1,4 @@
-@include('layouts.upnl.header')
+
 <style>
 	a:hover {
     text-decoration: none;
@@ -8,5 +8,4 @@
 	@if(isset($page) && $page != '')
 		@include($page)
 	@endif
-	<!--end page-wrapper-->
-	@include('layouts.upnl.footer')
+	
