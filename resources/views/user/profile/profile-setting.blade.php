@@ -1816,7 +1816,7 @@
                                 <div data-v-6b868a30="" class="tw-flex tw-items-center">
                                     <div data-v-6b868a30=""
                                         class="tw-w-60px tw-h-60px tw-rounded-full tw-overflow-hidden">
-                                            <img data-v-6b868a30="" src="{{ asset('') }}2.png" alt="" s>
+                                            <img data-v-6b868a30="" src="{{ asset('') }}2.png" alt="">
                                         </div>
                                     <div data-v-6b868a30="" class="tw-ml-12px">
                                         <div data-v-6b868a30="" class="tw-text-18px">{{sitename('')}}</div>
@@ -1892,11 +1892,13 @@
                                 <li data-v-6b868a30=""
                                     class="tw-flex-1 tw-flex tw-flex-col tw-break-words tw-items-center"><span
                                         class="van-popover__wrapper" data-v-6b868a30="">
-                                        <div class="tw-flex tw-flex-col tw-items-center"><svg data-v-3f1a7394=""
+                                        <div class="tw-flex tw-flex-col tw-items-center">
+                                            <svg data-v-3f1a7394=""
                                                 aria-hidden="true" class="tw-mb-6px svg-icon" alt=""
                                                 style="width: 1.224rem; height: 0.9412rem;">
                                                 <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-social"></use>
                                             </svg>
+                                            
                                             <a href="{{ route('user.terms') }}">
                                             <div class="tw-text-12px tw-text-center tw-break-words"> Social Media </div>
                                             </a>
@@ -1921,22 +1923,24 @@
                             <div data-v-6b868a30="" class="tw-mb-12px tw-text-16px">Menu</div>
                             <ul data-v-6b868a30="" class="tw-flex tw-flex-wrap">
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-rules"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img   class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/langu.png" alt=""  style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <a href="{{ route('user.terms') }}">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Terms of
                                         Use </div>
                                         </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-kyc"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img   class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/download (9).png" alt=""  style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Verify
                                     </div>
                                 </li>
@@ -1950,11 +1954,12 @@
                                         Authenticator </div>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-lock"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/download (6).png" alt="" style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <a
                                 href="{{ route('user.ChangePass') }}">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Login
@@ -1962,11 +1967,12 @@
                                         </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-security"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/download (3).png" alt="" style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <a
                                 href="{{ route('user.change-trx-password') }}">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center">
@@ -1980,41 +1986,45 @@
                             <ul data-v-6b868a30="" class="tw-flex tw-flex-wrap">
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
                                     <a href="{{ route('user.terms') }}">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-feedback"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/download (9).png" alt="" style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Feedback
                                     </div>
                                     </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
                                     <a href="{{ route('user.about') }}">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-question"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/download (10).png" alt="" style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Help
                                         Center </div>
                                           </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-i18n"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/download (6).png" alt="" style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Switch
                                         Language </div>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
-                                    <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
+                                    <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-service"></use>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="tw-mb-6px svg-icon"src="{{ asset('') }}static/icon/support.png" alt="" style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Customer
                                         Service </div>
                                 </li>
