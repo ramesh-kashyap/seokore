@@ -1780,20 +1780,28 @@
             <div data-v-6b868a30="" class="headers">
                 <div class="tw-px-16px tw-w-full tw-h-full tw-flex tw-items-center" data-v-6b868a30=""
                     style="background-color: transparent;">
-                    <div class="tw-w-44px tw-h-full tw-flex tw-items-center"><svg data-v-3f1a7394="" aria-hidden="true"
+                    <div class="tw-w-44px tw-h-full tw-flex tw-items-center">
+                        <a href="{{ route('user.dashboard') }}">
+                        <svg data-v-3f1a7394="" aria-hidden="true"
                             class="svg-icon"
                             style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-arrow-back"></use>
                         </svg>
+                        </a>
                         <!---->
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
                         style="color: rgba(255, 255, 255, 1);"><span>Mine</span></div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
+                        <a href="{{ route('user.lang') }}">
                         <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                        </a>
                         <!---->
                         <div>
+                        <a href="{{ route('user.notice') }}">
                         <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                       
+                        </a>
                             </div>
                         <!---->
                         <!---->
@@ -1814,18 +1822,22 @@
                                         <div data-v-6b868a30="" class="tw-text-18px">{{sitename('')}}</div>
                                         <div data-v-6b868a30="" class="tw-text-12px tw-flex tw-items-center"><span
                                                 data-v-6b868a30="" class="tw-text-secondary"> Invitation Code:
-                                            </span><span data-v-6b868a30="" class="tw-px-8px">3Q3X3V</span><span
-                                                data-v-6b868a30=""><svg data-v-3f1a7394="" aria-hidden="true"
+                                            </span><span data-v-6b868a30="" class="tw-px-8px">{{ Auth::user()->sponsor_detail?Auth::user()->sponsor_detail->username:0 }}</span><span
+                                                data-v-6b868a30="">
+                                                <svg data-v-3f1a7394="" aria-hidden="true"
                                                     class="svg-icon" data-v-6b868a30=""
-                                                    style="color: rgb(23, 114, 248); width: 0.2824rem; height: 0.2824rem; font-size: 0.2824rem;">
-                                                    <use data-v-3f1a7394="" xlink:href="#svg-icon-copy"></use>
+                                                    style="color: rgb(23, 114, 248); width: 0.2824rem; height: 0.2824rem; font-size: 0.2824rem;" onclick="copyById('code')">
+                                                    <use data-v-3f1a7394="" xlink:href="#svg-icon-copy" ></use>
                                                 </svg></span></div>
                                         <div data-v-6b868a30="" class="tw-text-12px"><span data-v-6b868a30=""
                                                 class="tw-text-secondary">UID:</span><span data-v-6b868a30=""
-                                                class="tw-pl-4px">3197627</span></div>
+                                                class="tw-pl-4px">{{ Auth::user()->username }}</span></div>
                                     </div>
-                                </div><i data-v-6b868a30="" class="tw-text-20px van-icon van-icon-arrow">
-                                    <!----></i>
+                                </div>
+                                <a href="{{ route('user.showinfo') }}">
+                                <i data-v-6b868a30="" class="tw-text-20px van-icon van-icon-arrow">
+                                   </i>
+                                </a>
                             </div>
                             <div data-v-6b868a30=""
                                 class="page-mine-header-banner tw-p-16px tw-flex tw-justify-between tw-items-center">
@@ -1838,9 +1850,13 @@
                                         class="tw-pl-8px tw-text-16px tw-text-white"> SK 0 </span>
                                 </div>
                                 <div data-v-6b868a30="" class="level-btn"><button data-v-6b868a30=""
-                                        class="tw-w-8 van-button van-button--default van-button--mini van-button--round">
-                                        <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
-                                                class="van-button__text"> Upgrade </span></div>
+                                        class="tw-w-8 van-button van-button--default1 van-button--mini van-button--round">
+                                        <div data-v-6b868a30="" class="van-button__content">
+                                            <a href="{{ route('user.vip') }}">
+                                            <span data-v-6b868a30=""
+                                                class="van-button__text"> Upgrade </span>
+                                            </a>
+                                            </div>
                                     </button></div>
                             </div>
                         </div>
@@ -1854,8 +1870,10 @@
                                             <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-recharge-large">
                                             </use>
                                         </svg>
+                                        <a href="{{ route('user.deposit') }}">
                                         <div data-v-6b868a30="" class="tw-text-12px tw-text-center tw-break-words">
                                             Deposit </div>
+                                        </a>
                                     </div>
                                 </li>
                                 <li data-v-6b868a30=""
@@ -1865,8 +1883,10 @@
                                             data-v-6b868a30="" style="width: 1.224rem; height: 0.9412rem;">
                                             <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-order-list"></use>
                                         </svg>
+                                        <a href="{{ route('user.Withdraw') }}">
                                         <div data-v-6b868a30="" class="tw-text-12px tw-text-center tw-break-words">
-                                            Order History </div>
+                                            WithDraw</div>
+                                             </a>
                                     </div>
                                 </li>
                                 <li data-v-6b868a30=""
@@ -1877,7 +1897,9 @@
                                                 style="width: 1.224rem; height: 0.9412rem;">
                                                 <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-social"></use>
                                             </svg>
+                                            <a href="{{ route('user.terms') }}">
                                             <div class="tw-text-12px tw-text-center tw-break-words"> Social Media </div>
+                                            </a>
                                         </div>
                                     </span></li>
                                 <li data-v-6b868a30=""
@@ -1887,8 +1909,10 @@
                                             data-v-6b868a30="" style="width: 1.224rem; height: 0.9412rem;">
                                             <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-team"></use>
                                         </svg>
+                                        <a href="{{ route('user.level-team') }}">
                                         <div data-v-6b868a30="" class="tw-text-12px tw-text-center tw-break-words"> Team
                                             Members </div>
+    </a>
                                     </div>
                                 </li>
                             </ul>
@@ -1902,8 +1926,10 @@
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-rules"></use>
                                     </svg>
+                                    <a href="{{ route('user.terms') }}">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Terms of
                                         Use </div>
+                                        </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
                                     <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
@@ -1929,8 +1955,11 @@
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-lock"></use>
                                     </svg>
+                                    <a
+                                href="{{ route('user.ChangePass') }}">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Login
                                         Password </div>
+                                        </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
                                     <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
@@ -1938,8 +1967,11 @@
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-security"></use>
                                     </svg>
+                                    <a
+                                href="{{ route('user.change-trx-password') }}">
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center">
                                         Transaction Password </div>
+                                        </a>
                                 </li>
                             </ul>
                         </div>
@@ -1947,6 +1979,7 @@
                             <div data-v-6b868a30="" class="tw-mb-12px tw-text-16px">Help</div>
                             <ul data-v-6b868a30="" class="tw-flex tw-flex-wrap">
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
+                                    <a href="{{ route('user.terms') }}">
                                     <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
@@ -1954,8 +1987,10 @@
                                     </svg>
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Feedback
                                     </div>
+                                    </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
+                                    <a href="{{ route('user.about') }}">
                                     <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
                                         data-v-6b868a30=""
                                         style="width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
@@ -1963,6 +1998,7 @@
                                     </svg>
                                     <div data-v-6b868a30="" class="tw-text-12px tw-break-words tw-text-center"> Help
                                         Center </div>
+                                          </a>
                                 </li>
                                 <li data-v-6b868a30="" class="tw-mb-16px tw-w-1/4 tw-flex tw-flex-col tw-items-center">
                                     <svg data-v-3f1a7394="" aria-hidden="true" class="tw-mb-4px svg-icon" alt=""
@@ -1983,15 +2019,22 @@
                                         Service </div>
                                 </li>
                             </ul>
-                        </div><button data-v-6b868a30=""
-                            class="!tw-mb-12px !tw-border-none van-button van-button--default van-button--normal van-button--plain van-button--block">
-                            <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
-                                    class="van-button__text"> Sign Out </span></div>
-                        </button><button data-v-6b868a30=""
+                        </div>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+    
+                        <button data-v-6b868a30="" type="submit"
+                            class="!tw-mb-12px !tw-border-none van-button van-button--default1 van-button--normal van-button--plain van-button--block">
+                            <div data-v-6b868a30="" class="van-button__content" >
+                                <span data-v-6b868a30="" class="van-button__text"> Sign Out </span></div>
+                        </button>
+                        </form>
+                        <!-- <button data-v-6b868a30=""
                             class="!tw-border-none van-button van-button--danger van-button--normal van-button--plain van-button--block">
                             <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
                                     class="van-button__text"> Delete Account </span></div>
-                        </button>
+                        </button> -->
+                        
                     </div>
                 </div>
             </div>
@@ -2014,8 +2057,37 @@
             <!---->
         </div>
     </div>
+    
     <script src="/static/1756094289381/js/chunk-vendors.b893e1dd.js"></script>
     <script src="/static/1756094289381/js/app.5acd7986.js"></script>
+        <script>
+        function copyById(elementId) {
+            const text = document.getElementById(elementId)?.innerText?.trim();
+            if (!text) return;
+
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    showToast("Copied: " + text);
+                })
+                .catch(() => {
+                    showToast("Failed to copy");
+                });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById("copyToast");
+            toast.innerText = message;
+            toast.style.visibility = "visible";
+            toast.style.opacity = "1";
+            toast.style.bottom = "50px";
+
+            setTimeout(() => {
+                toast.style.visibility = "hidden";
+                toast.style.opacity = "0";
+                toast.style.bottom = "30px";
+            }, 2000);
+        }
+    </script>
     <!---->
 </body>
 

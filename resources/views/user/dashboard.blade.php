@@ -153,13 +153,13 @@
                                 <p>Withdraw</p>
                             </span>
                             </a>
-                            <a href="{{ route('user.Withdraw') }}">
+                            <a href="{{ route('user.share') }}">
                             <span>
                                 <img src="{{ asset('') }}static/icon/invite.png" alt="">
                                 <p>Invite</p>
                             </span>
 </a>
-<a href="{{ route('user.Withdraw') }}">
+<a href="{{ route('user.about') }}">
                             <span>
                                 <img src="{{ asset('') }}static/icon/support.png" alt="">
                                 <p>Help Center</p>

@@ -1790,23 +1790,23 @@
                     style="background-color: transparent;">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center"><svg data-v-3f1a7394="" aria-hidden="true"
                             class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-arrow-back"></use>
                         </svg>
                         <!---->
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
-                        style="color: rgb(24, 25, 28);"><span>My messages</span></div>
-                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px"><svg
-                            data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-website"></use>
-                        </svg>
+                        style="color: rgba(255, 255, 255, 1);"><span>My messages</span></div>
+                    <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
+                        <a href="{{ route('user.lang') }}">
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                        </a>
                         <!---->
-                        <div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                                style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                                <use data-v-3f1a7394="" xlink:href="#svg-icon-bell"></use>
-                            </svg></div>
+                        <div>
+                            <a href="{{ route('user.notice') }}">
+                            <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            </a>
+                        </div>
                         <!---->
                         <!---->
                     </div>
@@ -1836,8 +1836,30 @@
             <!---->
         </div>
     </div>
-    <script src="/static/1756094289381/js/chunk-vendors.b893e1dd.js"></script>
-    <script src="/static/1756094289381/js/app.5acd7986.js"></script>
+    <script>
+        window.onload = function() {
+            document.addEventListener("touchstart", function(event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            let lastTouchEnd = 0;
+            document.addEventListener(
+                "touchend",
+                function(event) {
+                    const now = new Date().getTime();
+                    if (now - lastTouchEnd <= 300) {
+                        event.preventDefault();
+                    }
+                    lastTouchEnd = now;
+                },
+                false
+            );
+            document.addEventListener("gesturestart", function(event) {
+                event.preventDefault();
+            });
+        };
+    </script>
 </body>
 
 </html>

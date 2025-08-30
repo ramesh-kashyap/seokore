@@ -1718,12 +1718,12 @@
                     style="background-color: transparent;">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center"><svg data-v-3f1a7394="" aria-hidden="true"
                             class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-close"></use>
                         </svg>
                         <!---->
                     </div>
-                    <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
+                    <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center rtw-text-16px van-ellipsis"
                         style="color: rgb(24, 25, 28);"><span></span></div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
                         <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
@@ -1778,10 +1778,10 @@
                                         </div>
                                         <div class="van-tabs__content">
                                             <div role="tabpanel" class="van-tab__pane" id="mobilephase" style="display:none">
-                                                <div class="tw-mt-20px tw-text-16px"> Mobile phone </div>
+                                                <div class="tw-mt-20px rtw-text-16px"> Mobile phone </div>
                                                 <div class="van-cell van-field !tw-px-0 cell-after-full">
                                                     <div class="van-field__left-icon">
-                                                        <div class="tw-flex tw-items-center">
+                                                        <div class="tw-flex rtw-items-center">
                                                             <input type="hidden" id="country-name" name="country" value="CANADA">
                                             <input type="hidden" id="dial-code" name="dialCode" value="1">
                                             <input type="hidden" id="country_iso" name="country_iso"
@@ -1802,7 +1802,7 @@
                                                 <div></div>
                                             </div>
                                             <div role="tabpanel" class="van-tab__pane" id="emailphase" style="">
-                                                <div class="tw-mt-20px tw-text-16px"> Mailbox </div>
+                                                <div class="tw-mt-20px rtw-text-16px"> Mailbox </div>
                                                 <div class="van-cell van-field !tw-px-0 cell-after-full">
                                                     <div
                                                         class="van-cell__value van-cell__value--alone van-field__value">
@@ -1815,7 +1815,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-20px tw-text-16px">Login Password</div>
+                                    <div data-v-6b868a30="" class="tw-mt-20px rtw-text-16px">Login Password</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
                                             <div class="van-field__body"><input type="password"
@@ -1829,7 +1829,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-flex tw-items-center tw-text-14px">
+                                    <div data-v-6b868a30="" class="tw-mt-16px tw-flex rtw-items-center tw-text-14px">
                                         <div role="checkbox" tabindex="0" aria-checked="false"
                                             class="tw-mr-8px rounded van-checkbox" data-v-6b868a30="">
                                             <div class="van-checkbox__icon van-checkbox__icon--square"><i
@@ -1840,8 +1840,8 @@
                                     </div>
                                 </div>
                                 <div data-v-6b868a30=""
-                                    class="tw-relative tw-z-0 tw-bottom-10px tw-flex tw-justify-between tw-items-center">
-                                    <a href="/user/forget_password?id=1" class="tw-mt-12px tw-text-primary"
+                                    class="tw-relative tw-z-0 tw-bottom-10px tw-flex tw-justify-between rtw-items-center">
+                                    <a href="/user/forget_password?id=1" class="rtw-mt-12px tw-text-primary"
                                         data-v-6b868a30=""> Forgot password? </a><a href="{{ route('register') }}"
                                         class="page-auth-form-footer" data-v-6b868a30=""> Registration <i
                                             class="van-icon van-icon-arrow">
@@ -1861,9 +1861,9 @@
             <!---->
         </div>
         <div class="van-overlay" style="display: none;">
-            <div class="tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
+            <div class="tw-w-full tw-h-full tw-flex tw-justify-center rtw-items-center">
                 <div
-                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center tw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
+                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center rtw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
                     <div class="van-loading van-loading--circular"><span
                             class="van-loading__spinner van-loading__spinner--circular"
                             style="color: rgb(23, 114, 248); width: 1rem; height: 1rem;"><svg viewBox="25 25 50 50"

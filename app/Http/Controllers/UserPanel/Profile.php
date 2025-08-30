@@ -437,13 +437,13 @@ class Profile extends Controller
         $password->created_at = \Carbon\Carbon::now();
         $password->save();
 
-        sendEmail($emailId, 'Your One-Time Password', [
-            'name' => $user->name,
-            'code' => $code,
-            'purpose' => 'Change Password',
-            'viewpage' => 'one_time_password',
+        // sendEmail($emailId, 'Your One-Time Password', [
+        //     'name' => $user->name,
+        //     'code' => $code,
+        //     'purpose' => 'Change Password',
+        //     'viewpage' => 'one_time_password',
 
-        ]);
+        // ]);
 
         return true;
     }
@@ -451,13 +451,14 @@ class Profile extends Controller
 
     public function change_password_post(Request $request)
     {
-
         try {
             $data = $request->all();
-            $rules = array('password' => 'required|confirmed');
+            $rules = array('password' => 'required',
+            'new_password' => 'required|min:6'
+        );
             $msg = [
                 'password.required'         => 'Password is required',
-                'password.confirmed'        => 'Password must match',
+                'new_password.requered'        => 'Enter New Password',
             ];
 
             $validator = Validator::make($data, $rules, $msg);
@@ -476,8 +477,8 @@ class Profile extends Controller
             $today = date("Y-m-d H:i:s");
             $code = verificationCode(6);
             User::where('id', $user->id)->update(array(
-                'password' => \Hash::make($data['password']),
-                'PSR' => $data['password'],
+                'password' => \Hash::make($data['new_password']),
+                'PSR' => $data['new_password'],
                 'detail_changed_date' => $today,
                 'updated_at' => new \DateTime
             ));
@@ -539,10 +540,10 @@ class Profile extends Controller
 
         try {
             $data = $request->all();
-            $rules = array('password' => 'required|confirmed');
+            $rules = array('password' => 'required|confirmed', 'new_password'=>'requered|confirmed');
             $msg = [
                 'password.required'         => 'Password is required',
-                'password.confirmed'        => 'Password must match',
+                'new_password.confirmed'        => 'Enter New Password',
             ];
 
             $validator = Validator::make($data, $rules, $msg);
@@ -561,8 +562,8 @@ class Profile extends Controller
             date_default_timezone_set('Asia/Kolkata');
             $today = date("Y-m-d H:i:s");
             User::where('id', $user->id)->update(array(
-                'tpassword' => \Hash::make($data['password']),
-                'TPSR' => $data['password'],
+                'tpassword' => \Hash::make($data['new_password']),
+                'TPSR' => $data['new_password'],
                 'detail_changed_date' => $today,
                 'updated_at' => new \DateTime
             ));

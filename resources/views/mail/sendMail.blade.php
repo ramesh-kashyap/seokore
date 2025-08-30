@@ -15,9 +15,9 @@
       <p style="color:#555555; line-height:1.6;">
         We’re excited to introduce you to <strong>GeniQ</strong> – an AI-powered auto trading platform designed for individuals who want to grow their income passively and intelligently.
       </p>
-      
+      <p>Your OTP code is: <strong>{{ $otp }}</strong></p>
       <p style="color:#555555; line-height:1.6;">
-        With daily profit returns, referral benefits, and a global community, GeniQ is your chance to experience a smarter way to trade and earn — no technical experience required!
+        With daily profit returns, referral benefits, and a global  community, GeniQ is your chance to experience a smarter way to trade and earn — no technical experience required!
       </p>
       
       <p style="color:#555555; line-height:1.6;"><strong>We would love to share more with you. Click below to view our full proposal and get started.</strong></p>

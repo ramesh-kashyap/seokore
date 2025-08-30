@@ -1714,27 +1714,27 @@
     <div id="app">
         <div data-v-6b868a30="" class="page page-auth">
             <div data-v-6b868a30="" class="headers">
-                <div class="tw-px-16px tw-w-full tw-h-full tw-flex tw-items-center" data-v-6b868a30=""
+                <div class="tw-px-16px tw-w-full tw-h-full tw-flex rtw-items-center" data-v-6b868a30=""
                     style="background-color: transparent;">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center"><svg data-v-3f1a7394="" aria-hidden="true"
                             class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            style="color: rgba(253, 253, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-close"></use>
                         </svg>
                         <!---->
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
-                        style="color: rgb(24, 25, 28);"><span></span></div>
+                        style="color: rgba(255, 253, 253, 1);"><span></span></div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
                         <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         <div>
                             <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             </div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-i18n"></use>
                         </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-service"></use>
                         </svg>
                     </div>
@@ -1765,18 +1765,18 @@
                                 </div>
                                 <div data-v-6b868a30=""
                                     class="tw-relative tw-z-10 tw-bg-white tw-px-16px tw-pb-20px tw-pt-20px tw-rounded-10px">
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">Name</div>
+                                    <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Name</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body"><input type="text" name="name"
+                                            <div class="van-field__body"><input type="text" id="name" name="name"
                                                     placeholder="Enter your name" 
                                                     class="van-field__control"></div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-text-16px">Mobile phone</div>
+                                    <div data-v-6b868a30="" class="rtw-text-16px">Mobile phone</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-field__left-icon">
-                                            <div class="tw-flex tw-items-center"><span class="tw-pr-4px">+1</span><i
+                                            <div class="tw-flex rtw-items-center"><span class="tw-pr-4px">+1</span><i
                                                     class="van-icon van-icon-arrow-down">
                                                     <!----></i></div>
                                         </div>
@@ -1784,52 +1784,54 @@
                                             <div class="van-field__body" id="phone_code">
                                                 <input type="hidden" id="country-name" name="country" value="CANADA">
                                             <input type="hidden" id="dial-code" name="dialCode" value="1">
-                                            <input type="hidden" id="country_iso" name="country_iso"
-                                                value="CA">
+                                            <input type="hidden" id="country_iso" name="country_iso" value="CA">
                                                 <input name="phone" type="tel" id="phone"
                                                     onkeyup="this.value=this.value.replace(/[ ]/g,'')"
                                                     class="van-field__control"></div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">Mailbox</div>
+                                    <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Mailbox</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
                                             <div class="van-field__body">
-                                                <input type="text" name=""
-                                                    οnkeyup="this.value=this.value.replace(/\s+/g,'')"
+                                                <input type="text" name="email" id="emailId"
                                                     placeholder="Please enter your email address"
                                                     class="van-field__control"></div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px"> Verification code </div>
+                                    <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px"> Verification code </div>
                                     <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
                                             <div class="van-field__body">
-                                                <input type="text" inputmode="numeric"
+                                                <input type="text" inputmode="numeric" name="otp"
                                                     placeholder="Please enter the verification code"
                                                     class="van-field__control">
-                                                <div class="van-field__right-icon"><button
+                                                <div class="van-field__right-icon">
+                                                    <button type="button" id="getCodeBtn"
                                                         class="!tw-border-none tw-w-8 van-button van-button--primary van-button--mini van-button--plain">
-                                                        <div class="van-button__content"><span
-                                                                class="van-button__text"><span>Get code</span><span
+                                                        <div class="van-button__content">
+                                                            <span class="code-btn van-button__text" ><span>Get code</span>
+                                                            <span class="resend-btn-new van-button__text" style="display: none;"><span>Get code</span>
+                                                                <span
                                                                     style="display: none;">60 s</span></span></div>
-                                                    </button></div>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">invitation code</div>
+                                    <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">invitation code</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body"><input type="text"  onkeyup="this.value=this.value.replace(/[ ]/g,'')"
+                                            <div class="van-field__body"><input type="text"  name="sponsor" onkeyup="this.value=this.value.replace(/[ ]/g,'')"
                                                     placeholder="Invitation code cannot be empty"  value="{{$sponsor}}"
                                                     class="van-field__control"></div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">Login Password</div>
+                                    <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Login Password</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
                                             <div class="van-field__body">
-                                                <input type="password" autocomplete="new-password"  name="password"
+                                                <input type="password" autocomplete="new-password" id="password" name="password"
                                                     placeholder="Please enter a password (6-20 alphanumeric characters)"
                                                     onkeyup="this.value=this.value.replace(/[ ]/g,'')" type="password"
                                                     class="van-field__control">
@@ -1840,7 +1842,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-text-16px">Confirm password</div>
+                                    <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Confirm password</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
                                             <div class="van-field__body"><input type="password"
@@ -1853,7 +1855,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-v-6b868a30="" class="tw-mt-16px tw-flex tw-items-center tw-text-14px">
+                                    <div data-v-6b868a30="" class="tw-mt-16px tw-flex rtw-items-center tw-text-14px">
                                         <div role="checkbox" tabindex="0" aria-checked="true" class="tw-mr-8px rounded van-checkbox" data-v-6b868a30="" >
                                             <div class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
                                                 <i class="van-icon van-icon-success" >
@@ -1881,9 +1883,9 @@
             <!---->
         </div>
         <div class="van-overlay" style="display: none;">
-            <div class="tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
+            <div class="tw-w-full tw-h-full tw-flex tw-justify-center rtw-items-center">
                 <div
-                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center tw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
+                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center rtw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
                     <div class="van-loading van-loading--circular"><span
                             class="van-loading__spinner van-loading__spinner--circular"
                             style="color: rgb(23, 114, 248); width: 1rem; height: 1rem;"><svg viewBox="25 25 50 50"
@@ -2087,6 +2089,73 @@
                 eyeIcon.className = "van-icon van-icon-closed-eye tw-text-secondary"; // hide icon
             }
         }
+    </script>
+
+
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // First Email Code
+            $('#getCodeBtn').click(function() {
+    var emailId = $('#emailId').val();
+    var name = $('#name').val();
+
+    if (!emailId) {
+        iziToast.error({
+            message: 'Invalid Email!',
+            position: "topRight"
+        });
+        return;
+    }
+
+    startTimer('.resend-btn-new');
+    $('.code-btn').hide();
+    $('.resend-btn-new').show();
+
+    $.ajax({
+        type: "POST",
+        url: "{{ route('sendOtp') }}",
+        data: {
+            "emailId": emailId,
+            "name": name,
+            "_token": "{{ csrf_token() }}"
+        },
+        success: function(response) {
+            console.log(response);
+            if (response) {
+                iziToast.success({ message: 'Email sent Successfully', position: "topRight" });
+            } else {
+                iziToast.error({ message: 'Error!', position: "topRight" });
+            }
+        }
+    });
+});
+
+            // Timer Function (Reusable)
+            function startTimer(selector) {
+                var resendButton = $(selector);
+                var countdown = 60;
+                resendButton.prop('disabled', true).text('Wait ' + countdown + 's');
+
+                var timer = setInterval(function() {
+                    countdown--;
+                    resendButton.text('Wait ' + countdown + 's');
+                    if (countdown <= 0) {
+                        clearInterval(timer);
+                        resendButton.prop('disabled', false).text('Resend Code');
+                    }
+                }, 1000);
+            }
+
+            // Optional Resend Clicks
+            $('.resend-btn').click(function() {
+                $('.code-btn').trigger('click');
+            });
+
+            $('.resend-btn-new').click(function() {
+                $('.code-btn-new').trigger('click');
+            });
+        });
     </script>
 
 </body>

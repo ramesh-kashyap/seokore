@@ -419,7 +419,7 @@ section {
 
 a {
     text-decoration: none;
-    color: #333
+    color: #fefefe
 }
 
 .c:after {
@@ -1087,6 +1087,11 @@ input::placeholder {
     color:#fff;
 }
 
+.rtw-items-center {
+    align-items: center;
+    color:#000000;
+}
+
 .tw-items-stretch {
     align-items: stretch
 }
@@ -1487,6 +1492,10 @@ input::placeholder {
 .tw-text-16px {
     font-size: .42667rem;
     color:#fff;
+}
+.rtw-text-16px {
+    font-size: .42667rem;
+    color:#000000;
 }
 
 .tw-text-18px {

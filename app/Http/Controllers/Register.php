@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use App\Models\PasswordReset;
 use Redirect;
 use Carbon\Carbon;
 use Log;
@@ -53,7 +54,38 @@ class Register extends Controller
     }
 
 
+           public function sendOtp(Request $request)
+      {
+        $validation =  Validator::make($request->all(), [
+            'emailId' => 'required',
+        ]);
+        if ($validation->fails()) { return response()->json([
+        'status' => false,
+        'message' => $validation->errors()->first()
+        ]);
+          }        
+        $name = $request->name;
+        $emailId = $request->emailId;
+        $code = verificationCode(6);
+         $purpose=$request->purpose;
 
+      PasswordReset::where('email', $emailId)->delete();
+
+      $password = new PasswordReset();
+      $password->email = $emailId;
+      $password->token = $code;
+      $password->created_at = \Carbon\Carbon::now();
+      $password->save();
+
+    //      sendEmail($emailId, 'Your One-Time Password', [
+    //       'name' => $name,
+    //       'code' => $code,
+    //       'purpose' => $purpose,
+    //       'viewpage' => 'resources/views/mail/sendMail',
+
+    //    ]);
+     return true;
+  }
 
 
     public function register(Request $request)
@@ -62,12 +94,12 @@ class Register extends Controller
             $validation =  Validator::make($request->all(), [
                 'phone' => 'required|unique:users,phone',
                 'password' => 'required|confirmed|min:5',
+                'email'=> 'required',
                 'sponsor' => 'required|exists:users,username',           
                 'name' => 'required',
    
             ]);
             if($validation->fails()) {
-
                 Log::info($validation->getMessageBag()->first());
      
                 return Redirect::back()->withErrors($validation->getMessageBag()->first())->withInput();
@@ -99,7 +131,7 @@ class Register extends Controller
           
             $data['phone'] = $post_array['phone'];
             $data['name'] = $post_array['name'];
-
+            $data['email'] =$post_array['email'];
             $data['username'] = $username;
             $data['password'] =   Hash::make($post_array['password']);
             $data['tpassword'] =   Hash::make($tpassword);

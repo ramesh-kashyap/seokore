@@ -77,6 +77,7 @@ Route::post('/getUserName', [App\Http\Controllers\Register::class, 'getUserNameA
 Route::post('/registers', [App\Http\Controllers\Register::class, 'register'])->name('registers');
 Route::get('/register_sucess', [App\Http\Controllers\Register::class, 'index'])->name('register_sucess');
 Route::get('/Register', [App\Http\Controllers\Register::class, 'registration'])->name('Register');
+Route::post('/sendOtp', [App\Http\Controllers\Register::class, 'sendOtp'])->name('sendOtp'); 
 
 Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->name('Index');
 Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])->name('about-us');

@@ -2317,6 +2317,11 @@ ul {
     background-color: #eaedf2;
     border: .02667rem solid #eaedf2
 }
+.van-button--default1 {
+    color: #ffffff;
+    background-color: rgb(25 140 82 / 11%);
+    border: 0.3px solid #3f3f3f
+}
 
 .van-button--primary {
     color: #fff;
@@ -2343,7 +2348,8 @@ ul {
 }
 
 .van-button--plain {
-    background-color: #fff
+    background-color: rgb(25 140 82 / 11%);
+    border:0.3px solid #3f3f3f,
 }
 
 .van-button--plain.van-button--primary {
@@ -3338,6 +3344,20 @@ ul {
     line-height: .64rem;
     background-color: #fff
 }
+.van-cell1 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .26667rem .42667rem;
+    overflow: hidden;
+    color: #18191c;
+    font-size: .37333rem;
+    line-height: .64rem;
+    background-color: rgb(25 140 82 / 11%)
+}
 
 .van-cell:after {
     position: absolute;
@@ -3485,6 +3505,20 @@ ul {
     margin: 0;
     padding: 0;
     color: #18191c;
+    line-height: inherit;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    resize: none
+}
+.van-field__control1{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     line-height: inherit;
     text-align: left;
     background-color: transparent;

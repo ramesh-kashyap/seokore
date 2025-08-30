@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Crypt;
 use App\Models\User;
 use App\Models\Investment;
 use App\Models\Income;
+use App\Models\PasswordReset;
 use App\Models\User_trade;
 use App\Models\Contract;
 use App\Models\Withdraw;
@@ -169,11 +170,7 @@ class Dashboard extends Controller
     }
 
 
-   
-
-
-
-      
+     
    public function claimReward(Request $request)
    {
        $user = Auth::user();
