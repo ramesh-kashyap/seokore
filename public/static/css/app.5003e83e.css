@@ -1546,7 +1546,7 @@ input::placeholder {
 
 .tw-text-primary {
     --tw-text-opacity: 1;
-    color: rgba(23, 114, 248, var(--tw-text-opacity))
+    color: rgba(255, 255, 248, var(--tw-text-opacity))
 }
 
 .tw-text-secondary {
