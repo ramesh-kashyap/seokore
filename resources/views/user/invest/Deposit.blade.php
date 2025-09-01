@@ -8,7 +8,7 @@
                             class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
                             <div data-v-4bcdfc27="" data-v-6b868a30="" class="tw-flex tw-items-center"><img
                                     data-v-4bcdfc27="" data-v-6b868a30=""
-                                    src="{{ asset('') }}static/img/eth.png"
+                                    src="{{ asset('') }}static/img/usdt.png"
                                     alt="" class="tw-w-24px">
                                     <input data-v-4bcdfc27="" data-v-6b868a30=""type="text" value="USDT"
                                     readonly="readonly" class="tw-pl-8px van-field__control1"></div><i data-v-4bcdfc27="" data-v-6b868a30=""
@@ -49,7 +49,7 @@
                             class="tw-mt-18px tw-p-14px tw-text-14px tw-bg-white3 tw-rounded-10px">
                             <div data-v-4bcdfc27="" data-v-6b868a30="" class="tw-flex tw-items-center"><i
                                     data-v-4bcdfc27="" data-v-6b868a30="" class="tw-text-20px van-icon van-icon-warning"
-                                    style="color: rgb(10, 113, 247);">
+                                    style="color: rgba(255, 255, 255, 1);">
                                     <!----></i><span data-v-4bcdfc27="" data-v-6b868a30=""
                                     class="tw-text-primary tw-pl-8px">Note</span></div>
                             <div data-v-4bcdfc27="" data-v-6b868a30="" class="tw-text-14px tw-text-secondary tw-mt-8px">
@@ -78,7 +78,7 @@
                     class="tw-w-100px tw-h-100px tw-flex tw-justify-center tw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
                     <div class="van-loading van-loading--circular"><span
                             class="van-loading__spinner van-loading__spinner--circular"
-                            style="color: rgb(23, 114, 248); width: 1rem; height: 1rem;"><svg viewBox="25 25 50 50"
+                            style="color: rgba(106, 255, 124, 0.18); width: 1rem; height: 1rem;"><svg viewBox="25 25 50 50"
                                 class="van-loading__circular">
                                 <circle cx="50" cy="50" r="20" fill="none"></circle>
                             </svg></span></div>

@@ -2324,9 +2324,9 @@ ul {
 }
 
 .van-button--primary {
-    color: #fff;
-    background-color: #1772f8;
-    border: .02667rem solid #1772f8
+    color: #000000;
+    background-color: #ffffff;
+    border: .02667rem solid #d4d4d4
 }
 
 .van-button--info {
