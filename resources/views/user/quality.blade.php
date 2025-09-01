@@ -38,7 +38,7 @@
                                     style="color: rgb(121, 129, 143);">Foreign Exchange Stocks</span>
                             </div>
                             <div data-v-29a06c8f=""
-                                class="tw-rounded-10px !tw-bg-light cell-after-hidden custom-focus van-cell van-cell--large van-field"
+                                class="tw-rounded-10px !tw-bg-light cell-after-hidden custom-focus van-cell1 van-cell--large van-field"
                                 data-v-6b868a30="">
                                 <div class="van-cell__value van-cell__value--alone van-field__value">
                                     <div class="van-field__body"><input type="text" inputmode="decimal"
