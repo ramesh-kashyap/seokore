@@ -1840,7 +1840,7 @@
                                 </a>
                             </div>
                             <div data-v-6b868a30=""
-                                class="page-mine-header-banner tw-p-16px tw-flex tw-justify-between tw-items-center">
+                                class="page-mine-header-banner tw-p-16px tw-flex tw-justify-between tw-items-center" style="border:0.3px solid #3f3f3f; border-radius:5px">
                                 <div data-v-6b868a30="" class="tw-flex tw-items-center">
                                     <div data-v-6b868a30=""
                                         class="tw-w-36px tw-h-36px tw-rounded-full tw-overflow-hidden"><img

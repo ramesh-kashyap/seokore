@@ -322,8 +322,8 @@
                                 <div data-v-40a6c17a="" class="market_box">
                                     <div data-v-40a6c17a="" class="market_list">
                                         <div data-v-40a6c17a="" class="tabbar-list">
-                                            <div data-v-40a6c17a="" class="act"> STOCKS </div>
-                                            <div data-v-40a6c17a="" class=""> FOREX </div>
+                                            <!-- <div data-v-40a6c17a="" class="act"> STOCKS </div>
+                                            <div data-v-40a6c17a="" class=""> FOREX </div> -->
                                             <div data-v-40a6c17a="" class=""> Crypto </div>
                                         </div>
                                         <div data-v-40a6c17a="" class="market-list">

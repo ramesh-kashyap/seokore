@@ -8,7 +8,8 @@
                                     <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                         style="width: 1.694rem; height: 1.694rem; font-size: 1.694rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-usdt-large"></use>
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div data-v-6b868a30="" class="tw-text-12px tw-opacity-80"> Total Assets (USDT) </div>
                                 <div data-v-6b868a30="" class="tw-text-28px tw-font-bold"> ${{ number_format(Auth::user()->available_balance(), 2) }} </div>
                                 <div data-v-6b868a30=""
@@ -33,16 +34,18 @@
                             <div data-v-6b868a30=""
                                 class="tw-pt-28px tw-pb-12px tw-flex tw-justify-between tw-items-center tw-text-dark tw-bg-white3">
                                 <div data-v-6b868a30="" class="tw-flex-1 tw-flex tw-justify-center tw-items-center">
-                                <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                         style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-recharge"></use>
-                                    </svg><a href="{{ route('user.invest') }}"><span data-v-6b868a30="" class="tw-pl-8px">Deposit</span></a></div>
-                                <div data-v-6b868a30=""
-                                    class="tw-flex-1 tw-flex tw-justify-center tw-items-center van-hairline--left"><svg
-                                        data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                    </svg> -->
+                                    <img src="{{asset('static/icon/scanner.png')}}"data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                         style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
-                                        <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-withdraw"></use>
-                                    </svg><a href="{{ route('user.Withdraw') }}"><span data-v-6b868a30="" class="tw-pl-8px">Withdraw</span></a></div>
+                                    <a href="{{ route('user.invest') }}"><span data-v-6b868a30="" class="tw-pl-8px">Deposit</span></a></div>
+                                <div data-v-6b868a30=""
+                                    class="tw-flex-1 tw-flex tw-justify-center tw-items-center van-hairline--left">
+                                    <img src="{{asset('static/icon/telegram.png')}}"data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                        style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
+                                    <a href="{{ route('user.Withdraw') }}"><span data-v-6b868a30="" class="tw-pl-8px">Withdraw</span></a></div>
                             </div>
                         </div>
                         <div class="revenue" data-v-6b868a30="">
@@ -57,7 +60,7 @@
                                     <div class="tw-mb-16px tw-flex tw-justify-between tw-items-center">
                                         <div class="tw-flex tw-items-center">
                                             <div class="tw-mr-8px tw-w-36px tw-h-36px"><img
-                                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20241119/a374614d2b1d9d3b68ad00f1b2b38e68.jpeg"
+                                                    src="{{asset('static/img/usdt.png')}}"
                                                     alt=""></div>
                                             <div class="tw-text-16px tw-text-dark">USDT</div>
                                         </div>
