@@ -334,103 +334,104 @@
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/203bd5f91705c89087a9ec78f1fb7e0d.png"
+                                                        src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220308/e795dba042eb43472cfd11297581e607.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">AVGO</div>
+                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">BTC</div>
                                                         <!---->
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$234.97</div>
+                                                <div data-v-40a6c17a="" class="list-price" id="btc-rate">$64312.76</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="up">+3.31%</div>
+                                                    <div data-v-40a6c17a="" class="up" id="btc-percentage">+0.37%</div>
                                                 </div>
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/66c35b395d6a10b145e4d1009e02628d.png"
+                                                        src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/8bec4afab0e8f479f8479f47aef9e822.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">NVDA</div>
+                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">ETH</div>
                                                         <!---->
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$133.45</div>
+                                                <div data-v-40a6c17a="" class="list-price" id="eth-rate">$3140.45</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="up">+2.58%</div>
+                                                    <div data-v-40a6c17a="" class="up" id="eth-percentage">+2.88%</div>
                                                 </div>
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
+                                                        src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/ce23a8f522542d64023021ddcad30711.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">NKE</div>
-                                                        <!---->
+                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">DOGE</div>
+                                                      
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$70.89</div>
+                                                <div data-v-40a6c17a="" class="list-price"id="doge-rate">$0.15314</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="up">+2.20%</div>
+                                                    <div data-v-40a6c17a="" class="up" id="doge-percentage">+1.37%</div>
                                                 </div>
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/00f8a3726f8e1cc249b48830e434e4d4.png"
+                                                        src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/4dfb5e25907eaf15d4d87f253b5d2ba8.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">MCD</div>
+                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">ADA</div>
                                                         <!---->
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$307.77</div>
+                                                <div data-v-40a6c17a="" class="list-price" id="ada-rate">$307.77</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="up">+1.81%</div>
+                                                    <div data-v-40a6c17a="" class="up" id="ada-percentage">+1.81%</div>
                                                 </div>
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/d6f47ffd133cc642b5cd0be64e9e5730.png"
+                                                        src="https://meta2032.s3.ap-east-1.amazonaws.com/upload/20220224/147c6a59421991d1da20c9919492d195.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">ORCL</div>
+                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">AVAX</div>
                                                         <!---->
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$179</div>
+                                                <div data-v-40a6c17a="" class="list-price"  id="avax-rate">$179</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="up">+1.70%</div>
+                                                    <div data-v-40a6c17a="" class="up" id="avax-percentage">+1.70%</div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="" id="exchange" value="BINANCE">
+                                            <div data-v-40a6c17a="" class="quotes-list">
+                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
+                                                        src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/59880c5ceae09e49da9427896f5d3efd.png"
+                                                        alt="">
+                                                    <div data-v-40a6c17a="" class="coin-name">
+                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">BCH</div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                                <div data-v-40a6c17a="" class="list-price" id="bch-rate">$110.2</div>
+                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
+                                                        alt="">
+                                                    <div data-v-40a6c17a="" class="up" id="bch-percentage">+1.62%</div>
                                                 </div>
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">AMD</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$110.2</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+1.62%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/40783613447d5fe5ced78fad6a46c91d.png"
+                                                        src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/d44602725f444b9498a7097e04e907fa.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
                                                         <div data-v-40a6c17a="" style="line-height: 0.64rem;">UNH</div>
@@ -446,7 +447,7 @@
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/8fe10a9f11ffcb84f374b86677202f3c.png"
+                                                        src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/ea7cf8c8fe3d360ee5e02b3dc283a2b4.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
                                                         <div data-v-40a6c17a="" style="line-height: 0.64rem;">CVX</div>
@@ -462,500 +463,50 @@
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/34d3f3cdf1b41d667971776e6d736bf5.png"
+                                                        src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/81ec1d4e3f0cd8c9e2b5b1f229461a2d.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">WMT</div>
-                                                        <!---->
+                                                        <div data-v-40a6c17a="" style="line-height: 0.28rem;">DOT</div>
+                                                        <p data-v-40a6c17a="">USDT</p>
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$102.98</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+1.01%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/7a8c5b4df9ced6783911a227029569fd.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">XOM</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$111.1</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.99%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/c470de7037500a572bc18009a32d3961.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">COST</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$1061.3</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.88%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/cad2d4fa41a86cb8d6303631cc681a4b.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">AMZN</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$232.56</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.87%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/c112adc9761d45296f158fbc60a0782a.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">HD</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$413.917</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.79%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/12db9a8758e536491a86eabcbb1f6d5f.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">KO</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$64.6</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.78%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f29eed3982c6c622074acf6d479c1ad7.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">V</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$351.23</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.72%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/079a35168ad0cffae8dc3acd197ab82a.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">JNJ</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$154.24</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.41%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">PFE</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$25.84</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.23%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/1076c3e018cc15e29ec4142b3d22db19.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">TMUS</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$255.2731</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.13%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/d44ffae38030a3da4cf0a6b827c3c2ea.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">MA</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$565.49</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBvdbfTcMwEAbwz24lXjtCRigj5AGeywYwAhNgwQLdgGzAAlRhhI7ACDzy0lz9R2nT1G3vzlI+KZIj2Zdf4lwUgynz7VYgs2TPn9N6jikzww92ePMjHvL/rrGYMrX7w4xqP9pyl+iAYau0ESLlwM2H3yLzhc37J7RJyCfOVBkw4KhzcUz0rEa2boGdv0lG+MAhro8GmXAtmI3CA+ZwfSRIIQ4s4DVcHw7yGs7g17+T98g0ji3GcZC3cNZ3de22ue62KhzRayzMQfJwqVbmE2TFuI5e8ODWsfAtpATXZ4Q0Ytyjaw7nravQeQChOgeYxmOXItww4eYwBkpwHGQuHNzJ9BKcFCnEpSWlOC5SgQuxca+pWxXhQsKFLzWOEpeWhuS6TYIbZvwkC3Bp+bHwEanFjZEhBbhc4UXRv95prSoehdkDIhcAUPF/3UsAAAAASUVORK5CYII="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="up">+0.04%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">PEP</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$144.35</div>
+                                                <div data-v-40a6c17a="" class="list-price">$4.267</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="">+0.00%</div>
+                                                    <div data-v-40a6c17a="" class="">-2.40%</div>
                                                 </div>
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/ac682912fe178730af2f63501ae9a603.png"
+                                                        src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/e0020a378c09cd7b7ee3936f8b1a4622.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">NFLX</div>
-                                                        <!---->
+                                                        <div data-v-40a6c17a="" style="line-height: 0.28rem;">LTC</div>
+                                                        <p data-v-40a6c17a="">USDT</p>
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$1022.26</div>
+                                                <div data-v-40a6c17a="" class="list-price">$90</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.07%</div>
+                                                    <div data-v-40a6c17a="" class="">-2.49%</div>
                                                 </div>
                                             </div>
                                             <div data-v-40a6c17a="" class="quotes-list">
                                                 <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/e1b38365ea7494598dc6450e63262730.png"
+                                                        src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20240821/39c3d51f604b3d8ffcc7e1a35724bdb2.png"
                                                         alt="">
                                                     <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">PG</div>
-                                                        <!---->
+                                                        <div data-v-40a6c17a="" style="line-height: 0.28rem;">DOGE</div>
+                                                        <p data-v-40a6c17a="">USDT</p>
                                                     </div>
                                                 </div>
-                                                <div data-v-40a6c17a="" class="list-price">$167.31</div>
+                                                <div data-v-40a6c17a="" class="list-price">$0.16812</div>
                                                 <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
                                                         alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.22%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/8eb6fcdf6e6b0fde2c9c75b7fe479dcc.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">CRM</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$327.08</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.25%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">MMM</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$149.69</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.31%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/6aab19631d37af91320e9a53906c8f2e.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">MSFT</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$412.22</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.36%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/4afee9197a3e69b15a9c8b4c082d8d86.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">META</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$715.8467</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.37%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/42bbaba02241065bc0d059f74f075f62.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">GOOG</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$187.7999</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.66%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/fc1da549f4af817c276151359169e1fe.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">BRK.A
-                                                        </div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$705959</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.75%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">BRK.B
-                                                        </div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$470.17</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.79%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f365d6300baed92f0fdd5e5d60889a1c.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">MRK</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$86.4891</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-0.81%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/53ea493362abbcd66245ac90876a73c1.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">AAPL</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$226.9999</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.11%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/99786bf8b7a9be4e1005658b5378b005.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">ABBV</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$189.2947</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.13%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">GS</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$650.53</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.28%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/9509dce27d16a12f6717d0fbb9e5eaf1.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">LLY</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$866</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.33%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">BA</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$180.35</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.51%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/2af3e819359c2150e6659f2f6f9d37d7.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">BAC</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$46.65</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.74%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/a1c202215c47722908b0031d30a4fa66.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">JPM</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$271.2358</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.77%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/f1b6cae12dd1aca354e7778b8eea3bfb.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">DIS</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$109.01</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-1.91%</div>
-                                                </div>
-                                            </div>
-                                            <div data-v-40a6c17a="" class="quotes-list">
-                                                <div data-v-40a6c17a="" class="list-coin"><img data-v-40a6c17a=""
-                                                        src="https://ts-vertex-all.s3.ap-southeast-1.amazonaws.com/upload/20241026/53995a801d5aa682338e2f8d9eb91fd9.png"
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="coin-name">
-                                                        <div data-v-40a6c17a="" style="line-height: 0.64rem;">TSLA</div>
-                                                        <!---->
-                                                    </div>
-                                                </div>
-                                                <div data-v-40a6c17a="" class="list-price">$347.61</div>
-                                                <div data-v-40a6c17a="" class="list-down"><img data-v-40a6c17a=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBvZbRTcMwEEDv0nzwGaTCd5mATIDCBnSCdhPaSaATQCcgYgKP0H8q0U+EQg9f2yDLOPFdEvVJUZ36Yj/57qIAOHwWebYt8gcYALvWhC/oSeIsmFWEb0T4sr3LZ9ADFvuxa/HVVxJdOTvM/yaI5uN3swIltRwBTE4bbEZI95el2UAHDifoyzGE+Kw9SV/usI4d9znJY4qR1qFJjWRIbghJrAcfRb6wRo/BoEi62+S8zdTpRvemi6RUrqsk+n9oJFvTirRCwlvwalsqyY3Lv4k/cVWahTVZhh5yazImd12aeWol7K35Nx+pyfqt8gWQITTQdpJ7xOWIaNYm528GwpN04yukm0bBmGQIX04r6cdFBTWSTXJSyT2mU6TqyZ0XCUokY3ISyRAsmEgC2xtHJsfYNO6aGqcJkSATktTI1WglxYKMK9lFruYkOZXEimrQh78Zx6V5hY5Ia1HcJEOiaRRxkwyFtouZFM7IN4yK5Phpt5bEXwDtfgEkDDromZ0WDAAAAABJRU5ErkJggg=="
-                                                        alt="">
-                                                    <div data-v-40a6c17a="" class="">-2.41%</div>
+                                                    <div data-v-40a6c17a="" class="">-3.00%</div>
                                                 </div>
                                             </div>
                                             <!---->
@@ -1003,4 +554,101 @@
                     </div>
                 </div>
             </div>
+            <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+            <script>$(document).ready(function () {
+    let exchange = $('#exchange').val();
+    let intervalId;
+
+    // Update active tab and exchange value
+    function updateActiveTab(selectedTab) {
+        $('.home-market .tab').removeClass('first');
+        selectedTab.addClass('first');
+        exchange = selectedTab.attr('data-response');
+        $('#exchange').val(exchange);
+    }
+console.log(exchange)
+    // Function to get the API URL based on exchange and coin
+    function getApiUrl(exchange, coin) {
+        
+        switch (exchange) {
+            case "BINANCE":
+                return `https://api.binance.com/api/v3/ticker/24hr?symbol=${coin}USDT`;
+            case "KUCOIN":
+                return `https://api.kraken.com/0/public/Ticker?pair=${coin}USD`;
+            case "HUOBI":
+                return `https://api.huobi.pro/market/detail/merged?symbol=${coin.toLowerCase()}usdt`;
+            default:
+                return null;
+        }
+    }
+
+    // Function to fetch and update coin rate
+    function fetchRate(coin, rateId, percentageId) {
+        const apiUrl = getApiUrl(exchange, coin);
+        if (!apiUrl) return;
+
+        $.ajax({
+            url: apiUrl,
+            method: 'GET',
+            success: function (response) {
+                let rate, percentageChange;
+                console.log(`Fetching ${coin} rate from ${exchange}`); 
+                switch (exchange) {
+                    case "BINANCE":
+                        rate = parseFloat(response.bidPrice).toFixed(4);
+                        percentageChange = parseFloat(response.priceChangePercent).toFixed(2);
+                        break;
+                    case "KUCOIN":
+                        const tickerKey = Object.keys(response.result)[0];
+        const ticker = response.result[tickerKey];
+
+        if (ticker && ticker.c && ticker.o) {
+            rate = parseFloat(ticker.c[0]).toFixed(4);  // Last closing price
+            const openPrice = parseFloat(ticker.o);     // Opening price
+            percentageChange = (((rate / openPrice) - 1) * 100).toFixed(2);
+        } else {
+            throw new Error("Invalid data structure from Kraken");
+        }
+                       
+                        break;
+                    case "HUOBI":
+                        rate = parseFloat(response.tick.close).toFixed(4);
+                        percentageChange = ((response.tick.close / response.tick.open - 1) * 100).toFixed(2);
+                        break;
+                }
+
+                // Update rate and percentage on the page
+                $(`#${rateId}`).text(`$${rate}`);
+                $(`#${percentageId}`).text(`${percentageChange}%`)
+                    .css('background-color', (percentageChange > 0) ? '#00bc81' : 'red');
+            },
+            error: function (xhr, status, error) {
+                console.error(`Error fetching ${coin} rate from ${exchange}:`, error);
+            }
+        });
+    }
+
+    // Update all coin rates
+    function updateAllRates() {
+        fetchRate("BTC", "btc-rate", "btc-percentage");
+        fetchRate("ETH", "eth-rate", "eth-percentage");
+        fetchRate("DOGE", "doge-rate", "doge-percentage");
+        fetchRate("ADA", "ada-rate", "ada-percentage");
+        fetchRate("AVAX", "avax-rate", "avax-percentage");
+    }
+
+    // Switch tab and update rates immediately
+    $('.home-market .tab').on('click', function () {
+        updateActiveTab($(this));
+        clearInterval(intervalId);  // Clear the previous interval
+        updateAllRates();           // Fetch rates immediately on tab change
+        intervalId = setInterval(updateAllRates, 5000);  // Start a new interval
+    });
+
+    // Initial rate update and interval setup
+    updateAllRates();
+    intervalId = setInterval(updateAllRates, 5000);
+});
+
+</script>
      @include('layouts.upnl.footer')
