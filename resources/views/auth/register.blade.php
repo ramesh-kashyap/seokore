@@ -1736,7 +1736,7 @@
                         </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                             style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-service"></use>
-                        </svg>
+                        </svg> -->
                     </div>
                 </div>
             </div>
