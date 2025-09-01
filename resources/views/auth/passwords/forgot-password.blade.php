@@ -1839,12 +1839,7 @@
                                             </div>
                                         </div>
                                         <div data-v-6b868a30="" class="tw-mt-16px tw-flex rtw-items-center tw-text-14px">
-                                            <div role="checkbox" tabindex="0" aria-checked="true" class="tw-mr-8px rounded van-checkbox" data-v-6b868a30="">
-                                                <div class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
-                                                    <i class="van-icon van-icon-success">
-                                                    </i>
-                                                </div>
-                                            </div>
+                                        
                                             <!-- <a href="/article?id=REGISTRATION_AGREEMENT" class="" data-v-6b868a30="">
                                                 I have read the privacy agreement </a> -->
                                         </div>

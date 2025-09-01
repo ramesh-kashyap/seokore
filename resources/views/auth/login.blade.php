@@ -1835,9 +1835,10 @@
                                         <div data-v-6b868a30="" class="tw-mt-16px tw-flex rtw-items-center tw-text-14px">
                                             <div role="checkbox" tabindex="0" aria-checked="false"
                                                 class="tw-mr-8px rounded van-checkbox" data-v-6b868a30="">
-                                                <div class="van-checkbox__icon van-checkbox__icon--square"><i
-                                                        class="van-icon van-icon-success"> <input type="checkbox" name="" id="">
-                                                        <!----></i></div><span class="van-checkbox__label"> Remember account
+                                                <div class="van-checkbox__icon van-checkbox__icon--square">
+                                                 
+                                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                                        </div><span class="van-checkbox__label" style="  margin-bottom: 9px;"> Remember account
                                                     password </span>
                                             </div>
                                         </div>

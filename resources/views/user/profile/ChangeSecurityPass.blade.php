@@ -1869,7 +1869,7 @@
                                 <div data-v-7c19a79c="" data-v-6b868a30="" class="tw-flex tw-items-center"><i
                                         data-v-7c19a79c="" data-v-6b868a30=""
                                         class="tw-text-20px van-icon van-icon-warning"
-                                        style="color: rgb(10, 113, 247);">
+                                        style="color: rgba(255, 255, 255, 1);">
                                         <!----></i><span data-v-7c19a79c="" data-v-6b868a30=""
                                         class="tw-text-primary tw-pl-8px"> Reminder </span></div>
                                 <div data-v-7c19a79c="" data-v-6b868a30=""
