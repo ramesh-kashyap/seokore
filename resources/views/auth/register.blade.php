@@ -1764,7 +1764,7 @@
                                     <div data-v-6b868a30="" class="page-auth-form-title"> Registration </div>
                                 </div>
                                 <div data-v-6b868a30=""
-                                    class="tw-relative tw-z-10 tw-bg-white tw-px-16px tw-pb-20px tw-pt-20px tw-rounded-10px">
+                                    class="tw-relative tw-z-10 tw-bg-white tw-px-16px tw-pb-20px tw-pt-20px tw-rounded-11px">
                                     <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Name</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
@@ -1800,7 +1800,7 @@
                                         </div>
                                     </div>
                                     <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px"> Verification code </div>
-                                    <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
+                                    <div class="van-cell van-field tw-rounded-11px" data-v-6b868a30="">
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
                                             <div class="van-field__body">
                                                 <input type="text" inputmode="numeric" name="otp"
@@ -1808,7 +1808,7 @@
                                                     class="van-field__control">
                                                 <div class="van-field__right-icon">
                                                     <button type="button" id="getCodeBtn"
-                                                        class="!tw-border-none tw-w-8 van-button van-button--primary van-button--mini van-button--plain">
+                                                        class="!tw-border-none tw-w-8 van-button  van-button--mini van-button--plain" style="color: #2a9862;">
                                                         <div class="van-button__content">
                                                             <span class="code-btn van-button__text" ><span>Get code</span>
                                                             <span class="resend-btn-new van-button__text" style="display: none;"><span>Get code</span>
@@ -1885,7 +1885,7 @@
         <div class="van-overlay" style="display: none;">
             <div class="tw-w-full tw-h-full tw-flex tw-justify-center rtw-items-center">
                 <div
-                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center rtw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
+                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center rtw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-11px">
                     <div class="van-loading van-loading--circular"><span
                             class="van-loading__spinner van-loading__spinner--circular"
                             style="color: rgb(23, 114, 248); width: 1rem; height: 1rem;"><svg viewBox="25 25 50 50"

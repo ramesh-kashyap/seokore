@@ -2317,6 +2317,7 @@ ul {
     background-color: #eaedf2;
     border: .02667rem solid #eaedf2
 }
+
 .van-button--default1 {
     color: #ffffff;
     background-color: rgb(25 140 82 / 11%);
@@ -2324,9 +2325,9 @@ ul {
 }
 
 .van-button--primary {
-    color: #fff;
-    background-color: #1772f8;
-    border: .02667rem solid #1772f8
+    color: #000000;
+    background-color: #ffffffa4;
+    border: .02667rem solid #474747;
 }
 
 .van-button--info {
@@ -2349,7 +2350,7 @@ ul {
 
 .van-button--plain {
     background-color: rgb(25 140 82 / 11%);
-    border:0.3px solid #3f3f3f,
+    border: 0.3px solid #3f3f3f,
 }
 
 .van-button--plain.van-button--primary {
@@ -2897,8 +2898,8 @@ ul {
     flex-shrink: 0;
     width: 100%;
     height: 100%;
-    color:#fff;
-   
+    color: #fff;
+
 }
 
 .van-swipe {
@@ -2916,7 +2917,7 @@ ul {
     display: -webkit-flex;
     display: flex;
     /* height: 100%; */
-     height: 180px
+    height: 180px
 }
 
 .van-swipe__track--vertical {
@@ -3344,6 +3345,7 @@ ul {
     line-height: .64rem;
     background-color: #fff
 }
+
 .van-cell1 {
     position: relative;
     display: -webkit-box;
@@ -3502,7 +3504,7 @@ ul {
     box-sizing: border-box;
     width: 100%;
     min-width: 0;
-    margin: 0;
+    margin-left: 3px;
     padding: 0;
     color: #18191c;
     line-height: inherit;
@@ -3511,7 +3513,8 @@ ul {
     border: 0;
     resize: none
 }
-.van-field__control1{
+
+.van-field__control1 {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -3713,8 +3716,8 @@ ul {
 
 .van-checkbox__icon--checked .van-icon {
     color: #fff;
-    background-color: #1772f8;
-    border-color: #1772f8
+    background-color: #2a9862;
+    border-color: #2a9862
 }
 
 .van-checkbox__icon--disabled {
@@ -4139,7 +4142,7 @@ ul {
     z-index: 1;
     width: 1.06667rem;
     height: .08rem;
-    background-color: #1772f8;
+    background-color: #69c799;
     border-radius: .08rem
 }
 
@@ -4566,7 +4569,7 @@ ul {
     color: #ed6a0c;
     font-size: .37333rem;
     line-height: .64rem;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
 }
 

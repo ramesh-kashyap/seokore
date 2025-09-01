@@ -9,8 +9,9 @@ use Redirect;
 use App\Models\PasswordReset;
 use App\Models\User;
 use App\Models\UserLogin;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 
-use DB;
 class Login extends Controller
 {
 
@@ -121,48 +122,97 @@ class Login extends Controller
        return true;
     }
    
+public function forgot_password_submit(Request $request)
+{
+    try {
+        // ✅ Validation
+        $validation = Validator::make($request->all(), [
+            'email'    => 'required|email',
+            'code'     => 'required',
+            'password' => 'required|confirmed',
+        ]);
 
-
-
-    public function forgot_password_submit(Request $request)
-    {
-         $validation =  Validator::make($request->all(), [
-                'email' => 'required',
-                'code' => 'required',
-                'password' => 'required|confirmed',
-
-            ]);
-            
-        $credentials = User::where('email',$request->email)->first();
-
-        if ($credentials)
-        {
-
-          
-           $code = $request->code;
-
-          
-            if (PasswordReset::where('token', $code)->where('email', $request->email)->count() != 1) {
-                $notify[] = ['error', 'Invalid token'];
-                return redirect()->route('forgot-password')->withNotify($notify);
-            }
-
-            $password = password_hash($request->password, PASSWORD_DEFAULT);
-
-            $credentials->password=$password;
-            $credentials->PSR=$request->password;
-            $credentials->save();
-            $notify[] = ['success', 'Your Password change Successfully.'];
-            return redirect()->route('login')->withNotify($notify);
-        }
-        else{
-            $notify[] = ['error', 'Invalid Email ID '];
+        if ($validation->fails()) {
+            $notify[] = ['error', $validation->errors()->first()];
             return redirect()->route('forgot-password')->withNotify($notify);
         }
 
+        // ✅ Check Email Exist
+        $credentials = User::where('email', $request->email)->first();
 
+        if (!$credentials) {
+            $notify[] = ['error', 'Invalid Email ID'];
+            return redirect()->route('forgot-password')->withNotify($notify);
+        }
 
+        // ✅ Check Token
+        $code = $request->code;
+        $isValid = PasswordReset::where('token', $code)
+            ->where('email', $request->email)
+            ->count();
+
+        if ($isValid != 1) {
+            $notify[] = ['error', 'Invalid token'];
+            return redirect()->route('forgot-password')->withNotify($notify);
+        }
+
+        // ✅ Update Password
+        $credentials->password = bcrypt($request->password); // Laravel recommended
+        $credentials->PSR      = $request->password; // ⚠ plain password store करना risky है
+        $credentials->save();
+
+        $notify[] = ['success', 'Your password has been changed successfully.'];
+        return redirect()->route('login')->withNotify($notify);
+
+    } catch (\Exception $e) {
+        // ✅ Exception Handling
+        \Log::error('Forgot Password Error: '.$e->getMessage());
+        $notify[] = ['error', 'Something went wrong, please try again later.'];
+        return redirect()->route('forgot-password')->withNotify($notify);
     }
+}
+
+
+
+    // public function forgot_password_submit(Request $request)
+    // {
+    //      $validation =  Validator::make($request->all(), [
+    //             'email' => 'required',
+    //             'code' => 'required',
+    //             'password' => 'required|confirmed',
+
+    //         ]);
+            
+    //     $credentials = User::where('email',$request->email)->first();
+    //     // dd($credentials);
+    //     if ($credentials)
+    //     {
+
+          
+    //        $code = $request->code;
+
+          
+    //         if (PasswordReset::where('token', $code)->where('email', $request->email)->count() != 1) {
+    //             $notify[] = ['error', 'Invalid token'];
+    //             return redirect()->route('forgot-password')->withNotify($notify);
+    //         }
+
+    //         $password = password_hash($request->password, PASSWORD_DEFAULT);
+
+    //         $credentials->password=$password;
+    //         $credentials->PSR=$request->password;
+    //         $credentials->save();
+    //         $notify[] = ['success', 'Your Password change Successfully.'];
+    //         return redirect()->route('login')->withNotify($notify);
+    //     }
+    //     else{
+    //         $notify[] = ['error', 'Invalid Email ID '];
+    //         return redirect()->route('forgot-password')->withNotify($notify);
+    //     }
+
+
+
+    // }
 
     public function codeVerify(){
         $page_title = 'Account Recovery';

@@ -1815,7 +1815,7 @@
                         <div data-v-7c19a79c="" data-v-6b868a30="" class="tw-flex-1 tw-mb-32px">
                             <div data-v-7c19a79c="" data-v-6b868a30=""
                                 class="tw-mt-16px psd-title tw-mb-10px tw-text-14px"> Old password </div>
-                            <div data-v-7c19a79c="" class="van-cell1 van-field tw-rounded-10px" data-v-6b868a30="">
+                            <div data-v-7c19a79c="" class="van-cell1 van-field .tw-rounded-11px" data-v-6b868a30="">
                                 <div class="van-cell__value van-cell__value--alone van-field__value">
                                     <div class="van-field__body">
                                         <input  type="password" name="password"  id="passwordInput"
@@ -1828,7 +1828,7 @@
                             </div>
                             <div data-v-7c19a79c="" data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> New
                                 password </div>
-                            <div data-v-7c19a79c="" class="van-cell1 van-field tw-rounded-10px" data-v-6b868a30="">
+                            <div data-v-7c19a79c="" class="van-cell1 van-field .tw-rounded-11px" data-v-6b868a30="">
                                 <div class="van-cell__value van-cell__value--alone van-field__value">
                                     <div class="van-field__body">
                                         <input type="password" name="new_password" id="passwordInput2"
@@ -1843,7 +1843,7 @@
                             <input data-v-47636760="" data-v-6e2d35de="" type="hidden" name="email"  id="emailId" value="{{Auth::user()->email}}">                          
                             <div data-v-7c19a79c="" data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px">
                                 Varification Code </div>
-                            <div data-v-7c19a79c="" class="van-cell1 van-field tw-rounded-10px" data-v-6b868a30="">
+                            <div data-v-7c19a79c="" class="van-cell1 van-field .tw-rounded-11px" data-v-6b868a30="">
                                 <div class="van-cell__value van-cell__value--alone van-field__value">
                                     <div class="van-field__body"><input type="text" name="code"
                                             placeholder="Email Verification code" 
@@ -1854,7 +1854,7 @@
                                 </div>
                             </div>
                             <div data-v-7c19a79c="" data-v-6b868a30=""
-                                class="tw-mt-18px tw-p-14px tw-text-14px tw-bg-white1 tw-rounded-10px">
+                                class="tw-mt-18px tw-p-14px tw-text-14px tw-bg-white1 .tw-rounded-11px">
                                 <div data-v-7c19a79c="" data-v-6b868a30="" class="tw-flex tw-items-center"><i
                                         data-v-7c19a79c="" data-v-6b868a30=""
                                         class="tw-text-20px van-icon van-icon-warning"
@@ -1868,7 +1868,7 @@
                             </div>
                         </div>
                         <button data-v-7c19a79c="" data-v-6b868a30="" type="submit"
-                            class="van-button van-button--primary van-button--normal van-button--block">
+                            class="van-button van-button--default van-button--normal van-button--block">
                             <div data-v-7c19a79c="" data-v-6b868a30="" class="van-button__content"><span
                                     data-v-7c19a79c="" data-v-6b868a30="" class="van-button__text"> Confirm </span>
                             </div>
@@ -1882,7 +1882,7 @@
         <div class="van-overlay" style="display: none;">
             <div class="tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
                 <div
-                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center tw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
+                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center tw-items-center tw-bg-dark tw-bg-opacity-10 .tw-rounded-11px">
                     <div class="van-loading van-loading--circular"><span
                             class="van-loading__spinner van-loading__spinner--circular"
                             style="color: rgb(23, 114, 248); width: 1rem; height: 1rem;"><svg viewBox="25 25 50 50"

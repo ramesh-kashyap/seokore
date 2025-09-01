@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Reset login password</title>
+    <title>Forgot Password</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#fff">
@@ -15,7 +15,7 @@
     <meta name="renderer" content="webkit">
     <meta name="robots" content="noindex, nofollow">
     <script>
-        window.addEventListener('error', function (event) {
+        window.addEventListener('error', function(event) {
             if (event.message.indexOf("Unexpected token '<'") > -1) {
                 location.reload();
             }
@@ -25,7 +25,7 @@
                 remotes = false;
             document.addEventListener(
                 'click',
-                function (event) {
+                function(event) {
                     noddy = event.target;
                     while (noddy.nodeName !== 'A' && noddy.nodeName !== 'HTML') {
                         noddy = noddy.parentNode;
@@ -42,7 +42,6 @@
                 false
             );
         }
-
     </script>
     <style>
         * {
@@ -77,8 +76,8 @@
             height: 100vh;
             object-fit: cover;
         }
-
-    </style> <link href="{{ asset('') }}static/css/chunk-02c8c6ba.f02a30c2.css" rel="prefetch">
+    </style>
+    <link href="{{ asset('') }}static/css/chunk-02c8c6ba.f02a30c2.css" rel="prefetch">
     <link href="{{ asset('') }}static/css/chunk-03c1575b.3035c347.css" rel="prefetch">
     <link href="{{ asset('') }}static/css/chunk-0566fd30.1e11c8e5.css" rel="prefetch">
     <link href="{{ asset('') }}static/css/chunk-08efff57.d1c57c5a.css" rel="prefetch">
@@ -242,12 +241,11 @@
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
 </head>
 
-
 <body datasqstyle="{&quot;top&quot;:0,&quot;position&quot;:&quot;static&quot;}"
-    datasquuid="fe3cb836-d426-425c-81f4-a843ea83a074" style="top: 40px; position: relative;"><svg
+    datasquuid="376203bd-baee-4dd8-8666-c64e25faa7ca" style="top: 40px; position: relative;"><svg
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         style="position: absolute; width: 0px; height: 0px; top: 40px;" aria-hidden="true" id="__SVG_SPRITE_NODE__"
-        dataSqstyle="{&quot;top&quot;:null}" dataSquuid="fe3cb836-d426-425c-81f4-a843ea83a074">
+        dataSqstyle="{&quot;top&quot;:null}" dataSquuid="376203bd-baee-4dd8-8666-c64e25faa7ca">
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="svg-icon-address-book">
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M18 3C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H7C5.34315 21 4 19.6569 4 18V17L4.00685 16.9032C4.05651 16.5371 4.3703 16.255 4.75 16.255C5.16421 16.255 5.5 16.5907 5.5 17.005V18C5.5 18.8284 6.17157 19.5 7 19.5H18C18.8284 19.5 19.5 18.8284 19.5 18V6C19.5 5.17157 18.8284 4.5 18 4.5H7C6.17157 4.5 5.5 5.17157 5.5 6V7.00496C5.5 7.41917 5.16421 7.75496 4.75 7.75496C4.33579 7.75496 4 7.41917 4 7.00496V6C4 4.34315 5.34315 3 7 3H18ZM13.2587 7.37443C14.9156 7.37443 16.2587 8.71757 16.2587 10.3744C16.2587 11.1989 15.9261 11.9457 15.3878 12.488C16.4697 13.1709 17.2008 14.3589 17.251 15.7209C17.2629 15.7708 17.2684 15.8225 17.2684 15.8756C17.2684 16.2898 16.9326 16.6256 16.5184 16.6256C16.1042 16.6256 15.7684 16.2898 15.7684 15.8756L15.7537 15.8708C15.7537 14.512 14.6697 13.4064 13.3192 13.3717L13.2587 13.3744L13.1936 13.3724L13.0894 13.3762C11.8396 13.4573 10.8402 14.4567 10.759 15.7065L10.7536 15.8695C10.7536 16.2837 10.4178 16.6195 10.0036 16.6195C9.58941 16.6195 9.25362 16.2837 9.25362 15.8695C9.25369 14.4435 10.0008 13.1914 11.1252 12.4835C10.5897 11.9421 10.2587 11.1969 10.2587 10.3744C10.2587 8.71757 11.6019 7.37443 13.2587 7.37443ZM6.25 13.5C6.66421 13.5 7 13.8358 7 14.25C7 14.6642 6.66421 15 6.25 15H3.75C3.33579 15 3 14.6642 3 14.25C3 13.8358 3.33579 13.5 3.75 13.5H6.25ZM6.25 11C6.66421 11 7 11.3358 7 11.75C7 12.1642 6.66421 12.5 6.25 12.5H3.75C3.33579 12.5 3 12.1642 3 11.75C3 11.3358 3.33579 11 3.75 11H6.25ZM13.2587 8.87443C12.4303 8.87443 11.7587 9.546 11.7587 10.3744C11.7587 11.184 12.4001 11.8438 13.2025 11.8734L13.2537 11.8708L13.3116 11.8714L13.4032 11.8676C14.1638 11.7949 14.7587 11.1541 14.7587 10.3744C14.7587 9.546 14.0871 8.87443 13.2587 8.87443ZM6.25 8.5C6.66421 8.5 7 8.83579 7 9.25C7 9.66421 6.66421 10 6.25 10H3.75C3.33579 10 3 9.66421 3 9.25C3 8.83579 3.33579 8.5 3.75 8.5H6.25Z"
@@ -1714,27 +1712,29 @@
         </symbol>
     </svg>
     <div id="app">
-        <div data-v-6b868a30="" class="page">
+        <div data-v-6b868a30="" class="page page-auth">
             <div data-v-6b868a30="" class="headers">
-                <div class="tw-px-16px tw-w-full tw-h-full tw-flex tw-items-center" data-v-6b868a30=""
+                <div class="tw-px-16px tw-w-full tw-h-full tw-flex rtw-items-center" data-v-6b868a30=""
                     style="background-color: transparent;">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center"><svg data-v-3f1a7394="" aria-hidden="true"
                             class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-arrow-back"></use>
+                            style="color: rgba(253, 253, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            <use data-v-3f1a7394="" xlink:href="#svg-icon-close"></use>
                         </svg>
-                        <!---->
+
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
-                        style="color: rgb(24, 25, 28);"><span>Forgot password</span></div>
+                        style="color: rgba(255, 253, 253, 1);"><span></span></div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
                         <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                        <!---->
+                        <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         <div>
-                        <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            </div>
-                        <!----><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                        </div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
+                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            <use data-v-3f1a7394="" xlink:href="#svg-icon-i18n"></use>
+                        </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
+                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-service"></use>
                         </svg>
                     </div>
@@ -1742,85 +1742,137 @@
             </div>
             <div data-v-6b868a30="" id="scroll" class="content-container">
                 <div data-v-6b868a30="" id="content" class="content-scroll">
-                    <div role="alert" class="van-notice-bar van-notice-bar--wrapable" data-v-6b868a30=""
-                        style="color: rgb(255, 115, 0); background: rgba(255, 115, 0, 0.05);">
-                        <div role="marquee" class="van-notice-bar__wrap">
-                            <div class="van-notice-bar__content" style="transition-duration: 0s;"> To ensure the
-                                security of your account, you can withdraw money only 48 hours after resetting your
-                                login password </div>
-                        </div>
-                    </div>
-                    <div data-v-6b868a30="" class="page-auth-container tw-p-20px">
-                        <div data-v-6b868a30="" class="tw-mb-10px tw-text-14px">Mobile phone</div>
-                        <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
-                            <div class="van-field__left-icon">
-                                <div class="tw-flex tw-items-center"><span class="tw-pr-4px">+1</span><i
-                                        class="van-icon van-icon-arrow-down">
-                                        <!----></i></div>
-                            </div>
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body"><input type="tel"
-                                        placeholder="Please enter your phone number" class="van-field__control"></div>
+                    <div data-v-6b868a30="" class="page-auth-container tw-h-full tw-p-20px">
+                        <div data-v-6b868a30=""
+                            class="page-auth-header tw-relative tw-z-10 tw-mb-20px tw-flex tw-items-center"><img
+                                data-v-6b868a30="" src="{{ asset('') }}static/img/logo.41d208eb.svg" alt=""
+                                class="tw-w-64px tw-h-64px">
+                            <div data-v-6b868a30="" class="tw-pl-12px tw-flex-1">
+                                <div data-v-6b868a30="" class="tw-mb-6px tw-text-24px">Hello,</div>
+                                <div data-v-6b868a30="" class="tw-text-18px van-ellipsis"> Welcome {{siteName()}}</div>
                             </div>
                         </div>
-                        <div data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> Reset login password </div>
-                        <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body"><input type="password"
-                                        placeholder="Please enter a password (6-20 alphanumeric characters)"
-                                        class="van-field__control">
-                                    <div class="van-field__right-icon"><i
-                                            class="van-icon van-icon-closed-eye tw-text-secondary">
-                                            <!----></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> Confirm password </div>
-                        <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body"><input type="password"
-                                        placeholder="Please enter a password (6-20 alphanumeric characters)"
-                                        class="van-field__control">
-                                    <div class="van-field__right-icon"><i
-                                            class="van-icon van-icon-closed-eye tw-text-secondary">
-                                            <!----></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> Mailbox </div>
-                        <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body"><input type="text"
-                                        placeholder="Please enter your email address" class="van-field__control"></div>
-                            </div>
-                        </div>
-                        <div data-v-6b868a30="" class="tw-mt-16px tw-mb-10px tw-text-14px"> Verification code </div>
-                        <div class="tw-rounded-10px tw-p-20px van-cell van-field tw-rounded-10px" data-v-6b868a30="">
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body"><input type="tel" inputmode="numeric"
-                                        placeholder="Please enter the verification code" class="van-field__control">
-                                    <div class="van-field__right-icon"><button
-                                            class="!tw-border-none tw-w-8 van-button van-button--primary van-button--mini van-button--plain">
-                                            <div class="van-button__content"><span class="van-button__text"><span>Get
-                                                        code</span><span style="display: none;">60 s</span></span></div>
+                        <div data-v-6b868a30="" class="page-auth-content tw-relative tw-z-10">
+                            <div data-v-6b868a30="" class="page-auth-form tw-pb-24px">
+                                <form action="{{ route('forgot_submit') }}" method="POST">
+                                    @csrf
+
+                                    @if(session('success'))
+                                    <div class="alert alert-success">{{ session('success') }}</div>
+                                    @endif
+
+                                    @if(session('error'))
+                                    <div class="alert alert-danger">{{ session('error') }}</div>
+                                    @endif
+
+                                    @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        @foreach ($errors->all() as $error)
+                                        <p>{{ $error }}</p>
+                                        @endforeach
+                                    </div>
+                                    @endif
+                                    <div data-v-6b868a30=""
+                                        class="tw-relative tw-z-0 tw-top-10px tw-flex tw-justify-between tw-items-start">
+                                        <div data-v-6b868a30="" class="page-auth-form-title"> Reset Password </div>
+                                    </div>
+                                    <div data-v-6b868a30=""
+                                        class="tw-relative tw-z-10 tw-bg-white tw-px-16px tw-pb-20px tw-pt-20px tw-rounded-11px">
+
+
+                                        <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Mailbox</div>
+                                        <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                                <div class="van-field__body">
+                                                    <input type="text" name="email" id="emailId"
+                                                        placeholder="Please enter your email address"
+                                                        class="van-field__control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px"> Verification code </div>
+                                        <div class="van-cell van-field tw-rounded-11px" data-v-6b868a30="">
+                                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                                <div class="van-field__body">
+                                                    <input type="text" inputmode="numeric" name="code"
+                                                        placeholder="Please enter the verification code"
+                                                        class="van-field__control">
+                                                    <div class="van-field__right-icon">
+                                                        <button type="button" id="getCodeBtn"
+                                                            class="!tw-border-none tw-w-8 van-button  van-button--mini van-button--plain" style="color: #2a9862;">
+                                                            <div class="van-button__content">
+                                                                <span class="code-btn van-button__text"><span>Get code</span>
+                                                                    <span class="resend-btn-new van-button__text" style="display: none;"><span>Get code</span>
+                                                                        <span
+                                                                            style="display: none;">60 s</span></span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">New password</div>
+                                        <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                                <div class="van-field__body"><input type="password"
+                                                        autocomplete="new-password" id="password" name="password"
+                                                        placeholder="Please enter new password " accept="onkeyup=" this.value=this.value.replace(/[ ]/g,'')" type="password"
+                                                        class="van-field__control">
+                                                    <div class="van-field__right-icon"><i
+                                                            class="van-icon van-icon-closed-eye tw-text-secondary">
+                                                        </i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Confirm password</div>
+                                        <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                                <div class="van-field__body"><input type="password"
+                                                        autocomplete="new-password" id="password_confirmation" name="password_confirmation"
+                                                        placeholder="Please enter confirm password " accept="onkeyup=" this.value=this.value.replace(/[ ]/g,'')" type="password"
+                                                        class="van-field__control">
+                                                    <div class="van-field__right-icon"><i
+                                                            class="van-icon van-icon-closed-eye tw-text-secondary">
+                                                        </i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-6b868a30="" class="tw-mt-16px tw-flex rtw-items-center tw-text-14px">
+                                            <div role="checkbox" tabindex="0" aria-checked="true" class="tw-mr-8px rounded van-checkbox" data-v-6b868a30="">
+                                                <div class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
+                                                    <i class="van-icon van-icon-success">
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <!-- <a href="/article?id=REGISTRATION_AGREEMENT" class="" data-v-6b868a30="">
+                                                I have read the privacy agreement </a> -->
+                                        </div>
+                                    </div>
+                                    <div data-v-6b868a30=""
+                                        class="tw-relative tw-z-0 tw-bottom-10px tw-flex tw-justify-end"><a href="/login"
+                                            class="page-auth-form-footer" data-v-6b868a30=""> Login <i
+                                                class="van-icon van-icon-arrow">
+                                            </i></a></div>
+                                    <div data-v-6b868a30="" class="tw-mt-24px"><button data-v-6b868a30="" type="submit"
+                                            class="van-button van-button--default van-button--large">
+                                            <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
+                                                    class="van-button__text"> Reset Password </span></div>
                                         </button></div>
-                                </div>
+                                </form>
+                                @include('partials.notify')
+
                             </div>
                         </div>
-                        <div data-v-6b868a30="" class="tw-mt-24px"><button data-v-6b868a30=""
-                                class="van-button van-button--primary van-button--large">
-                                <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
-                                        class="van-button__text"> Confirm </span></div>
-                            </button></div>
                     </div>
                 </div>
             </div>
-            <!---->
+
         </div>
         <div class="van-overlay" style="display: none;">
-            <div class="tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
+            <div class="tw-w-full tw-h-full tw-flex tw-justify-center rtw-items-center">
                 <div
-                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center tw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-10px">
+                    class="tw-w-100px tw-h-100px tw-flex tw-justify-center rtw-items-center tw-bg-dark tw-bg-opacity-10 tw-rounded-11px">
                     <div class="van-loading van-loading--circular"><span
                             class="van-loading__spinner van-loading__spinner--circular"
                             style="color: rgb(23, 114, 248); width: 1rem; height: 1rem;"><svg viewBox="25 25 50 50"
@@ -1831,8 +1883,32 @@
             </div>
         </div>
         <div data-v-4d1ba5fa="">
-            <!---->
+
         </div>
+    </div>
+    <div class="van-popup van-popup--round van-popup--bottom" style="z-index: 2005; display: none" id="overlay">
+        <div class="tw-p-16px tw-overflow-hidden" style="z-index: 2010; display: none" id="popup">
+            <div class="tw-text-center tw-text-16px"> Choose an international phone area code </div>
+            <div class="van-cell van-field">
+                <div class="van-field__left-icon">
+                    <i id="cancel" role="button" tabindex="0" class="van-icon van-icon-search"></i>
+                </div>
+                <div class="van-cell__value van-cell__value--alone van-field__value">
+                    <div class="van-field__body">
+                        <input type="text" placeholder="Search area code"
+                            class="van-field__control" id="country-search" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <ul class="tw-h-32 tw-overflow-y-auto">
+                <div class="country-list" id="country-list"></div>
+
+            </ul>
+
+        </div>
+        <i role="button" tabindex="0"
+            class="van-icon van-icon-cross van-popup__close-icon van-popup__close-icon--top-right">
+        </i>
     </div>
     <script src="/static/1756094289381/js/chunk-vendors.b893e1dd.js"></script>
     <script src="/static/1756094289381/js/app.5acd7986.js"></script>
@@ -1859,23 +1935,28 @@
                                 subdomain backlinks</span><span class="sqseobar2-parameterItemInline-title">LD</span><a
                                 href="https://www.semrush.com/analytics/backlinks/backlinks/h5.seokore.com:domain?utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params&amp;ref=174537735"
                                 target="_blank" class="seoquake-params-request">30</a></div>
-                        <div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-bing"></span><span
+                        <div class="sqseobar2-parameterItemInline" style="visibility: visible;"><span
+                                class="sqicn sqicn-bing"></span><span
                                 class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Bing
                                 index</span><span class="sqseobar2-parameterItemInline-title">I</span><a
                                 href="https://www.bing.com/search?q=site%3Ah5.seokore.com&amp;FORM=QBRE" target="_blank"
                                 class="seoquake-params-request">n/a</a></div>
-                        <div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-user"></span><a
+                        <div class="sqseobar2-parameterItemInline" style="visibility: visible;"><span
+                                class="sqicn sqicn-user"></span><a
                                 href="https://whois.domaintools.com/h5.seokore.com?utm_source=seoquake&amp;utm_medium=seoquake&amp;utm_campaign=seoquake&amp;ref=174537735"
                                 target="_blank" class="seoquake-params-request">whois</a></div>
-                        <div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-source"></span><a
+                        <div class="sqseobar2-parameterItemInline" style="visibility: visible;"><span
+                                class="sqicn sqicn-source"></span><a
                                 href="view-source:https://h5.seokore.com/user/login" target="_blank"
                                 class="seoquake-params-request">source</a></div>
-                        <div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span
+                        <div class="sqseobar2-parameterItemInline" style="visibility: visible;"><span
+                                class="sqicn sqicn-semrush"></span><span
                                 class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush
                                 Rank</span><span class="sqseobar2-parameterItemInline-title">Rank</span><a
                                 href="https://www.semrush.com/analytics/overview/?q=h5.seokore.com&amp;searchType=domain&amp;ref=174537735&amp;utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params"
                                 target="_blank" class="seoquake-params-request">n/a</a></div>
-                        <div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-pinterest"></span><span
+                        <div class="sqseobar2-parameterItemInline" style="visibility: visible;"><span
+                                class="sqicn sqicn-pinterest"></span><span
                                 class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Pinterest
                                 Pin count</span><span class="sqseobar2-parameterItemInline-title">PIN</span><a
                                 href="https://api.pinterest.com/v1/urls/count.json?callback=r&amp;url=https%3A%2F%2Fh5.seokore.com%2Fuser%2Flogin"
@@ -1898,7 +1979,201 @@
             </div>
         </div>
     </div> -->
-    <!---->
+
+
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            $("#phone_code").click(function() {
+                $("#popup").show();
+                $("#overlay").show();
+            });
+            $("#cancel").click(function() {
+                $("#popup").hide();
+                $("#overlay").hide();
+            });
+        });
+    </script>
+    <?php
+    $countries = \DB::table('country')
+        ->select('phonecode as code', 'name', 'iso as flag')
+        ->get()
+        ->map(function ($country) {
+            return [
+                'code' => '+' . ltrim($country->code, '+'),
+                'name' => $country->name,
+                'flag' => strtolower($country->flag),
+            ];
+        })
+        ->toArray();
+    ?>
+    <script>
+        const countries = <?php echo json_encode($countries, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>;
+    </script>
+    <script>
+        (function($) {
+            function populateList(filteredCountries) {
+                const $list = $('#country-list');
+                $list.empty();
+                filteredCountries.forEach(country => {
+                    $list.append(`           
+                     <li class="tw-h-42px tw-flex tw-items-center" id="country-list">
+                <div class="tw-w-24px tw-h-24px" data-code="${country.code}" data-flag="${country.flag}">
+                    <span class="fi fi-${country.flag}"></span>
+                    </div>
+                <div class="tw-h-full tw-flex-1 tw-flex tw-items-center van-hairline--bottom"> ${country.name} (${country.code}) </div>
+            </li>
+                    
+                `);
+                });
+            }
+
+            $(document).ready(function() {
+                const $popup = $('#popup');
+                const $overlay = $('#overlay');
+                const $search = $('#country-search');
+                const $countryList = $('#country-list');
+                const $phone_code = $('#phone_code');
+                const $country_iso = $('#country_iso');
+                populateList(countries); // Initial population of the list
+
+                // Show popup when input is focused
+                $search.on('focus', function() {
+                    $popup.show();
+                    $overlay.show();
+                });
+
+                // Hide popup when clicking outside
+                $overlay.on('click', function() {
+                    $popup.hide();
+                    $overlay.hide();
+                });
+
+                // Filter the list based on search input
+                $search.on('input', function() {
+                    const searchTerm = $(this).val().toLowerCase();
+                    const filteredCountries = countries.filter(country =>
+                        country.name.toLowerCase().includes(searchTerm) || country.code.includes(
+                            searchTerm)
+                    );
+                    populateList(filteredCountries);
+                });
+
+                // Handle country selection
+                $countryList.on('click', 'div', function() {
+                    const countryCode = $(this).data('code');
+                    const countryIso = $(this).data('flag'); // Correct way to get the ISO code
+                    $phone_code.find('span').text(countryCode);
+                    $('#country-name').val($(this).text().split('(')[0].trim());
+                    $('#dial-code').val(countryCode.replace('+', ''));
+                    $('#country_iso').val(countryIso.toUpperCase()); // Set the ISO code correctly
+                    $popup.hide();
+                    $overlay.hide();
+                });
+                // Hide popup when the close icon is clicked
+                $('#cancel').on('click', function() {
+                    $popup.hide();
+                    $overlay.hide();
+                });
+            });
+        }(jQuery));
+    </script>
+
+
+
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("passwordInput");
+            const eyeIcon = document.getElementById("eyeIcon");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.className = "van-icon van-icon-eye tw-text-primary"; // show icon when password visible
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.className = "van-icon van-icon-closed-eye tw-text-secondary"; // hide icon
+            }
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // First Email Code
+            $('#getCodeBtn').click(function() {
+                var emailId = $('#emailId').val();
+                var name = $('#name').val();
+
+                if (!emailId) {
+                    iziToast.error({
+                        message: 'Invalid Email!',
+                        position: "topRight"
+                    });
+                    return;
+                }
+
+                startTimer('.resend-btn-new');
+                $('.code-btn').hide();
+                $('.resend-btn-new').show();
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('sendOtp') }}",
+                    data: {
+                        "emailId": emailId,
+                        "name": name,
+                        "_token": "{{ csrf_token() }}"
+                    },
+                    success: function(response) {
+                        console.log(response);
+                        if (response) {
+                            iziToast.success({
+                                message: 'Email sent Successfully',
+                                position: "topRight"
+                            });
+                        } else {
+                            iziToast.error({
+                                message: 'Error!',
+                                position: "topRight"
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Timer Function (Reusable)
+            function startTimer(selector) {
+                var resendButton = $(selector);
+                var countdown = 60;
+                resendButton.prop('disabled', true).text('Wait ' + countdown + 's');
+
+                var timer = setInterval(function() {
+                    countdown--;
+                    resendButton.text('Wait ' + countdown + 's');
+                    if (countdown <= 0) {
+                        clearInterval(timer);
+                        resendButton.prop('disabled', false).text('Resend Code');
+                    }
+                }, 1000);
+            }
+
+            // Optional Resend Clicks
+            $('.resend-btn').click(function() {
+                $('.code-btn').trigger('click');
+            });
+
+            $('.resend-btn-new').click(function() {
+                $('.code-btn-new').trigger('click');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
