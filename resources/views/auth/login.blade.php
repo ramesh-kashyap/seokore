@@ -1782,7 +1782,7 @@
                                             <div class="van-tabs__content">
                                                 <div role="tabpanel" class="van-tab__pane" id="mobilephase" style="display:none">
                                                     <div class="tw-mt-20px rtw-text-16px"> Mobile phone </div>
-                                                    <div class="van-cell van-field !tw-px-0 cell-after-full">
+                                                    <div class="van-cell van-field tw-rounded-11px">
                                                         <div class="van-field__left-icon">
                                                             <div class="tw-flex rtw-items-center" id="phone_code">
                                                                 <input type="hidden" id="country-name" name="country" value="CANADA">
@@ -1805,7 +1805,7 @@
                                                 </div>
                                                 <div role="tabpanel" class="van-tab__pane" id="emailphase" style="">
                                                     <div class="tw-mt-20px rtw-text-16px"> Mailbox </div>
-                                                    <div class="van-cell van-field !tw-px-0 cell-after-full">
+                                                    <div class="van-cell van-field tw-rounded-11px">
                                                         <div
                                                             class="van-cell__value van-cell__value--alone van-field__value">
                                                             <div class="van-field__body"><input type="text" name="email"
@@ -1818,7 +1818,7 @@
                                             </div>
                                         </div>
                                         <div data-v-6b868a30="" class="tw-mt-20px rtw-text-16px">Login Password</div>
-                                        <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                        <div class="van-cell van-field tw-rounded-11px" data-v-6b868a30="">
                                             <div class="van-cell__value van-cell__value--alone van-field__value">
                                                 <div class="van-field__body"><input type="password"
                                                         autocomplete="new-password" name="password" id="passwordInput"

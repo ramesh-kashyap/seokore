@@ -1781,7 +1781,7 @@
 
 
                                         <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Mailbox</div>
-                                        <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                        <div class="van-cell van-field tw-rounded-11px" data-v-6b868a30="">
                                             <div class="van-cell__value van-cell__value--alone van-field__value">
                                                 <div class="van-field__body">
                                                     <input type="text" name="email" id="emailId"
@@ -1813,7 +1813,7 @@
                                         </div>
 
                                         <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">New password</div>
-                                        <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                        <div class="van-cell van-field tw-rounded-11px" data-v-6b868a30="">
                                             <div class="van-cell__value van-cell__value--alone van-field__value">
                                                 <div class="van-field__body"><input type="password"
                                                         autocomplete="new-password" id="password" name="password"
@@ -1826,7 +1826,7 @@
                                             </div>
                                         </div>
                                         <div data-v-6b868a30="" class="tw-mt-16px rtw-text-16px">Confirm password</div>
-                                        <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
+                                        <div class="van-cell van-field tw-rounded-11px" data-v-6b868a30="">
                                             <div class="van-cell__value van-cell__value--alone van-field__value">
                                                 <div class="van-field__body"><input type="password"
                                                         autocomplete="new-password" id="password_confirmation" name="password_confirmation"
