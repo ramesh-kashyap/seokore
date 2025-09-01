@@ -1732,13 +1732,14 @@
                         <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         <div>
                             <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                        </div><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
+                        </div>
+                        <!-- <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                             style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-i18n"></use>
                         </svg><svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                             style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-service"></use>
-                        </svg>
+                        </svg> -->
                     </div>
                 </div>
             </div>

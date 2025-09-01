@@ -40,29 +40,24 @@
                         </div>
                         <div data-v-6b868a30="" class="tw-mb-16px tw-grid tw-grid-cols-3 tw-gap-12px">
                             <div data-v-6b868a30="" class="tw-flex-1 tw-p-12px tw-bg-white3 tw-rounded-10px statisic">
-                                <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                <img src="{{ asset('/static/icon/teams.png') }}" data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                     style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
-                                    <use data-v-3f1a7394="" xlink:href="#svg-icon-people-all"></use>
-                                </svg>
+                                    
                                 <div data-v-6b868a30="" class="tw-mt-6px tw-text-secondary tw-text-12px"> Number of
                                     Users </div>
                                 <div data-v-6b868a30="" class="tw-mt-12px tw-text-18px tw-font-bold"> {{$tatalActive}} / {{$totalTeam}}</div>
                             </div>
                             <div data-v-6b868a30="" class="tw-flex-1 tw-p-12px tw-bg-white3 tw-rounded-10px statisic">
-                                <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                <img src="{{ asset('/static/icon/invite.png') }}" data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                     style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
-                                    <use data-v-3f1a7394="" xlink:href="#svg-icon-people-new"></use>
-                                </svg>
                                 <div data-v-6b868a30="" class="tw-mt-6px tw-text-secondary tw-text-12px"> New Users
                                 </div>
                                 <div data-v-6b868a30="" class="tw-mt-12px tw-text-18px tw-text-success tw-font-bold"> 1
                                 </div>
                             </div>
                             <div data-v-6b868a30="" class="tw-flex-1 tw-p-12px tw-bg-white3 tw-rounded-10px statisic">
-                                <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                <img src="{{ asset('/static/img/buy (1).png') }}" data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                     style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
-                                    <use data-v-3f1a7394="" xlink:href="#svg-icon-income-new"></use>
-                                </svg>
                                 <div data-v-6b868a30="" class="tw-mt-6px tw-text-secondary tw-text-12px"> Today's Income
                                 </div>
                                 <div data-v-6b868a30="" class="tw-mt-12px tw-text-18px tw-text-primary tw-font-bold">
