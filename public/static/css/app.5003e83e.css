@@ -1236,8 +1236,8 @@ input::placeholder {
 .tw-bg-white3 {
     --tw-bg-opacity: 1;
     color: #fff;
-    background-color: rgb(25 140 82 / 11%)
-    /* background-color: #ffffff */
+    background-color: rgb(25 140 82 / 11%);
+    border:0.3px solid #3f3f3f
 }
 
 .tw-bg-dark {

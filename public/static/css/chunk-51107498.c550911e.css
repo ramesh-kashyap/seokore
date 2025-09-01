@@ -42,7 +42,7 @@
 }
 
 .market_card .quotes-list[data-v-40a6c17a] {
-    /* border-bottom: .02667rem solid #f4f4f4; */
+    border-bottom: .02667rem solid #3f3f3f;
     padding: .42667rem 0;
     display: flex;
     align-items: center
