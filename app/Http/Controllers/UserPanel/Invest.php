@@ -32,11 +32,7 @@ class Invest extends Controller
     Log::info('User accessing deposit page', ['user_id' => $user->id]);
 
     $invest_check = Investment::where('user_id', $user->id)
-        ->where('status', '!=', 'Decline')
-        ->orderBy('id', 'desc')
-        ->limit(1)
-        ->first();
-
+        ->where('status', '!=', 'Decline')->orderBy('id', 'desc')->limit(1)->first();
     $userInfo = Auth::user();
     $refId = $userInfo->username;
     

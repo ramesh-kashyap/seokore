@@ -1772,7 +1772,7 @@
                                 style="color: rgb(182, 188, 198);">
                                 <!----></i></div>
                         <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Address </div>
-                        <div class="tw-rounded-10px van-cell van-field" data-v-6b868a30="">
+                        <div class="tw-rounded-10px van-cell1 van-field" data-v-6b868a30="">
                             <div class="van-cell__value van-cell__value--alone van-field__value">
                                 <div class="van-field__body"><input type="text" readonly="readonly"
                                         placeholder="Please select address" class="van-field__control">
@@ -1785,7 +1785,7 @@
                             </div>
                         </div>
                         <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Amount </div>
-                        <div class="van-cell van-field tw-rounded-10px" data-v-6b868a30="">
+                        <div class="1 van-field tw-rounded-10px" data-v-6b868a30="">
                             <div class="van-cell__value van-cell__value--alone van-field__value">
                                 <div class="van-field__body"><input type="text" inputmode="decimal"
                                         placeholder="Please enter the withdrawal amount" class="van-field__control"
@@ -1800,6 +1800,19 @@
                             class="tw-mb-16px tw-p-14px tw-h-38px tw-flex tw-justify-between tw-items-center tw-bg-secondary tw-bg-opacity-10 tw-rounded-bl-10px tw-rounded-br-10px">
                             <span data-v-6b868a30="" class="tw-text-secondary">Arrival Amount</span><span
                                 data-v-6b868a30="" class="tw-text-success"> 0 USDT </span></div>
+                         <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Address </div>
+                        <div class="tw-rounded-10px van-cell1 van-field tw-mb-16px" data-v-6b868a30="">
+                            <div class="van-cell__value van-cell__value--alone van-field__value">
+                                <div class="van-field__body"><input type="text" readonly="readonly"
+                                        placeholder="Please select address" class="van-field__control">
+                                    <div class="van-field__right-icon"><svg data-v-3f1a7394="" aria-hidden="true"
+                                            class="svg-icon"
+                                            style="width: 0.5647rem; height: 0.5647rem; font-size: 0.5647rem;">
+                                            <use data-v-3f1a7394="" xlink:href="#svg-icon-address-book"></use>
+                                        </svg></div>
+                                </div>
+                            </div>
+                        </div>        
                         <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
                                 data-v-6b868a30="" class="tw-text-secondary"> Withdraw Process Fee 9 % </span><span
                                 data-v-6b868a30="">0 USDT</span></div>

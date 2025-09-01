@@ -19,8 +19,8 @@ class Login extends Controller
     {
         //  dd($request);
             $validation =  Validator::make($request->all(), [
-                'phone' => 'unique:users,phone',
-                // 'email' => 'nullable|unique:users,email',
+                'phone' => 'nullable|unique:users,phone',
+                'email' => 'nullable|unique:users,email',
                 'password' => 'required|string',
 
             ]);
@@ -34,8 +34,8 @@ class Login extends Controller
         //     }
 
 
-            $user = User::where('phone', $request->phone)->first();
-            
+            $user = User::where('phone', $request->phone)->orWhere('email', $request->email)->first();
+             
             if (!$user) {
                 return redirect()->back()->withErrors(['Mobile number not registered!'])->withInput();
             }
@@ -46,10 +46,12 @@ class Login extends Controller
             // }
             
             $post_array  = $request->all();
-            $credentials = $request->only('phone', 'password');
-
-
-
+            if ($request->filled('phone')) {
+              $credentials = $request->only('phone', 'password');
+              } else {
+          $credentials = $request->only('email', 'password');
+               }
+            //   dd($credentials);
             if (Auth::attempt($credentials)) {
                 $request->session()->regenerate(); // ← Add this line
                 $user = Auth::user();

@@ -1775,13 +1775,13 @@
                                     </div>
                                     <div data-v-6b868a30="" class="rtw-text-16px">Mobile phone</div>
                                     <div class="van-cell van-field !tw-px-0 cell-after-full" data-v-6b868a30="">
-                                        <div class="van-field__left-icon">
-                                            <div class="tw-flex rtw-items-center"><span class="tw-pr-4px">+1</span><i
+                                        <div class="van-field__left-icon" id="phone_code" class="phone_code">
+                                            <div class="tw-flex rtw-items-center"><span class="tw-pr-4px"style="display: none;">+1</span><i
                                                     class="van-icon van-icon-arrow-down">
                                                     <!----></i></div>
                                         </div>
                                         <div class="van-cell__value van-cell__value--alone van-field__value">
-                                            <div class="van-field__body" id="phone_code">
+                                            <div class="van-field__body">
                                                 <input type="hidden" id="country-name" name="country" value="CANADA">
                                             <input type="hidden" id="dial-code" name="dialCode" value="1">
                                             <input type="hidden" id="country_iso" name="country_iso" value="CA">
@@ -1899,6 +1899,28 @@
             <!---->
         </div>
     </div>
+    <div class="van-popup van-popup--round van-popup--bottom" style="z-index: 2005; display: none" id="overlay"> 
+    <div class="tw-p-16px tw-overflow-hidden" style="z-index: 2010; display: none" id="popup">
+        <div class="tw-text-center tw-text-16px"> Choose an international phone area code </div>
+        <div class="van-cell van-field">
+            <div class="van-field__left-icon">
+                <i id="cancel" role="button" tabindex="0" class="van-icon van-icon-search"></i></div>
+            <div class="van-cell__value van-cell__value--alone van-field__value">
+                <div class="van-field__body">
+                    <input type="text" placeholder="Search area code"
+                        class="van-field__control"  id="country-search"autocomplete="off"></div>
+            </div>
+        </div>
+        <ul class="tw-h-32 tw-overflow-y-auto">
+            <div class="country-list" id="country-list"></div>
+           
+        </ul>
+        
+    </div>
+    <i role="button" tabindex="0"
+        class="van-icon van-icon-cross van-popup__close-icon van-popup__close-icon--top-right">
+       </i>
+    </div>
     <script src="/static/1756094289381/js/chunk-vendors.b893e1dd.js"></script>
     <script src="/static/1756094289381/js/app.5acd7986.js"></script>
     <!-- <div id="sqseobar2" class="sqseobar2-white sqseobar2-horizontal">
@@ -2009,14 +2031,13 @@
                 const $list = $('#country-list');
                 $list.empty();
                 filteredCountries.forEach(country => {
-                    $list.append(`
-                
-                                                <li data-v-a84105cc="" class="db">
-                    <div class="db" data-code="${country.code}" data-flag="${country.flag}">
-                        <span class="fi fi-${country.flag}"></span>
-                        ${country.name} (${country.code})
+                    $list.append(`           
+                     <li class="tw-h-42px tw-flex tw-items-center" id="country-list">
+                <div class="tw-w-24px tw-h-24px" data-code="${country.code}" data-flag="${country.flag}">
+                    <span class="fi fi-${country.flag}"></span>
                     </div>
-                    </li>
+                <div class="tw-h-full tw-flex-1 tw-flex tw-items-center van-hairline--bottom"> ${country.name} (${country.code}) </div>
+            </li>
                     
                 `);
                 });

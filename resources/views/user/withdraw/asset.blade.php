@@ -10,11 +10,11 @@
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-usdt-large"></use>
                                     </svg></div>
                                 <div data-v-6b868a30="" class="tw-text-12px tw-opacity-80"> Total Assets (USDT) </div>
-                                <div data-v-6b868a30="" class="tw-text-28px tw-font-bold"> 6.09 </div>
+                                <div data-v-6b868a30="" class="tw-text-28px tw-font-bold"> ${{ number_format(Auth::user()->available_balance(), 2) }} </div>
                                 <div data-v-6b868a30=""
                                     class="list tw-flex tw-justify-between tw-px-28px tw-py-16px tw-bg-white3 tw-bg-opacity-90 tw-rounded-8px">
                                     <div data-v-6b868a30="" class="item tw-flex-1 tw-px-4px tw-text-center">
-                                        <div data-v-6b868a30="" class="tw-text-primary tw-text-18px"> 6.09 </div>
+                                        <div data-v-6b868a30="" class="tw-text-primary tw-text-18px">  {{ number_format(Auth::user()->available_balance(), 2) }} </div>
                                         <div data-v-6b868a30="" class="name tw-text-12px tw-text-secondary"> Flexible
                                             Funds </div>
                                     </div>
@@ -24,7 +24,7 @@
                                             Funds </div>
                                     </div>
                                     <div data-v-6b868a30="" class="item tw-flex-1 tw-text-center">
-                                        <div data-v-6b868a30="" class="tw-text-dark tw-text-18px"> 0 </div>
+                                        <div data-v-6b868a30="" class="tw-text-dark tw-text-18px"> ${{number_format(Auth::user()->withdraw(),2)}} </div>
                                         <div data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> To Be Released
                                         </div>
                                     </div>
@@ -32,17 +32,17 @@
                             </div>
                             <div data-v-6b868a30=""
                                 class="tw-pt-28px tw-pb-12px tw-flex tw-justify-between tw-items-center tw-text-dark tw-bg-white3">
-                                <div data-v-6b868a30="" class="tw-flex-1 tw-flex tw-justify-center tw-items-center"><svg
-                                        data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
+                                <div data-v-6b868a30="" class="tw-flex-1 tw-flex tw-justify-center tw-items-center">
+                                <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                         style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-recharge"></use>
-                                    </svg><span data-v-6b868a30="" class="tw-pl-8px">Deposit</span></div>
+                                    </svg><a href="{{ route('user.invest') }}"><span data-v-6b868a30="" class="tw-pl-8px">Deposit</span></a></div>
                                 <div data-v-6b868a30=""
                                     class="tw-flex-1 tw-flex tw-justify-center tw-items-center van-hairline--left"><svg
                                         data-v-3f1a7394="" aria-hidden="true" class="svg-icon" data-v-6b868a30=""
                                         style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
                                         <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-withdraw"></use>
-                                    </svg><span data-v-6b868a30="" class="tw-pl-8px">Withdraw</span></div>
+                                    </svg><a href="{{ route('user.Withdraw') }}"><span data-v-6b868a30="" class="tw-pl-8px">Withdraw</span></a></div>
                             </div>
                         </div>
                         <div class="revenue" data-v-6b868a30="">

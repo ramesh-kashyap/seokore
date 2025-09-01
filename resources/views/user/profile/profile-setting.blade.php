@@ -1860,64 +1860,33 @@
                                     </button></div>
                             </div>
                         </div>
-                        <div data-v-6b868a30="" class="tw-mb-16px tw-p-16px tw-bg-white3 tw-rounded-10px">
-                            <ul data-v-6b868a30="" class="tw-flex tw-justify-between">
-                                <li data-v-6b868a30=""
-                                    class="tw-flex-1 tw-flex tw-flex-col tw-break-words tw-items-center">
-                                    <div data-v-6b868a30="" class="tw-flex tw-flex-col tw-items-center"><svg
-                                            data-v-3f1a7394="" aria-hidden="true" class="tw-mb-6px svg-icon" alt=""
-                                            data-v-6b868a30="" style="width: 1.224rem; height: 0.9412rem;">
-                                            <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-recharge-large">
-                                            </use>
-                                        </svg>
-                                        <a href="{{ route('user.deposit') }}">
-                                        <div data-v-6b868a30="" class="tw-text-12px tw-text-center tw-break-words">
-                                            Deposit </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li data-v-6b868a30=""
-                                    class="tw-flex-1 tw-flex tw-flex-col tw-break-words tw-items-center">
-                                    <div data-v-6b868a30="" class="tw-flex tw-flex-col tw-items-center"><svg
-                                            data-v-3f1a7394="" aria-hidden="true" class="tw-mb-6px svg-icon" alt=""
-                                            data-v-6b868a30="" style="width: 1.224rem; height: 0.9412rem;">
-                                            <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-order-list"></use>
-                                        </svg>
-                                        <a href="{{ route('user.Withdraw') }}">
-                                        <div data-v-6b868a30="" class="tw-text-12px tw-text-center tw-break-words">
-                                            WithDraw</div>
-                                             </a>
-                                    </div>
-                                </li>
-                                <li data-v-6b868a30=""
-                                    class="tw-flex-1 tw-flex tw-flex-col tw-break-words tw-items-center"><span
-                                        class="van-popover__wrapper" data-v-6b868a30="">
-                                        <div class="tw-flex tw-flex-col tw-items-center">
-                                            <svg data-v-3f1a7394=""
-                                                aria-hidden="true" class="tw-mb-6px svg-icon" alt=""
-                                                style="width: 1.224rem; height: 0.9412rem;">
-                                                <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-social"></use>
-                                            </svg>
-                                            
-                                            <a href="{{ route('user.terms') }}">
-                                            <div class="tw-text-12px tw-text-center tw-break-words"> Social Media </div>
-                                            </a>
-                                        </div>
-                                    </span></li>
-                                <li data-v-6b868a30=""
-                                    class="tw-flex-1 tw-flex tw-flex-col tw-break-words tw-items-center">
-                                    <div data-v-6b868a30="" class="tw-flex tw-flex-col tw-items-center"><svg
-                                            data-v-3f1a7394="" aria-hidden="true" class="tw-mb-6px svg-icon" alt=""
-                                            data-v-6b868a30="" style="width: 1.224rem; height: 0.9412rem;">
-                                            <use data-v-3f1a7394="" xlink:href="#svg-icon-colorful-team"></use>
-                                        </svg>
-                                        <a href="{{ route('user.level-team') }}">
-                                        <div data-v-6b868a30="" class="tw-text-12px tw-text-center tw-break-words"> Team
-                                            Members </div>
-    </a>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div data-v-6b868a30="" class="tw-mb-16px tw-p-16px  tw-rounded-10px">
+                           <div class="actions">
+                        <a href="{{ route('user.deposit') }}">
+                            <span >                                
+                                <img src="{{ asset('') }}static/icon/scanner.png" alt="">
+                                <p>Deposit</p>                                 
+                            </span>
+                            </a>
+                            <a href="{{ route('user.Withdraw') }}">
+                            <span>
+                                <img src="{{ asset('') }}static/icon/telegram.png" alt="">
+                                <p>Withdraw</p>
+                            </span>
+                            </a>
+                            <a href="{{ route('user.share') }}">
+                            <span>
+                                <img src="{{ asset('') }}static/icon/invite.png" alt="">
+                                <p>Invite</p>
+                            </span>
+</a>
+<a href="{{ route('user.about') }}">
+                            <span>
+                                <img src="{{ asset('') }}static/icon/support.png" alt="">
+                                <p>Help Center</p>
+                            </span>
+</a>
+                        </div> 
                         </div>
                         <div data-v-6b868a30="" class="tw-mb-16px tw-px-16px tw-pt-16px tw-bg-white3 tw-rounded-10px">
                             <div data-v-6b868a30="" class="tw-mb-12px tw-text-16px">Menu</div>

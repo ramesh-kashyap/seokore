@@ -8,9 +8,10 @@
                             class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
                             <div data-v-4bcdfc27="" data-v-6b868a30="" class="tw-flex tw-items-center"><img
                                     data-v-4bcdfc27="" data-v-6b868a30=""
-                                    src="http://seokore-all.s3.ap-southeast-1.amazonaws.com/upload/20241119/a374614d2b1d9d3b68ad00f1b2b38e68.jpeg"
-                                    alt="" class="tw-w-24px"><span data-v-4bcdfc27="" data-v-6b868a30=""
-                                    class="tw-pl-8px">USDT</span></div><i data-v-4bcdfc27="" data-v-6b868a30=""
+                                    src="{{ asset('') }}static/img/eth.png"
+                                    alt="" class="tw-w-24px">
+                                    <input data-v-4bcdfc27="" data-v-6b868a30=""type="text" value="USDT"
+                                    readonly="readonly" class="tw-pl-8px van-field__control1"></div><i data-v-4bcdfc27="" data-v-6b868a30=""
                                 class="van-icon van-icon-arrow" style="color: rgb(182, 188, 198);">
                                 <!----></i>
                         </div>
@@ -18,27 +19,28 @@
                             Network </div>
                         <div data-v-4bcdfc27="" data-v-6b868a30=""
                             class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
-                            <span data-v-4bcdfc27="" data-v-6b868a30="">TRC20</span><i data-v-4bcdfc27=""
+                            <input data-v-4bcdfc27="" data-v-6b868a30=""id="currencyId" class="tw-pl-8px van-field__control1" style="color:white;"
+                                    Value="BEP20" readonly type="text"><i data-v-4bcdfc27=""
                                 data-v-6b868a30="" class="van-icon van-icon-arrow" style="color: rgb(182, 188, 198);">
-                                <!----></i></div>
+                                </i></div>
                         <div data-v-4bcdfc27="" data-v-6b868a30=""
                             class="tw-mt-18px tw-mb-10px tw-pt-16px tw-text-14px tw-bg-white3 tw-rounded-10px">
                             <div data-v-4bcdfc27="" data-v-6b868a30=""
                                 class="tw-mx-auto tw-p-10px tw-w-180px tw-h-180px tw-flex tw-justify-center tw-items-center tw-border tw-border-solid tw-border-primary tw-border-opacity-20 tw-rounded-10px">
                                 <div data-v-4bcdfc27="" value="TF58GzEQpuZeyDFQ7Nx6AgFWt2iwbXgva7" level="H"
                                     background="#fff" foreground="#000" class="custom-qrcode" data-v-6b868a30=""><canvas
-                                        height="360" width="360" style="width: 240px; height: 240px;"></canvas></div>
+                                        height="360" width="360" style="width: 240px; height: 240px;"><img alt="Scan me!"
+                                        src="" id="qrCodeImage"></canvas></div>
                             </div>
                             <div data-v-4bcdfc27="" data-v-6b868a30="" class="tw-mt-16px tw-p-16px">
                                 <div data-v-4bcdfc27="" data-v-6b868a30="" class="tw-text-14px tw-text-secondary">
                                     Deposit Address </div>
                                 <div data-v-4bcdfc27="" data-v-6b868a30="" class="tw-flex tw-items-center">
                                     <div data-v-4bcdfc27="" data-v-6b868a30=""
-                                        class="tw-flex-1 break tw-break-words tw-text-16px">
-                                        TF58GzEQpuZeyDFQ7Nx6AgFWt2iwbXgva7 </div>
+                                        class="tw-flex-1 break tw-break-words tw-text-16px" id="depositAddressDiv">
+                                        TF58GzEQpuZeyDFQ7Nx6AgFW</div>
                                     <div data-v-4bcdfc27="" data-v-6b868a30=""><img data-v-4bcdfc27=""
-                                            data-v-6b868a30=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAcCAYAAAB75n/uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFKSURBVHgB7VbbUYRAEOzeolT84jK4ECCDMwNTMAMukiMDUzgj0AwwgyMD+ZIrPhh3eChnuedSBZYf118LDNO7M729S5zBTVqtSTwSEgOM4Akh99LI9piFBc8lN5R8SuJTsGxEksD12RjuIOiTSynCV3jlxdrOem3/iXT1TgKI3Pej4krCpMxYwgNR+hbVvD7oygnGxAII0+rZzn6jY4OF0ZZoDrW4YsygFlurzVTF0PbJkLnmcMUEc6nFvrn7kWAutbjiPpsslsA3uaLMVqPVSvQrwVK4EFwI/iFBlNo9Qd3hHQLMjJrVgb2nicjTAiXil6+B6QIEmhgvjTBRG5+9RO+729X4+S9UJK2DquW2CvDEd7W4EKjldge0WH8/5uG2KuCBGlU8VoubAHiwZ/FwwepPKR8MF5JOLa4oo53WjttZ7DEJp2pxRX0A2+ya0pEWCCoAAAAASUVORK5CYII="
+                                            data-v-6b868a30="" src="{{ asset('') }}static/img/copy.png" id="qrCodeImage"
                                             alt="" class="tw-w-16px tw-h-16px"></div>
                                 </div>
                             </div>
@@ -87,9 +89,137 @@
             <!---->
         </div>
     </div>
-    <script src="/static/1756094289381/js/chunk-vendors.b893e1dd.js"></script>
-    <script src="/static/1756094289381/js/app.5acd7986.js"></script>
-    <!---->
+   <script>
+        document.querySelector('.copy-btn').addEventListener('click', function() {
+            let copyText = document.getElementById('depositAddressDiv').innerText.trim();
+
+            navigator.clipboard.writeText(copyText).then(function() {
+                let toast = document.querySelector('.van-toast');
+                toast.style.display = 'block'; // Show the toast
+
+                // Hide after 3 seconds
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, 3000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    </script>
+    <script>
+        let selectedCoin = null;
+
+        function selectChain(element) {
+            // Remove previous selections
+            document.querySelectorAll('.chains .item').forEach(item => {
+                item.classList.remove('on');
+                const check = item.querySelector('.check');
+                if (check) check.style.display = 'none';
+            });
+
+            // Mark selected item
+            element.classList.add('on');
+            const check = element.querySelector('.check');
+            if (check) check.style.display = 'block';
+
+            // Save selected coin from attribute
+            selectedCoin = element.getAttribute('data-coin');
+        }
+
+        function confirmSelectedChain() {
+            if (!selectedCoin) {
+                alert("Please select a network first.");
+                return;
+            }
+
+            // Call API
+
+            if (selectedCoin == "USDT_BSC") {
+                document.getElementById('currencyImg').src =
+                    "https://tux-all.s3.ap-southeast-1.amazonaws.com/upload/20240723/284411f22a828b42a327a5a8586fae88.png";
+                document.getElementById('currencyId').value = "BEP20";
+            } else {
+                document.getElementById('currencyImg').src =
+                    "https://tux-all.s3.ap-southeast-1.amazonaws.com/upload/20240723/bcabd0a39b535b0c04e14dc6b5f16bdd.png";
+                document.getElementById('currencyId').value = "TRC20";
+            }
+
+
+
+            document.getElementById('popupBox').style.display = 'none';
+            document.getElementById('global-loading').style.display = 'block';
+
+
+            fetch(`/user/get-address-details/${selectedCoin}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log("API Response:", data); // Add this log
+
+                    if (data.success) {
+                        document.getElementById('global-loading').style.display = 'none';
+                        document.getElementById('qrCodeImage').src = data.qr;
+                        document.getElementById('depositAddressDiv').innerText = data.address;
+                    } else {
+                        alert(data.message || 'Failed to get address');
+                        document.getElementById('global-loading').style.display = 'none';
+                    }
+                })
+                .catch(error => {
+                    console.error("Fetch error:", error);
+                    document.getElementById('global-loading').style.display = 'none';
+                });
+        }
+    </script>
+    <script>
+        function showPopup() {
+            document.getElementById('popupBox').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('popupBox').style.display = 'none';
+        }
+
+        function changeTab(type) {
+            const h2 = document.getElementById('networkText');
+            const tabs = document.querySelectorAll('.van-tab');
+
+            tabs.forEach(tab => tab.classList.remove('van-tab--active'));
+
+            if (type === 'usdt') {
+                h2.textContent = 'USDT(BEP20)';
+                tabs[0].classList.add('van-tab--active');
+            } else if (type === 'usdc') {
+                h2.textContent = 'USDT(TRC20)';
+                tabs[1].classList.add('van-tab--active');
+            }
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            // 禁用双指放大
+            document.addEventListener("touchstart", function(event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            // 禁用双击放大
+            let lastTouchEnd = 0;
+            document.addEventListener(
+                "touchend",
+                function(event) {
+                    const now = new Date().getTime();
+                    if (now - lastTouchEnd <= 300) {
+                        event.preventDefault();
+                    }
+                    lastTouchEnd = now;
+                },
+                false
+            );
+            document.addEventListener("gesturestart", function(event) {
+                event.preventDefault();
+            });
+        };
+    </script>
 </body>
 
 </html>
