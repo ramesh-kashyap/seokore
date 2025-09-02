@@ -1850,15 +1850,17 @@
                                             alt=""></div><span data-v-6b868a30=""
                                         class="tw-pl-8px tw-text-16px tw-text-white"> SK 0 </span>
                                 </div>
-                                <div data-v-6b868a30="" class="level-btn"><button data-v-6b868a30=""
+                                <div data-v-6b868a30="" class="level-btn">
+                                    <button data-v-6b868a30="" {{route('user.vip')}}
                                         class="tw-w-8 van-button van-button--default1 van-button--mini van-button--round">
                                         <div data-v-6b868a30="" class="van-button__content">
-                                            <a href="{{ route('user.vip') }}">
+                                           <a href="{{route('user.vip')}}">
                                             <span data-v-6b868a30=""
                                                 class="van-button__text"> Upgrade </span>
                                             </a>
                                             </div>
-                                    </button></div>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div data-v-6b868a30="" class="tw-mb-16px tw-p-16px  tw-rounded-10px">

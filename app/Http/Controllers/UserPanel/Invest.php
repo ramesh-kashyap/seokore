@@ -782,6 +782,51 @@ class Invest extends Controller
 
 
 
+           $balance = Auth::user()->available_balance();
+            $levels = [];
+            $currentLevelIds = collect([$user->id]);
+            for($i=1; $i<=3; $i++){
+               $currentLevelIds = User::whereIn('sponsor', $currentLevelIds)->where('active_status', 'Active')->pluck('id');
+                $levels["level{$i}Count"] = $currentLevelIds->count();
+            }
+            $levelACount = $levels['level1Count']; // Direct (A)
+            $levelBCount = $levels['level2Count']; // Under A (B)
+            $levelCCount = $levels['level3Count'] + $levels['level2Count'];  
+            $this->data['balance']     = $balance;
+            $this->data['levelACount'] = $levelACount;
+            $this->data['levelBCount'] = $levelBCount;
+            $this->data['levelCCount'] = $levelCCount;
+    switch (true) {
+    case ($balance >= 50000 && $levelACount > 100 && $levelCCount > 300):
+        $qualifiedLevel = "EQ6"; $earning = "4.1%-4.3%";
+        break;
+    case ($balance >= 20000 && $levelACount > 80 && $levelCCount > 200):
+        $qualifiedLevel = "EQ5"; $earning = "3.7%-3.9%";
+        break;
+    case ($balance >= 5000 && $levelACount > 50 && $levelCCount > 100):
+        $qualifiedLevel = "EQ4"; $earning = "3.2%-3.5%";
+        break;
+    case ($balance >= 2000 && $levelACount > 30 && $levelCCount > 60):
+        $qualifiedLevel = "EQ3"; $earning = "2.7%-3.0%";
+        break;
+    case ($balance >= 500 && $levelACount > 20 && $levelCCount > 40):
+        $qualifiedLevel = "EQ2"; $earning = "2.3%-2.5%";
+        break;
+    case ($balance >= 50 && $levelACount > 10 && $levelCCount > 20):
+        $qualifiedLevel = "EQ1"; $earning = "2.0%-2.1%";
+        break;
+    case ($balance >= 1 && $levelACount > 5 && $levelCCount > 10):
+        $qualifiedLevel = "EQ0"; $earning = "1.5%-1.7%";
+        break;
+    default:
+        $qualifiedLevel = "EQ0"; $earning = "1.5%-1.7%";
+}
+
+
+// Pass to view
+     $this->data['qualifiedLevel'] = $qualifiedLevel;
+     $this->data['earning'] = $earning;
+
 
     $this->data['gen_team1total'] = $gen_team1->count();
     $this->data['active_gen_team1total'] = $gen_team1->where('active_status', 'Active')->count();
@@ -905,6 +950,21 @@ class Invest extends Controller
   public function vip(Request $request)
   {
 
+            $user=Auth::user();
+            $level = [];
+            $currentLevelIds = collect([$user->id]);
+            for($i=1; $i<=3; $i++){
+               $currentLevelIds = User::whereIn('sponsor', $currentLevelIds)->where('active_status', 'Active')->pluck('id');
+                $levels["level{$i}Count"] = $currentLevelIds->count();
+            }
+            $this->data['levelACount'] = $levels['level1Count']; // Direct (A)
+            $this->data['levelBCount'] = $levels['level2Count']; // Under A (B)
+            $this->data['levelCCount'] = $levels['level3Count'] + $levels['level2Count'];
+            $this->data['user'] = $user;
+            $this->data['myRank'] = $user->rank;
+            $this->data['page'] = 'user.invest.vip';
+            return $this->dashboard_layout();
+        }
     $user = Auth::user();
 
     $userDirect = User::where('sponsor', $user->id)->where('active_status', 'Active')->where('package', '>=', 30)->count();
