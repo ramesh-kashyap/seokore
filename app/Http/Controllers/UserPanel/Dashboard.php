@@ -408,8 +408,6 @@ class Dashboard extends Controller
 
     \DB::table('users')->where('id', $userID)->update(['last_trade' => now()]);
 // }
-
-
     $currentDateTime = now();
     $baseInsert = [
         'user_id' => $userID,
