@@ -15,7 +15,7 @@
     <meta name="renderer" content="webkit">
     <meta name="robots" content="noindex, nofollow">
     <script>
-        window.addEventListener('error', function (event) {
+        window.addEventListener('error', function(event) {
             if (event.message.indexOf("Unexpected token '<'") > -1) {
                 location.reload();
             }
@@ -25,7 +25,7 @@
                 remotes = false;
             document.addEventListener(
                 'click',
-                function (event) {
+                function(event) {
                     noddy = event.target;
                     while (noddy.nodeName !== 'A' && noddy.nodeName !== 'HTML') {
                         noddy = noddy.parentNode;
@@ -1730,23 +1730,23 @@
                     style="background-color: rgb(255 255 255 / 0%)">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center">
                         <a href="{{ route('user.profile') }}">
-                        <img data-v-6b868a30="" src="{{ asset('static/img/5.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            <img data-v-6b868a30="" src="{{ asset('static/img/5.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         </a>
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
                         style="color: rgb(24, 25, 28);">
-                           <img src="{{ asset('') }}y1.png" alt="" class="svg-icon">
+                        <img src="{{ asset('') }}y1.png" alt="" class="svg-icon">
                     </div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
                         <a href="{{ route('user.lang') }}">
-                        <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         </a>
                         <a href="{{ route('user.dashboard') }}">
-                        <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            <img data-v-6b868a30="" src="{{ asset('static/icon/langu.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         </a>
                         <div>
                             <a href="{{ route('user.notice') }}">
-                            <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                                <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             </a>
                         </div>
                         <!---->

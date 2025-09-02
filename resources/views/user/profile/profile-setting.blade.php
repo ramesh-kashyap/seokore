@@ -1807,6 +1807,7 @@
                         <!---->
                     </div>
                 </div>
+
             </div>
             <div data-v-6b868a30="" id="scroll" class="content-container">
                 <div data-v-6b868a30="" id="content" class="content-scroll">
@@ -1826,7 +1827,7 @@
                                                 data-v-6b868a30="">
                                                 <svg data-v-3f1a7394="" aria-hidden="true"
                                                     class="svg-icon" data-v-6b868a30=""
-                                                    style="color: rgb(23, 114, 248); width: 0.2824rem; height: 0.2824rem; font-size: 0.2824rem;" onclick="copyById('code')">
+                                                    style="color: rgba(255, 255, 255, 1); width: 0.2824rem; height: 0.2824rem; font-size: 0.2824rem;" onclick="copyById('code')">
                                                     <use data-v-3f1a7394="" xlink:href="#svg-icon-copy" ></use>
                                                 </svg></span></div>
                                         <div data-v-6b868a30="" class="tw-text-12px"><span data-v-6b868a30=""

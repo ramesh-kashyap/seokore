@@ -1835,7 +1835,7 @@
                                     <div data-v-6b868a30=""  onclick="copyById('link')">
                                         <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                                             data-v-6b868a30=""
-                                            style="color: rgb(10, 113, 247); width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
+                                            style="color: rgba(255, 255, 255, 1); width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                             <use data-v-3f1a7394="" xlink:href="#svg-icon-copy-line" ></use>
                                         </svg></div>
                                 </div>
@@ -1850,7 +1850,7 @@
                                     <div data-v-6b868a30="" onclick="copyById('code')"> 
                                         <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon" 
                                             data-v-6b868a30=""
-                                            style="color: rgb(10, 113, 247); width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
+                                            style="color: rgba(255, 255, 255, 1); width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
                                             <use data-v-3f1a7394="" xlink:href="#svg-icon-copy-line"></use>
                                         </svg></div>
                                 </div>

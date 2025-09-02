@@ -1746,7 +1746,7 @@
                     <div data-v-6b868a30="" class="page-auth-container tw-h-full tw-p-20px">
                         <div data-v-6b868a30=""
                             class="page-auth-header tw-relative tw-z-10 tw-mb-20px tw-flex tw-items-center"><img
-                                data-v-6b868a30="" src="{{ asset('') }}static/img/logo.41d208eb.svg" alt=""
+                                data-v-6b868a30="" src="{{ asset('/2.png') }}" alt=""
                                 class="tw-w-64px tw-h-64px">
                             <div data-v-6b868a30="" class="tw-pl-12px tw-flex-1">
                                 <div data-v-6b868a30="" class="tw-mb-6px tw-text-24px">Hello,</div>

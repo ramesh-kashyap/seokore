@@ -1782,13 +1782,13 @@
                     style="background-color: transparent;">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center"><svg data-v-3f1a7394="" aria-hidden="true"
                             class="svg-icon"
-                            style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             <use data-v-3f1a7394="" xlink:href="#svg-icon-arrow-back"></use>
                         </svg>
                         <!---->
                     </div>
                     <div class="tw-flex-1 tw-h-full tw-flex tw-justify-center tw-items-center tw-text-16px van-ellipsis"
-                        style="color: rgb(24, 25, 28);"><span>Platform Introduction</span></div>
+                        style="color: rgba(255, 255, 255, 1);"><span>Platform Introduction</span></div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px"><svg
                             data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
                             style="color: rgb(24, 25, 28); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
@@ -1807,7 +1807,7 @@
             <div data-v-6b868a30="" id="scroll" class="content-container">
                 <div data-v-6b868a30="" id="content" class="content-scroll">
                     <div data-v-6b868a30="" class="tw-min-h-full tw-p-16px">
-                        <div data-v-6b868a30="" class="tw-p-16px tw-bg-white tw-rounded-10px">
+                        <div data-v-6b868a30="" class="tw-p-16px tw-bg-white3 tw-rounded-10px">
                             <p>SEOKORE Founding Information</p>
 
                             <p><br>

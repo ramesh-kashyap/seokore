@@ -1299,6 +1299,7 @@ input::placeholder {
 }
 
 .tw-p-10px {
+        margin-bottom: 15px;
     padding: .26667rem
 }
 
