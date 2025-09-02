@@ -15,7 +15,7 @@
     <meta name="renderer" content="webkit">
     <meta name="robots" content="noindex, nofollow">
     <script>
-        window.addEventListener('error', function (event) {
+        window.addEventListener('error', function(event) {
             if (event.message.indexOf("Unexpected token '<'") > -1) {
                 location.reload();
             }
@@ -25,7 +25,7 @@
                 remotes = false;
             document.addEventListener(
                 'click',
-                function (event) {
+                function(event) {
                     noddy = event.target;
                     while (noddy.nodeName !== 'A' && noddy.nodeName !== 'HTML') {
                         noddy = noddy.parentNode;
@@ -1730,11 +1730,11 @@
                     style="background-color: transparent;">
                     <div class="tw-w-44px tw-h-full tw-flex tw-items-center">
                         <a href="{{ route('user.profile') }}">
-                        <svg data-v-3f1a7394="" aria-hidden="true"
-                            class="svg-icon"
-                            style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
-                            <use data-v-3f1a7394="" xlink:href="#svg-icon-arrow-back"></use>
-                        </svg>
+                            <svg data-v-3f1a7394="" aria-hidden="true"
+                                class="svg-icon"
+                                style="color: rgba(255, 255, 255, 1); width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                                <use data-v-3f1a7394="" xlink:href="#svg-icon-arrow-back"></use>
+                            </svg>
                         </a>
                         <!---->
                     </div>
@@ -1742,12 +1742,12 @@
                         style="color: rgba(255, 255, 255, 1);"><span>Withdrawal</span></div>
                     <div class="tw-h-full tw-min-w-44px tw-flex tw-justify-end tw-items-center tw-gap-12px">
                         <a href="{{ route('user.lang') }}">
-                        <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                            <img data-v-6b868a30="" src="{{ asset('static/icon/lang.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                         </a>
                         <!---->
-                         <div>
+                        <div>
                             <a href="{{ route('user.notice') }}">
-                            <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
+                                <img data-v-6b868a30="" src="{{ asset('static/img/111.png') }}" alt="" class="svg-icon" style=" width: 0.4706rem; height: 0.4706rem; font-size: 0.4706rem;">
                             </a>
                         </div>
                         <!---->
@@ -1757,170 +1757,190 @@
             </div>
             <div data-v-6b868a30="" id="scroll" class="content-container">
                 <div data-v-6b868a30="" id="content" class="content-scroll">
-                    <form action="{{ route('user.Withdraw-Request') }}" methode="post"data-v-7daccefc="" id="scroll">
-                {{ csrf_field() }}
-                    <div data-v-6b868a30="" class="page-withdraw tw-min-h-full tw-p-16px">
-                        <div data-v-6b868a30="" class="tw-mb-10px tw-text-14px">Select Currency</div>
-                        <div data-v-6b868a30=""
-                            class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
-                            <div data-v-6b868a30="" class="tw-flex tw-items-center"><img data-v-6b868a30=""
-                                    src="{{asset('/static/img/usdt.png')}}"
-                                    alt="" class="tw-w-24px">
+                    <form action="{{ route('user.Withdraw-Request') }}" methode="post" data-v-7daccefc="" id="scroll">
+                        {{ csrf_field() }}
+                        <div data-v-6b868a30="" class="page-withdraw tw-min-h-full tw-p-16px">
+                            <div data-v-6b868a30="" class="tw-mb-10px tw-text-14px">Select Currency</div>
+                            <div data-v-6b868a30=""
+                                class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
+                                <div data-v-6b868a30="" class="tw-flex tw-items-center"><img data-v-6b868a30=""
+                                        src="{{asset('/static/img/usdt.png')}}"
+                                        alt="" class="tw-w-24px">
                                     <input data-v-6b868a30="" class="tw-pl-8px van-field__control1" value="USDT" readonly="readonly" type="text">
-                            </div><i data-v-6b868a30="" class="van-icon van-icon-arrow"
-                                style="color: rgb(182, 188, 198);">
-                                <!----></i>
-                        </div>
-                        <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Select Network </div>
-                        <div data-v-6b868a30=""
-                            class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
-                            <input data-v-6b868a30="" value="BEP20" id="currencyId" class="tw-pl-8px van-field__control1" name="paymentMode"><i data-v-6b868a30="" class="van-icon van-icon-arrow"
-                                style="color: rgb(182, 188, 198);">
-                                <!----></i></div>
-                        <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Address </div>
-                        <div class="tw-rounded-10px van-cell1 van-field" data-v-6b868a30="">
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body">
-                                    <input type="text" readonly="readonly" id="walletAddress" value="{{ Auth::user()->usdtBep20 }}"
-                                        name="walletAddress" class="van-field__control" style="color:#fff">
-                                    <div class="van-field__right-icon"><svg data-v-3f1a7394="" aria-hidden="true"
-                                            class="svg-icon"
-                                            style="width: 0.5647rem; height: 0.5647rem; font-size: 0.5647rem;">
-                                            <a href="{{route('user.wallets')}}"> 
-                                            <use data-v-3f1a7394="" xlink:href="#svg-icon-address-book"></use>
-                                             </a>
-                                        </svg></div>
-                                </div>
+                                </div><i data-v-6b868a30="" class="van-icon van-icon-arrow"
+                                    style="color: rgb(182, 188, 198);">
+                                    <!----></i>
                             </div>
-                        </div>
-                        <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Amount </div>
-                        <div class="1 van-field tw-rounded-10px" data-v-6b868a30="">
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body"><input type="text" min="20" name="amount" inputmode="decimal"
-                                        placeholder="Please enter the withdrawal amount" class="van-field__control">
-                                    <div class="van-field__right-icon">
-                                        <div class="tw-text-primary"> All </div>
+                            <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Select Network </div>
+                            <!-- <div data-v-6b868a30=""
+                                class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
+                                <input data-v-6b868a30="" value="BEP20" id="currencyId" class="tw-pl-8px van-field__control1" name="paymentMode"><i data-v-6b868a30="" class="van-icon van-icon-arrow"
+                                    style="color: rgb(182, 188, 198);">
+                                    </i>
+                            </div> -->
+                            <div class="tw-h-44px tw-px-14px tw-flex tw-justify-between tw-items-center tw-bg-white3 tw-rounded-10px">
+                                <select id="currencyId" class="tw-pl-8px van-field__control1" name="paymentMode">
+                                    <option value="bep20">BEP20</option>
+                                    <option value="trc20">TRC20</option>
+                                </select>
+                            </div>
+
+
+
+
+
+                            <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Address </div>
+                            <div class="tw-rounded-10px van-cell1 van-field" data-v-6b868a30="">
+                                <div class="van-cell__value van-cell__value--alone van-field__value">
+                                    <div class="van-field__body">
+                                        <p id="walletAddress" style="color: white; font-size: 12px; margin-top: 10px;"></p>
+                                        <input type="hidden" id="walletAddressInput" name="walletAddress" required>
+
+
+                                        <div class="van-field__right-icon" onclick="copyWallet()"> <svg data-v-3f1a7394="" aria-hidden="true" class="svg-icon"
+                                                data-v-6b868a30=""
+                                                style="color: rgba(255, 255, 255, 1); width: 0.6118rem; height: 0.6118rem; font-size: 0.6118rem;">
+                                                <use data-v-3f1a7394="" xlink:href="#svg-icon-copy-line"></use>
+                                            </svg></div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div data-v-6b868a30=""
-                            class="tw-mb-16px tw-p-14px tw-h-38px tw-flex tw-justify-between tw-items-center tw-bg-secondary tw-bg-opacity-10 tw-rounded-bl-10px tw-rounded-br-10px">
-                            <span data-v-6b868a30="" class="tw-text-secondary">Arrival Amount</span><span
-                                data-v-6b868a30="" class="tw-text-success"> {{ number_format(Auth::user()->available_balance(), 2) }}  USDT </span></div>
-                         <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Address </div>
-                        <div class="tw-rounded-10px van-cell1 van-field tw-mb-16px" data-v-6b868a30="">
-                            <div class="van-cell__value van-cell__value--alone van-field__value">
-                                <div class="van-field__body">
-                                    <input type="hidden" name="" id="emailId" value="{{ Auth::user()->email }}">
-                                    <input type="text" readonly="readonly"  name="code"
-                                        placeholder="Please enter the verfication code" class="van-field__control">
-                                    <div class="code-btn  van-field__right-icon">
-                                            Send Code</div>
+                            <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Amount </div>
+
+                            <div class="tw-rounded-10px van-cell1 van-field" data-v-6b868a30="">
+                                <div class="van-cell__value van-cell__value--alone van-field__value">
+                                    <div class="van-field__body">
+                                        <input type="text" min="20" name="amount" inputmode="decimal" placeholder="Please enter the withdrawal amount"
+                                            class="van-field__control" style="color:#fff">
+                                        <div class="van-field__right-icon"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
-                        <?php
-                        
-                        $quantifiable_count = 0;
-                        
-                        $min_withdrawal = 10;
-                        $maximum_withdrawal = 50000;
-                        $chargeAmt = 10;
-                        
-                        if ($balance >= 30 && $balance <= 499) {
-                            // Basic range: small balance, any user
+                            <div data-v-6b868a30=""
+                                class="tw-mb-16px tw-p-14px tw-h-38px tw-flex tw-justify-between tw-items-center tw-bg-secondary tw-bg-opacity-10 tw-rounded-bl-10px tw-rounded-br-10px">
+                                <span data-v-6b868a30="" class="tw-text-secondary">Arrival Amount</span><span
+                                    data-v-6b868a30="" class="tw-text-success"> {{ number_format(Auth::user()->available_balance(), 2) }} USDT </span>
+                            </div>
+                            <div data-v-6b868a30="" class="tw-mt-18px tw-mb-10px tw-text-14px"> Withdrawal Address </div>
+                            <div class="tw-rounded-10px van-cell1 van-field tw-mb-16px" data-v-6b868a30="">
+                                <div class="van-cell__value van-cell__value--alone van-field__value">
+                                    <div class="van-field__body">
+                                        <input type="hidden" id="emailId" value="{{ Auth::user()->email }}">
+
+                                        <input type="text" name="code" style="color:#fff"
+                                            placeholder="Please enter the verification code" class="van-field__control">
+
+                                        <div class="code-btn van-field__right-icon">
+                                            Send Code
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <?php
+
+                            $quantifiable_count = 0;
+
                             $min_withdrawal = 10;
-                        } elseif ($balance >= 500 && $balance <= 2999 && $userDirect >= 5) {
-                            // Mid range: requires 5 direct referrals
-                            $min_withdrawal = 30;
-                        } elseif ($balance >= 3000 && $userDirect >= 10) {
-                            // High range: requires 10 direct referrals
-                            $min_withdrawal = 50;
-                            $maximum_withdrawal = 100000;
-                        }
-                        
-                        ?>
-                          <input type="hidden" id="chargeAmt" value="{{$chargeAmt}}">
-                          <input type="hidden" id="min_withdrawal" value="{{$min_withdrawal}}">
-                          <input type="hidden" id="max_withdrawal" value="{{$maximum_withdrawal}}">       
-                        <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
-                                data-v-6b868a30="" class="tw-text-secondary"> Withdraw Process Fee {{ $chargeAmt }} % </span><span
-                                data-v-6b868a30="">0 USDT</span></div>
-                        <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
-                                data-v-6b868a30="" class="tw-text-secondary"> Days to Free Withdrawal </span>
-                            <!---->
-                            <!---->
-                            <div data-v-6b868a30=""> 21 days </div>
-                            <!---->
-                        </div>
-                        <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
-                                data-v-6b868a30="" class="tw-text-secondary"> Minimum Withdrawal Amount </span><span
-                                data-v-6b868a30="">{{ $min_withdrawal }} USDT</span></div>
-                        <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
-                                data-v-6b868a30="" class="tw-text-secondary"> Maximum Withdrawal Amount </span><span
-                                data-v-6b868a30="">{{ $maximum_withdrawal }} USDT</span></div>
-                        <div data-v-6b868a30=""
-                            class="tw-mt-18px tw-mb-24px tw-p-14px tw-text-14px tw-bg-white3 tw-rounded-10px">
-                            <div data-v-6b868a30="" class="tw-flex tw-items-center"><i data-v-6b868a30=""
-                                    class="tw-text-20px van-icon van-icon-warning" style="color: rgba(211, 255, 231, 1);">
-                                    <!----></i><span data-v-6b868a30="" class="tw-text-primary tw-pl-8px"> Note </span>
-                            </div>
-                            <div data-v-6b868a30="" class="tw-text-14px tw-text-secondary tw-mt-8px">
-                                <p>1. The estimated processing time for each withdrawal is a maximum of 72 hours on
-                                    working days (Monday to Friday), weekends are not included. </p>
+                            $maximum_withdrawal = 50000;
+                            $chargeAmt = 10;
 
-                                <p>2. After becoming an active user and not withdrawing money for at least 21
-                                    consecutive calendar days, you can enjoy one fee-free withdrawal. </p>
+                            if ($balance >= 30 && $balance <= 499) {
+                                // Basic range: small balance, any user
+                                $min_withdrawal = 10;
+                            } elseif ($balance >= 500 && $balance <= 2999 && $userDirect >= 5) {
+                                // Mid range: requires 5 direct referrals
+                                $min_withdrawal = 30;
+                            } elseif ($balance >= 3000 && $userDirect >= 10) {
+                                // High range: requires 10 direct referrals
+                                $min_withdrawal = 50;
+                                $maximum_withdrawal = 100000;
+                            }
 
-                                <p>3. If you apply for a withdrawal after obtaining the right to withdraw without fees,
-                                    but cancel the withdrawal voluntarily, it will be deemed that you have lost the
-                                    opportunity to withdraw without fees, and the 21-day period will start again. </p>
-
-                                <p>4. The withdrawal format password can only be any 6-digit combination of 0-9, and no
-                                    symbols or letters can be entered. </p>
-
-                                <p>5. After changing the login password, transaction password, and digital currency
-                                    wallet address, the fund protection status must wait 48 hours before you can apply
-                                    for withdrawal. </p>
-
-                                <p>6. You can only use flexible funds to apply for cash withdrawal. If the flexible
-                                    funds are insufficient, please wait for the "pending release" funds to become
-                                    "flexible funds" before withdrawing money. </p>
-                            </div>
-                        </div>'
-                        <?php 
-                              date_default_timezone_set("Asia/Kolkata");   //India time (GMT+5:30)
-                              
-                            
-                                $date1 = Auth::user()->adate;
-                                $date1 = strtotime($date1);
-                                $date1 = strtotime(" + 4 day", $date1);
-                                $new_date1= date('Y-m-d H:i:s', $date1);    
-                            
-
-                            
                             ?>
-                               @if(date("Y-m-d H:i:s") > $new_date1) 
-                              
-                        <button data-v-6b868a30="" type="submit"
-                            class="van-button van-button--primary van-button--normal van-button--block">
-                            <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
-                                    class="van-button__text"> Confirm </span></div>
-                        </button>
-                         @else
-                         <button data-v-6b868a30="" type="button" disabled=""
-                            class="van-button van-button--primary van-button--normal van-button--block">
-                            <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
-                                    class="van-button__text"> Confirm </span></div>
-                        </button>
-                        @endif 
-                    </div>
-                     </form>
+                            <input type="hidden" id="chargeAmt" value="{{$chargeAmt}}">
+                            <input type="hidden" id="min_withdrawal" value="{{$min_withdrawal}}">
+                            <input type="hidden" id="max_withdrawal" value="{{$maximum_withdrawal}}">
+                            <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
+                                    data-v-6b868a30="" class="tw-text-secondary"> Withdraw Process Fee {{ $chargeAmt }} % </span><span
+                                    data-v-6b868a30="">0 USDT</span></div>
+                            <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
+                                    data-v-6b868a30="" class="tw-text-secondary"> Days to Free Withdrawal </span>
+                                <!---->
+                                <!---->
+                                <div data-v-6b868a30=""> 21 days </div>
+                                <!---->
+                            </div>
+                            <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
+                                    data-v-6b868a30="" class="tw-text-secondary"> Minimum Withdrawal Amount </span><span
+                                    data-v-6b868a30="">{{ $min_withdrawal }} USDT</span></div>
+                            <div data-v-6b868a30="" class="tw-mb-12px tw-flex tw-justify-between tw-items-center"><span
+                                    data-v-6b868a30="" class="tw-text-secondary"> Maximum Withdrawal Amount </span><span
+                                    data-v-6b868a30="">{{ $maximum_withdrawal }} USDT</span></div>
+                            <div data-v-6b868a30=""
+                                class="tw-mt-18px tw-mb-24px tw-p-14px tw-text-14px tw-bg-white3 tw-rounded-10px">
+                                <div data-v-6b868a30="" class="tw-flex tw-items-center"><i data-v-6b868a30=""
+                                        class="tw-text-20px van-icon van-icon-warning" style="color: rgba(211, 255, 231, 1);">
+                                        <!----></i><span data-v-6b868a30="" class="tw-text-primary tw-pl-8px"> Note </span>
+                                </div>
+                                <div data-v-6b868a30="" class="tw-text-14px tw-text-secondary tw-mt-8px">
+                                    <p>1. The estimated processing time for each withdrawal is a maximum of 72 hours on
+                                        working days (Monday to Friday), weekends are not included. </p>
+
+                                    <p>2. After becoming an active user and not withdrawing money for at least 21
+                                        consecutive calendar days, you can enjoy one fee-free withdrawal. </p>
+
+                                    <p>3. If you apply for a withdrawal after obtaining the right to withdraw without fees,
+                                        but cancel the withdrawal voluntarily, it will be deemed that you have lost the
+                                        opportunity to withdraw without fees, and the 21-day period will start again. </p>
+
+                                    <p>4. The withdrawal format password can only be any 6-digit combination of 0-9, and no
+                                        symbols or letters can be entered. </p>
+
+                                    <p>5. After changing the login password, transaction password, and digital currency
+                                        wallet address, the fund protection status must wait 48 hours before you can apply
+                                        for withdrawal. </p>
+
+                                    <p>6. You can only use flexible funds to apply for cash withdrawal. If the flexible
+                                        funds are insufficient, please wait for the "pending release" funds to become
+                                        "flexible funds" before withdrawing money. </p>
+                                </div>
+                            </div>'
+                            <?php
+                            date_default_timezone_set("Asia/Kolkata");   //India time (GMT+5:30)
+
+
+                            $date1 = Auth::user()->adate;
+                            $date1 = strtotime($date1);
+                            $date1 = strtotime(" + 4 day", $date1);
+                            $new_date1 = date('Y-m-d H:i:s', $date1);
+
+
+
+                            ?>
+                            @if(date("Y-m-d H:i:s") > $new_date1)
+
+                            <button data-v-6b868a30="" type="submit"
+                                class="van-button van-button--primary van-button--normal van-button--block">
+                                <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
+                                        class="van-button__text"> Confirm </span></div>
+                            </button>
+                            @else
+                            <button data-v-6b868a30="" type="button" disabled=""
+                                class="van-button van-button--primary van-button--normal van-button--block">
+                                <div data-v-6b868a30="" class="van-button__content"><span data-v-6b868a30=""
+                                        class="van-button__text"> Confirm </span></div>
+                            </button>
+                            @endif
+                        </div>
+                    </form>
+                    @include('partials.notify')
+
                 </div>
             </div>
             <!---->
         </div>
+
         <div class="van-overlay" style="display: none;">
             <div class="tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
                 <div
@@ -1938,211 +1958,247 @@
             <!---->
         </div>
     </div>
-      <script>
-            function showPopup() {
-                document.getElementById('popupBox').style.display = 'block';
-            }
-    
-            function hidePopup() {
-                document.getElementById('popupBox').style.display = 'none';
-            }
-    
-            function changeTab(type) {
-                const h2 = document.getElementById('networkText');
-                const tabs = document.querySelectorAll('.van-tab');
-    
-                tabs.forEach(tab => tab.classList.remove('van-tab--active'));
-    
-                if (type === 'usdt') {
-                    h2.textContent = 'USDT(BEP20)';
-                    tabs[0].classList.add('van-tab--active');
-                } else if (type === 'usdc') {
-                    h2.textContent = 'USDT(TRC20)';
-                    tabs[1].classList.add('van-tab--active');
-                }
-            }
-    
-        </script>
-
-<script>
-    let selectedCoin = null;
-
-    function selectChain(element) {
-        // Remove previous selections
-        document.querySelectorAll('.chains .item').forEach(item => {
-            item.classList.remove('on');
-            const check = item.querySelector('.check');
-            if (check) check.style.display = 'none';
-        });
-
-        // Mark selected item
-        element.classList.add('on');
-        const check = element.querySelector('.check');
-        if (check) check.style.display = 'block';
-
-        // Save selected coin from attribute
-        selectedCoin = element.getAttribute('data-coin');
-    }
-
-    function confirmSelectedChain() {
-        if (!selectedCoin) {
-            alert("Please select a network first.");
-            return;
+    <script>
+        function showPopup() {
+            document.getElementById('popupBox').style.display = 'block';
         }
 
-        // Call API
-
-        if (selectedCoin == "USDT_BSC") {
-            document.getElementById('currencyImg').src =
-                "https://tux-all.s3.ap-southeast-1.amazonaws.com/upload/20240723/284411f22a828b42a327a5a8586fae88.png";
-            document.getElementById('currencyId').value = "BEP20";
-        } else {
-            document.getElementById('currencyImg').src =
-                "https://tux-all.s3.ap-southeast-1.amazonaws.com/upload/20240723/bcabd0a39b535b0c04e14dc6b5f16bdd.png";
-            document.getElementById('currencyId').value = "TRC20";
+        function hidePopup() {
+            document.getElementById('popupBox').style.display = 'none';
         }
 
+        function changeTab(type) {
+            const h2 = document.getElementById('networkText');
+            const tabs = document.querySelectorAll('.van-tab');
 
+            tabs.forEach(tab => tab.classList.remove('van-tab--active'));
 
-        document.getElementById('popupBox').style.display = 'none';
-        document.getElementById('global-loading').style.display = 'block';
+            if (type === 'usdt') {
+                h2.textContent = 'USDT(BEP20)';
+                tabs[0].classList.add('van-tab--active');
+            } else if (type === 'usdc') {
+                h2.textContent = 'USDT(TRC20)';
+                tabs[1].classList.add('van-tab--active');
+            }
+        }
+    </script>
 
+    <script>
+        let selectedCoin = null;
 
-        fetch(`/user/get-address-wallet/${selectedCoin}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log("API Response:", data); // Add this log
-
-                if (data.success) {
-                    document.getElementById('global-loading').style.display = 'none';
-                    document.getElementById('walletAddress').value = data.address;
-                } else {
-                    alert(data.message || 'Failed to get address');
-                    document.getElementById('global-loading').style.display = 'none';
-                }
-            })
-            .catch(error => {
-                console.error("Fetch error:", error);
-                document.getElementById('global-loading').style.display = 'none';
+        function selectChain(element) {
+            // Remove previous selections
+            document.querySelectorAll('.chains .item').forEach(item => {
+                item.classList.remove('on');
+                const check = item.querySelector('.check');
+                if (check) check.style.display = 'none';
             });
-    }
-</script>
 
-<script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+            // Mark selected item
+            element.classList.add('on');
+            const check = element.querySelector('.check');
+            if (check) check.style.display = 'block';
 
-<script>
-    $(function(){
-        $('input[name="amount"]').on('change keyup',function () {
-            let str = $(this).val();
-            str = str.replace(',','.');
-            $(this).val(str);
-            let min =  $('#min_withdrawal').val();
-            let max =  $('#max_withdrawal').val();
+            // Save selected coin from attribute
+            selectedCoin = element.getAttribute('data-coin');
+        }
 
-            let charge = $('#chargeAmt').val();
-      
-            let amount = parseFloat(str);
-        
-        
-          
-         
-            if (amount>=min && amount<=max) 
-            {
-            $(".submit-btn").prop("disabled", false);  
+        function confirmSelectedChain() {
+            if (!selectedCoin) {
+                alert("Please select a network first.");
+                return;
             }
-            else
-            {
 
-            $(".submit-btn").prop("disabled", true);       
+            // Call API
+
+            if (selectedCoin == "USDT_BSC") {
+                document.getElementById('currencyImg').src =
+                    "https://tux-all.s3.ap-southeast-1.amazonaws.com/upload/20240723/284411f22a828b42a327a5a8586fae88.png";
+                document.getElementById('currencyId').value = "BEP20";
+            } else {
+                document.getElementById('currencyImg').src =
+                    "https://tux-all.s3.ap-southeast-1.amazonaws.com/upload/20240723/bcabd0a39b535b0c04e14dc6b5f16bdd.png";
+                document.getElementById('currencyId').value = "TRC20";
             }
-            
-         
-             $('#ActualAmount').html(amount-amount*charge/100+" USDT");
-             $('#chargefee').html(amount*charge/100+" USDT");  
-            
-          
-            
-        
-            //console.log(summ_usd);
-        });
-    })
 
 
 
-</script>
-<script>
-    $(document).ready(function () {
-        var countdown;
-        var timer;
+            document.getElementById('popupBox').style.display = 'none';
+            document.getElementById('global-loading').style.display = 'block';
 
-        $('.code-btn').click(function (e) {
-            var emailId = $('#emailId').val();
-            if (!emailId) {
-               
-                showVanToast('Invalid Email');
-                return false;
-            }
-            startTimer(); // Start the timer after sending the code
-            $('.code-btn').hide();
-            $('.resend-btn').show();
-            showVanToast('Email sent Successfully');
-            $.ajax({
-                type: "POST",
-                url: "{{ route('send_forgot') }}",
-                data: {
-                    "emailId": emailId,
-                    "_token": "{{ csrf_token() }}"
-                },
-                success: function (response) {
-                    if (response) {
-                       
-                      
 
+            fetch(`/user/get-address-wallet/${selectedCoin}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log("API Response:", data); // Add this log
+
+                    if (data.success) {
+                        document.getElementById('global-loading').style.display = 'none';
+                        document.getElementById('walletAddress').value = data.address;
                     } else {
-                     
-                        showVanToast('Error');
+                        alert(data.message || 'Failed to get address');
+                        document.getElementById('global-loading').style.display = 'none';
                     }
-                }
-            });
-        });
-
-        function showVanToast(message, duration = 3000) {
-        const toast = document.getElementById('customToast');
-        const text = document.getElementById('customToastText');
-
-            text.innerText = message;
-            toast.style.display = 'block';
-
-            setTimeout(() => {
-                toast.style.display = 'none';
-            }, duration);
+                })
+                .catch(error => {
+                    console.error("Fetch error:", error);
+                    document.getElementById('global-loading').style.display = 'none';
+                });
         }
-        function startTimer() {
-            var resendButton = $('.resend-btn');
-            countdown = 60; // 60 seconds
-            resendButton.prop('disabled', true); // Disable the resend button
-            resendButton.text('Wait ' + countdown + 's');
+    </script>
 
-            timer = setInterval(function () {
-                countdown--;
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(function() {
+            $('input[name="amount"]').on('change keyup', function() {
+                let str = $(this).val();
+                str = str.replace(',', '.');
+                $(this).val(str);
+                let min = $('#min_withdrawal').val();
+                let max = $('#max_withdrawal').val();
+
+                let charge = $('#chargeAmt').val();
+
+                let amount = parseFloat(str);
+
+
+
+
+                if (amount >= min && amount <= max) {
+                    $(".submit-btn").prop("disabled", false);
+                } else {
+
+                    $(".submit-btn").prop("disabled", true);
+                }
+
+
+                $('#ActualAmount').html(amount - amount * charge / 100 + " USDT");
+                $('#chargefee').html(amount * charge / 100 + " USDT");
+
+
+
+
+                //console.log(summ_usd);
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            var countdown;
+            var timer;
+
+            $('.code-btn').click(function(e) {
+                var emailId = $('#emailId').val();
+                if (!emailId) {
+
+                    showVanToast('Invalid Email');
+                    return false;
+                }
+                startTimer(); // Start the timer after sending the code
+                $('.code-btn').hide();
+                $('.resend-btn').show();
+                showVanToast('Email sent Successfully');
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('send_forgot') }}",
+                    data: {
+                        "emailId": emailId,
+                        "_token": "{{ csrf_token() }}"
+                    },
+                    success: function(response) {
+                        if (response) {
+
+
+
+                        } else {
+
+                            showVanToast('Error');
+                        }
+                    }
+                });
+            });
+
+            function showVanToast(message, duration = 3000) {
+                const toast = document.getElementById('customToast');
+                const text = document.getElementById('customToastText');
+
+                text.innerText = message;
+                toast.style.display = 'block';
+
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, duration);
+            }
+
+            function startTimer() {
+                var resendButton = $('.resend-btn');
+                countdown = 60; // 60 seconds
+                resendButton.prop('disabled', true); // Disable the resend button
                 resendButton.text('Wait ' + countdown + 's');
 
-                if (countdown <= 0) {
-                    clearInterval(timer);
-                    resendButton.prop('disabled',
-                    false); // Enable the resend button after the timer ends
-                    resendButton.text('Resend Code'); // Reset button text
-                }
-            }, 1000);
-        }
+                timer = setInterval(function() {
+                    countdown--;
+                    resendButton.text('Wait ' + countdown + 's');
 
-        // Optional: Handle Resend Button Click
-        $('.resend-btn').click(function (e) {
-            $('.code-btn').trigger('click'); // Simulate a click on the original send button
+                    if (countdown <= 0) {
+                        clearInterval(timer);
+                        resendButton.prop('disabled',
+                            false); // Enable the resend button after the timer ends
+                        resendButton.text('Resend Code'); // Reset button text
+                    }
+                }, 1000);
+            }
+
+            // Optional: Handle Resend Button Click
+            $('.resend-btn').click(function(e) {
+                $('.code-btn').trigger('click'); // Simulate a click on the original send button
+            });
         });
-    });
+    </script>
 
-</script>
+    <script>
+        function copyWallet() {
+            const walletText = document.getElementById("walletAddress").innerText;
+
+            navigator.clipboard.writeText(walletText)
+                .then(() => {
+                    alert("Wallet address copied!");
+                })
+                .catch(err => {
+                    console.error("Failed to copy!", err);
+                });
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const addresses = {
+                bep20: "{{ Auth::user()->usdtBep20 }}",
+                trc20: "{{ Auth::user()->usdtTrc20 }}"
+            };
+
+            function updateAddress() {
+                const selectedNetwork = $('#currencyId').val();
+                const selectedAddress = addresses[selectedNetwork] || "";
+
+                // ✅ Update visible <p> tag
+                $('#walletAddress').text(selectedAddress);
+
+                // ✅ Update hidden input
+                $('#walletAddressInput').val(selectedAddress);
+            }
+
+            // Initial load
+            updateAddress();
+
+            // On selection change
+            $('#currencyId').on('change', updateAddress);
+        });
+    </script>
+
+
+
 </body>
 
 </html>

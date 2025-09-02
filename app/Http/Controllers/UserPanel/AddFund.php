@@ -23,6 +23,39 @@ return $this->dashboard_layout();
 
 }
 
+   public function confirmFund()
+    {
+        // 1. Fetch currency setting
+        $curText = DB::table('general_settings')->value('cur_text'); // e.g. 'INR', 'usdtTrc20', 'usdtBep20'
+
+        // 2. Based on currency value, pick wallet or bank details
+        if (Str::contains(strtolower($curText), 'trc20')) {
+            $walletAddress = DB::table('general_settings')->value('usdtTrc20');
+            $bankDetails = null;
+        } elseif (Str::contains(strtolower($curText), 'bep20')) {
+            $walletAddress = DB::table('general_settings')->value('usdtBep20');
+            $bankDetails = null;
+        } elseif (strtolower($curText) === 'inr') {
+            $walletAddress = null;
+            $bankDetails = DB::table('general_settings')
+                ->select('account_no', 'ifsc_code', 'branch_name', 'bank_name')
+                ->first();
+        } else {
+            $walletAddress = null;
+            $bankDetails = null;
+        }
+
+        // 3. Prepare view data
+        $this->data['currency']      = $curText;
+        $this->data['walletAddress'] = $walletAddress;
+        $this->data['bankDetails']   = $bankDetails;
+        $this->data['page']          = 'user.fund.confirmFund';
+
+        // 4. Return view using your dashboard layout
+        return $this->dashboard_layout();
+    }
+
+
 
 public function fundHistory(Request $request)
 {

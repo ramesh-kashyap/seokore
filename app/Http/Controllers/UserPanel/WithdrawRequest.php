@@ -61,7 +61,7 @@ class WithdrawRequest extends Controller
 
 
         ]);
-
+        // dd($validation);
         if($validation->fails()) {
             Log::info($validation->getMessageBag()->first());
 

@@ -72,11 +72,17 @@
                                     Released Details</span></div>
                             <div data-v-29a06c8f="" data-v-6b868a30=""
                                 class="tw-flex tw-items-center tw-p-12px tw-bg-white3 tw-rounded-10px">
-                                <img src="{{ asset('/static/icon/langu.png') }}"
+
+                         <a href="{{route('user.records')}}">
+                                   <img src="{{ asset('/static/icon/langu.png') }}"
                                     data-v-3f1a7394="" data-v-29a06c8f="" aria-hidden="true" class="svg-icon"
                                     data-v-6b868a30=""
-                                    style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;"><span data-v-29a06c8f="" data-v-6b868a30="" class="tw-flex-1 tw-pl-8px">Order
-                                    History</span></div>
+                                    style="width: 0.6588rem; height: 0.6588rem; font-size: 0.6588rem;">
+                                    <span data-v-29a06c8f="" data-v-6b868a30="" class="tw-flex-1 tw-pl-8px">Order
+                                    History</span>
+                         </a>
+                                
+                                </div>
                         </div><button data-v-29a06c8f="" data-v-6b868a30=""
                             class="van-button van-button--primary van-button--normal van-button--block">
                             <div data-v-29a06c8f="" data-v-6b868a30="" class="van-button__content"><span

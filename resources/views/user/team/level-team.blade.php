@@ -61,7 +61,7 @@
                                 <div data-v-6b868a30="" class="tw-mt-6px tw-text-secondary tw-text-12px"> Today's Income
                                 </div>
                                 <div data-v-6b868a30="" class="tw-mt-12px tw-text-18px tw-text-primary tw-font-bold">
-                                    <span data-v-6b868a30="">0</span></div>
+                                    <span data-v-6b868a30="">{{ number_format($gen_teamIncome, 2) }}</span></div>
                             </div>
                         </div>
                         <div data-v-6b868a30="" class="tw-p-16px tw-bg-white3 tw-rounded-10px">
@@ -69,7 +69,7 @@
                                 <div data-v-6b868a30="" class="tw-mb-12px"> First Generation </div>
                                 <div data-v-6b868a30="" class="tw-flex tw-justify-between tw-items-center">
                                     <dl data-v-6b868a30="">
-                                        <dt data-v-6b868a30="" class="tw-mb-8px"> 0/2 </dt>
+                                        <dt data-v-6b868a30="" class="tw-mb-8px"> {{$active_gen_team1total}} / {{$gen_team1total}} </dt>
                                         <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Number of Users
                                         </dd>
                                     </dl>
@@ -79,7 +79,7 @@
                                         </dd>
                                     </dl>
                                     <dl data-v-6b868a30="" class="tw-text-right">
-                                        <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                        <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team1Income,2)}} </dt>
                                         <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Income
                                         </dd>
                                     </dl>
@@ -89,7 +89,7 @@
                                 <div data-v-6b868a30="" class="tw-mb-12px"> Second Generation </div>
                                 <div data-v-6b868a30="" class="tw-flex tw-justify-between tw-items-center">
                                     <dl data-v-6b868a30="">
-                                        <dt data-v-6b868a30="" class="tw-mb-8px"> 0/0 </dt>
+                                        <dt data-v-6b868a30="" class="tw-mb-8px"> {{$active_gen_team2total}} / {{$gen_team2total}} </dt>
                                         <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Number of Users
                                         </dd>
                                     </dl>
@@ -99,7 +99,7 @@
                                         </dd>
                                     </dl>
                                     <dl data-v-6b868a30="" class="tw-text-right">
-                                        <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                        <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team2Income,2)}} </dt>
                                         <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Income
                                         </dd>
                                     </dl>
@@ -109,7 +109,7 @@
                                 <div data-v-6b868a30="" class="tw-mb-12px"> Third Generation </div>
                                 <div data-v-6b868a30="" class="tw-flex tw-justify-between tw-items-center">
                                     <dl data-v-6b868a30="">
-                                        <dt data-v-6b868a30="" class="tw-mb-8px"> 0/0 </dt>
+                                        <dt data-v-6b868a30="" class="tw-mb-8px"> {{$active_gen_team3total}} / {{$gen_team3total}} </dt>
                                         <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Number of Users
                                         </dd>
                                     </dl>
@@ -119,7 +119,7 @@
                                         </dd>
                                     </dl>
                                     <dl data-v-6b868a30="" class="tw-text-right">
-                                        <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                        <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team3Income,2)}} </dt>
                                         <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Income
                                         </dd>
                                     </dl>
@@ -139,23 +139,23 @@
                                     <!---->
                                     <div data-v-6b868a30="" class="tw-text-12px"><span data-v-6b868a30=""
                                             class="tw-pr-4px tw-text-secondary"> Number of Users: </span><span
-                                            data-v-6b868a30="" class="tw-text-primary"> 0 / 2 </span></div>
+                                            data-v-6b868a30="" class="tw-text-primary"> {{$active_gen_team1total}} / {{$gen_team1total}} </span></div>
                                 </div>
                             </div>
                             <div data-v-6b868a30="" role="separator" class="van-divider van-divider--hairline"></div>
                             <div data-v-6b868a30="" class="tw-flex tw-justify-between tw-items-center">
                                 <dl data-v-6b868a30="">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px">0</dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px">{{number_format($gen_team1_deposit,2)}}</dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Deposit
                                     </dd>
                                 </dl>
                                 <dl data-v-6b868a30="" class="tw-text-center">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team1_withdraw,2)}} </dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Withdrawal
                                     </dd>
                                 </dl>
                                 <dl data-v-6b868a30="" class="tw-text-right">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px"> 12.0951 </dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team1Income,2)}} </dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Income
                                     </dd>
                                 </dl>
@@ -173,23 +173,23 @@
                                     <!---->
                                     <div data-v-6b868a30="" class="tw-text-12px"><span data-v-6b868a30=""
                                             class="tw-pr-4px tw-text-secondary"> Number of Users: </span><span
-                                            data-v-6b868a30="" class="tw-text-primary"> 0 / 0 </span></div>
+                                            data-v-6b868a30="" class="tw-text-primary"> {{$active_gen_team2total}} / {{$gen_team2total}} </span></div>
                                 </div>
                             </div>
                             <div data-v-6b868a30="" role="separator" class="van-divider van-divider--hairline"></div>
                             <div data-v-6b868a30="" class="tw-flex tw-justify-between tw-items-center">
                                 <dl data-v-6b868a30="">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px">0</dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px">{{number_format($gen_team2_deposit,2)}}</dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Deposit
                                     </dd>
                                 </dl>
                                 <dl data-v-6b868a30="" class="tw-text-center">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team2_withdraw,2)}}</dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Withdrawal
                                     </dd>
                                 </dl>
                                 <dl data-v-6b868a30="" class="tw-text-right">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team2Income,2)}} </dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Income
                                     </dd>
                                 </dl>
@@ -207,23 +207,23 @@
                                     <div data-v-6b868a30="" class="tw-text-14px"> Third Generation Data </div>
                                     <div data-v-6b868a30="" class="tw-text-12px"><span data-v-6b868a30=""
                                             class="tw-pr-4px tw-text-secondary"> Number of Users: </span><span
-                                            data-v-6b868a30="" class="tw-text-primary"> 0 / 0 </span></div>
+                                            data-v-6b868a30="" class="tw-text-primary"> {{$active_gen_team3total}} / {{$gen_team3total}}</span></div>
                                 </div>
                             </div>
                             <div data-v-6b868a30="" role="separator" class="van-divider van-divider--hairline"></div>
                             <div data-v-6b868a30="" class="tw-flex tw-justify-between tw-items-center">
                                 <dl data-v-6b868a30="">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px">0</dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px">{{number_format($gen_team3_deposit,2)}}</dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Deposit
                                     </dd>
                                 </dl>
                                 <dl data-v-6b868a30="" class="tw-text-center">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team3_withdraw,2)}} </dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Withdrawal
                                     </dd>
                                 </dl>
                                 <dl data-v-6b868a30="" class="tw-text-right">
-                                    <dt data-v-6b868a30="" class="tw-mb-8px"> 0 </dt>
+                                    <dt data-v-6b868a30="" class="tw-mb-8px"> {{number_format($gen_team3Income,2)}} </dt>
                                     <dd data-v-6b868a30="" class="tw-text-12px tw-text-secondary"> Cumulative Income
                                     </dd>
                                 </dl>

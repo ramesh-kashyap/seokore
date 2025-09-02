@@ -1760,6 +1760,23 @@
                                     @php
                                     $sponsor = @$_GET['inviteCode'] ? @$_GET['inviteCode'] : @$_GET['InviteCode'];
                                     @endphp
+
+
+                                      @if(session('success'))
+                                    <div class="alert alert-success">{{ session('success') }}</div>
+                                    @endif
+
+                                    @if(session('error'))
+                                    <div class="alert alert-danger">{{ session('error') }}</div>
+                                    @endif
+
+                                    @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        @foreach ($errors->all() as $error)
+                                        <p>{{ $error }}</p>
+                                        @endforeach
+                                    </div>
+                                    @endif
                                     <div data-v-6b868a30=""
                                         class="tw-relative tw-z-0 tw-top-10px tw-flex tw-justify-between tw-items-start">
                                         <div data-v-6b868a30="" class="page-auth-form-title"> Registration </div>
@@ -1785,8 +1802,8 @@
                                                 <div class="van-field__body">
                                                     <input type="hidden" id="country-name" name="country" value="CANADA">
                                                     <input type="hidden" id="dial-code" name="dialCode" value="1">
-                                                    <input type="hidden" id="country_iso" name="country_iso" value="CA">
-                                                    <input name="phone" type="tel" id="phone"
+                                                    <!-- <input type="hidden" id="country_iso" name="country_iso" value="CA"> -->
+                                                    <input name="phone" type="tel" id="phone" placeholder="Enter your phone number"
                                                         onkeyup="this.value=this.value.replace(/[ ]/g,'')"
                                                         class="van-field__control">
                                                 </div>
@@ -1881,6 +1898,8 @@
                                                     class="van-button__text"> Registration </span></div>
                                         </button></div>
                                 </form>
+                                @include('partials.notify')
+
                             </div>
                         </div>
                     </div>
