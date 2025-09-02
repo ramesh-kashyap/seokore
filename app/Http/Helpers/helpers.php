@@ -154,7 +154,28 @@ function reCaptcha()
     return $reCaptcha ? $reCaptcha->generateScript() : '';
 }
 
+function getEligibleIncomeAmount($user_id, $newIncome)
+{
+    // Total income from specified sources
+    $totalIncome = Income::where('user_id', $user_id)->whereNotIn('remarks',['Reward Income','Salary Income'])->sum('comm');
 
+    // Total investment
+    $totalInvestment = DB::table('investments')
+        ->where('user_id', $user_id)
+        ->where('status', 'Active')
+        ->sum('amount');
+
+    $maxAllowedIncome = $totalInvestment * 2;
+    
+     $remaining = $maxAllowedIncome - $totalIncome;
+     if($newIncome > $remaining)
+     {
+          User::where('id', $user_id)->update(['active_status' => 'Inactive']); 
+          Investment::where('user_id', $user_id)->update(['roiCandition' => 1]); 
+     }
+    return ($newIncome > $remaining) ? $remaining : $newIncome;
+    
+}
   function getCustomCaptcha($height = 46, $width = '300px', $bgcolor = '#003', $textcolor = '#03f356')
 {
     $textcolor = '#'.GeneralSetting::first()->base_color;
