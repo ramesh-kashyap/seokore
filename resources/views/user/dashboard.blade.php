@@ -42,89 +42,85 @@
                                 class="tw-w-full tw-h-150px tw-rounded-10px tw-bg-cover tw-bg-no-repeat tw-overflow-hidden"
                                 style="background: rgb(25 140 82 / 11%);  border: 1px solid white;border-right: 1.5px solid #fff0f036;
     border-top: 1.5px solid #fff0f02e;">
-                                <!-- <img src="{{ asset('') }}y1.png" alt="" class="svg-icon" style="margin:10px; height : 30px; width:100px"> -->
                                 <div data-v-77e1eeea="" style="margin:10px">
-                                    Welcome 3203228 to join Seokore </div>
+                                    <span style="color:#0cb67d;font-size:21px;">Welcome 3203228 to join Seokore</span>
+                                </div>
                                 <p style="margin:10px; font-size: 14px">
-                                    3203228 to join Seokore Welcome 3203228 to
-                                    join Seokore Welcome 3203228 to join Seokore Welcome
-                                    3203228 to join Seokore Welcome 3203228 to join
-                                    Seokore Welcome 3203228 to join Seokore
+                                    <img src="{{ asset('') }}y1.png" alt="" class="svg-icon" style="margin:10px; height : 30px; width:100px">
+
+
                                 </p>
                                 <div data-v-77e1eeea="" role="alert" class="van-notice-bar" vertical=""
                                     style="color: rgb(24, 25, 28); background: none;"><i
                                         class="van-icon van-notice-bar__left-icon">
                                         <img src="{{asset('static/icon/speaker.png')}}" class="van-icon__image">
                                         <!----></i>
-                                    <div role="marquee" class="van-notice-bar__wrap">
-                                        <div class="van-notice-bar__content van-ellipsis" style="transition-duration: 0s;">
-                                            <div data-v-77e1eeea="" class="notice-swipe van-swipe">
-                                                <div class="van-swipe__track van-swipe__track--vertical"
-                                                    style="transition-duration: 500ms; transform: translateY(-630px); height: 1350px;">
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3201478Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3203228Recharge55 </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        Welcome 3203228 to join Seokore </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3202256Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3201795Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3201059Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3198673Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3180274Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3202153Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3202334Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3191177Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3202479Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3198525Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3202350Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3201473Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3200601Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3203223Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3202133Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3200804Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3202963Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3199505Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3201646Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3201400Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3198924Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3195603Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3203223Recharge55 </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3201682Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3199569Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3203110Open Strategy </div>
-                                                    <div data-v-77e1eeea="" class="van-swipe-item" style="height: 45px;">
-                                                        3200264Open Strategy </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="marquee-container">
+                                        <div class="marquee-item">3201478 Open Strategy</div>
+                                        <div class="marquee-item">3203228 Recharge55</div>
+                                        <div class="marquee-item">Welcome 3203228 to join Seokore</div>
+                                        <div class="marquee-item">3202256 Open Strategy</div>
+                                        <div class="marquee-item">3201795 Open Strategy</div>
+                                        <div class="marquee-item">3201059 Open Strategy</div>
+                                        <div class="marquee-item">3198673 Open Strategy</div>
+                                        <div class="marquee-item">3180274 Open Strategy</div>
+                                        <div class="marquee-item">3202153 Open Strategy</div>
+                                        <div class="marquee-item">3202334 Open Strategy</div>
+                                        <div class="marquee-item">3191177 Open Strategy</div>
+                                        <div class="marquee-item">3202479 Open Strategy</div>
+                                        <div class="marquee-item">3198525 Open Strategy</div>
+                                        <div class="marquee-item">3202350 Open Strategy</div>
+                                        <div class="marquee-item">3201473 Open Strategy</div>
+                                        <div class="marquee-item">3200601 Open Strategy</div>
                                     </div>
+
+                                    <style>
+                                        .marquee-container {
+                                            width: 100%;
+                                            height: 45px;
+                                            overflow: hidden;
+                                            position: relative;
+                                            background: transparent;
+                                            color: white;
+                                            /* White text */
+                                            font-size: 16px;
+                                            line-height: 45px;
+                                            text-align: left;
+                                        }
+
+                                        .marquee-item {
+                                            display: none;
+                                            opacity: 0;
+                                            transition: opacity 1s ease-in-out;
+                                            position: absolute;
+                                            width: 100%;
+                                        }
+
+                                        .marquee-item.active {
+                                            display: block;
+                                            opacity: 1;
+                                        }
+                                    </style>
+
+                                    <script>
+                                        const items = document.querySelectorAll(".marquee-item");
+                                        let index = 0;
+
+                                        function showNext() {
+                                            // sab hide karo
+                                            items.forEach(item => item.classList.remove("active"));
+
+                                            // current show karo
+                                            items[index].classList.add("active");
+
+                                            // index update karo
+                                            index = (index + 1) % items.length;
+                                        }
+
+                                        showNext(); // first run
+                                        setInterval(showNext, 30000); // har 30 sec me change hoga
+                                    </script>
+
                                 </div>
                             </div>
                         </div>

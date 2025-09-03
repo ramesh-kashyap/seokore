@@ -965,15 +965,8 @@ class Invest extends Controller
             $this->data['page'] = 'user.invest.vip';
             return $this->dashboard_layout();
         }
-    $user = Auth::user();
-
-    $userDirect = User::where('sponsor', $user->id)->where('active_status', 'Active')->where('package', '>=', 30)->count();
-    $this->data['userDirect'] = $userDirect;
-    $this->data['user'] = $user;
-    $this->data['myRank'] = $user->rank;
-    $this->data['page'] = 'user.invest.vip';
-    return $this->dashboard_layout();
-  }
+  
+  
 
 
   public function raj()
